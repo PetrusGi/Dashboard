@@ -11,6 +11,7 @@ function addNewFeature() {
                     alert(`Feature "${featureName}" already exists.`);
                     return;
                 }
+                
                 // Add the new feature
                 features.push(featureName);
                 saveData('features.json', features)
@@ -25,6 +26,7 @@ function addNewFeature() {
             });
     }
 }
+
 
 // Function to edit a feature
 function editFeature(feature) {
@@ -68,6 +70,7 @@ function deleteFeature(feature) {
             });
     }
 }
+
 
 // --- Data Analysis Functions ---
 
@@ -162,6 +165,7 @@ function findFeatureLeader(competitors) {
         }))
         .sort((a, b) => b.featureCount - a.featureCount)[0];
 }
+
 
 // --- Visualization Functions ---
 
@@ -706,7 +710,7 @@ function updateFeatureDashboard(
     }
 }
 
-// --- New Code: Extended Interactive Filtering & Market Standard Update ---
+/* ------------------------- EXTENSION CODE START ------------------------- */
 
 // Additional Interactive Filtering for Visualizations by Category/Importance
 function setupCategoryFilters() {
@@ -756,6 +760,8 @@ function updateMarketStandardUI(competitors, features) {
         }
     `;
 }
+
+/* ------------------------- EXTENSION CODE END ------------------------- */
 
 // --- Initialization ---
 
