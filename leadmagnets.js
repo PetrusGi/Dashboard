@@ -24,7 +24,6 @@ function addNewLeadMagnet() {
     }
 }
 
-
 // Function to edit a lead magnet
 function editLeadMagnet(leadMagnet) {
     const newName = prompt(`Edit lead magnet: ${leadMagnet}`, leadMagnet);
@@ -68,88 +67,114 @@ function deleteLeadMagnet(leadMagnet) {
     }
 }
 
-
-function renderLeadMagnets(leadMagnets) {
-    const leadMagnetList = document.getElementById('leadmagnet-list');
-    leadMagnetList.innerHTML = '';
+// Calculate which competitor has implemented the most lead magnets
+function getLeadMagnetLeader(competitors) {
+    if (!competitors || competitors.length === 0) return null;
     
-    // Get competitor data to count usage
-    fetchData('competitors.json')
-        .then(competitors => {
-            // Count lead magnet usage
-            const leadMagnetCounts = {};
-            competitors.forEach(competitor => {
-                competitor.leadMagnets.forEach(leadMagnet => {
-                    leadMagnetCounts[leadMagnet] = (leadMagnetCounts[leadMagnet] || 0) + 1;
-                });
-            });
-            
-            // Calculate average lead magnets per competitor
-            const totalLeadMagnets = leadMagnets.length;
-            const avgLeadMagnets = competitors.length ? 
-                (competitors.reduce((sum, comp) => sum + comp.leadMagnets.length, 0) / competitors.length).toFixed(1) : 
-                '0';
-            
-            // Update stats
-            document.getElementById('total-leadmagnets').textContent = totalLeadMagnets;
-            document.getElementById('avg-leadmagnets').textContent = avgLeadMagnets;
-            
-            // Get top and least used lead magnets
-            const sortedLeadMagnets = [...leadMagnets].sort((a, b) => 
-                (leadMagnetCounts[b] || 0) - (leadMagnetCounts[a] || 0));
-            
-            const topLeadMagnets = sortedLeadMagnets.slice(0, 5);
-            const leastLeadMagnets = sortedLeadMagnets.slice(-5).reverse();
-            
-            // Render top lead magnets
-            const topLeadMagnetsList = document.getElementById('top-leadmagnets-list');
-            topLeadMagnetsList.innerHTML = '';
-            topLeadMagnets.forEach(leadMagnet => {
-                const count = leadMagnetCounts[leadMagnet] || 0;
-                const li = document.createElement('li');
-                li.innerHTML = `${leadMagnet} <span class="count">${count}</span>`;
-                topLeadMagnetsList.appendChild(li);
-            });
-            
-            // Render least used lead magnets
-            const leastLeadMagnetsList = document.getElementById('least-leadmagnets-list');
-            leastLeadMagnetsList.innerHTML = '';
-            leastLeadMagnets.forEach(leadMagnet => {
-                const count = leadMagnetCounts[leadMagnet] || 0;
-                const li = document.createElement('li');
-                li.innerHTML = `${leadMagnet} <span class="count">${count}</span>`;
-                leastLeadMagnetsList.appendChild(li);
-            });
-            
-            // Render all lead magnets
-            leadMagnets.forEach(leadMagnet => {
-                const count = leadMagnetCounts[leadMagnet] || 0;
-                const leadMagnetItem = document.createElement('div');
-                leadMagnetItem.className = 'list-item';
-                leadMagnetItem.innerHTML = `
-                    <span class="list-item-name">${leadMagnet}</span>
-                    <span class="list-item-count">${count}</span>
-                    <div class="list-item-actions">
-                        <button title="Edit" class="edit-leadmagnet-btn" data-leadmagnet="${leadMagnet}">
-                            <span class="material-icons">edit</span>
-                        </button>
-                        <button title="Delete" class="delete-leadmagnet-btn" data-leadmagnet="${leadMagnet}">
-                            <span class="material-icons">delete</span>
-                        </button>
-                    </div>
-                `;
-                leadMagnetList.appendChild(leadMagnetItem);
-                
-                // Add event listeners for edit and delete
-                leadMagnetItem.querySelector('.edit-leadmagnet-btn').addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    editLeadMagnet(leadMagnet);
-                });
-                
-                leadMagnetItem.querySelector('.delete-leadmagnet-btn').addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    deleteLeadMagnet(leadMagnet);
-                });
-            });
-        });
+    let maxLeadMagnets = 0;
+    let leader = null;
+    
+    competitors.forEach(competitor => {
+        if (!competitor.leadMagnets || !Array.isArray(competitor.leadMagnets)) {
+            return; // Skip if leadMagnets is not an array
+        }
+        
+        if (competitor.leadMagnets.length > maxLeadMagnets) {
+            maxLeadMagnets = competitor.leadMagnets.length;
+            leader = competitor;
+        }
+    });
+    
+    if (!leader) return null;
+    
+    return {
+        name: leader.name || "Unknown",
+        count: maxLeadMagnets,
+        country: leader.country || ""
+    };
 }
+
+// Find unique lead magnets (implemented by only one competitor)
+function findUniqueLeadMagnets(competitors, allLeadMagnets) {
+    if (!competitors || !Array.isArray(competitors) || competitors.length === 0 || 
+        !allLeadMagnets || !Array.isArray(allLeadMagnets) || allLeadMagnets.length === 0) {
+        return [];
+    }
+    
+    const leadMagnetsMap = {};
+    
+    // Initialize count for all lead magnets
+    allLeadMagnets.forEach(leadMagnet => {
+        if (leadMagnet) {
+            leadMagnetsMap[leadMagnet] = {
+                count: 0,
+                competitor: null
+            };
+        }
+    });
+    
+    // Count lead magnet usage across competitors
+    competitors.forEach(competitor => {
+        if (!competitor || !competitor.leadMagnets || !Array.isArray(competitor.leadMagnets)) {
+            return; // Skip invalid competitors
+        }
+        
+        competitor.leadMagnets.forEach(leadMagnet => {
+            if (leadMagnet && leadMagnetsMap[leadMagnet]) {
+                leadMagnetsMap[leadMagnet].count += 1;
+                if (leadMagnetsMap[leadMagnet].count === 1) {
+                    leadMagnetsMap[leadMagnet].competitor = competitor.name || "Unknown";
+                }
+            }
+        });
+    });
+    
+    // Filter for unique lead magnets
+    const uniqueLeadMagnets = allLeadMagnets.filter(leadMagnet => 
+        leadMagnet && leadMagnetsMap[leadMagnet] && leadMagnetsMap[leadMagnet].count === 1
+    ).map(leadMagnet => ({
+        name: leadMagnet,
+        competitor: leadMagnetsMap[leadMagnet].competitor
+    }));
+    
+    return uniqueLeadMagnets;
+}
+
+// Calculate market standard lead magnets
+function calculateMarketStandard(competitors, allLeadMagnets) {
+    if (!competitors || !Array.isArray(competitors) || competitors.length === 0 || 
+        !allLeadMagnets || !Array.isArray(allLeadMagnets) || allLeadMagnets.length === 0) {
+        return [];
+    }
+    
+    const leadMagnetsMap = {};
+    const validCompetitors = competitors.filter(comp => comp && comp.leadMagnets && Array.isArray(comp.leadMagnets));
+    
+    if (validCompetitors.length === 0) return [];
+    
+    // For small numbers of competitors, lower the threshold
+    const thresholdPercentage = validCompetitors.length < 5 ? 0.3 : 0.5; // 30% for small samples, 50% otherwise
+    const threshold = Math.ceil(validCompetitors.length * thresholdPercentage);
+    
+    // Initialize count for all lead magnets
+    allLeadMagnets.forEach(leadMagnet => {
+        if (leadMagnet) {
+            leadMagnetsMap[leadMagnet] = 0;
+        }
+    });
+    
+    // Count lead magnet usage across competitors
+    validCompetitors.forEach(competitor => {
+        competitor.leadMagnets.forEach(leadMagnet => {
+            if (leadMagnet && leadMagnetsMap[leadMagnet] !== undefined) {
+                leadMagnetsMap[leadMagnet] += 1;
+            }
+        });
+    });
+    
+    // Filter for market standard lead magnets
+    const standardLeadMagnets = allLeadMagnets.filter(leadMagnet => 
+        leadMagnet && leadMagnetsMap[leadMagnet] >= threshold
+    ).map(leadMagnet => ({
+        name: leadMagnet,
+        adoption: Math.round((leadMagnetsMap[leadMagnet] / validCompetitors.length) * 100)
