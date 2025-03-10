@@ -444,13 +444,7 @@ function renderERPs(erps) {
                     });
                 }
                 
-                // Setup add ERP button
-                const addERPBtn = document.getElementById('add-erp-btn');
-                if (addERPBtn) {
-                    addERPBtn.addEventListener('click', () => {
-                        addNewERP();
-                    });
-                }
+                // Note: Event listener for add ERP button is set up in main.js
             }
             
             // Remove search and add button from tab header if they exist
