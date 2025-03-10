@@ -42,8 +42,8 @@ async function updateCompetitorItems(filename, itemType, oldName, newName) {
         const competitors = await fetchData(filename);
         
         let field = itemType;
-        if (itemType === 'leadMagnets' && field !== 'leadMagnets') {
-            field = 'leadMagnets';
+        if (itemType === 'leadmagnets' && field !== 'leadmagnets') {
+            field = 'leadmagnets';
         }
         
         competitors.forEach(competitor => {
@@ -67,8 +67,8 @@ async function removeItemFromCompetitors(filename, itemType, itemName) {
         const competitors = await fetchData(filename);
         
         let field = itemType;
-        if (itemType === 'leadMagnets' && field !== 'leadMagnets') {
-            field = 'leadMagnets';
+        if (itemType === 'leadmagnets' && field !== 'leadmagnets') {
+            field = 'leadmagnets';
         }
         
         competitors.forEach(competitor => {
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add feature, ERP, and lead magnet buttons
     document.getElementById('add-feature-btn').addEventListener('click', addNewFeature);
     document.getElementById('add-erp-btn').addEventListener('click', addNewERP);
-    document.getElementById('add-leadmagnet-btn').addEventListener('click', addNewLeadMagnet);
+    document.getElementById('add-leadmagnet-btn').addEventListener('click', addNewleadmagnet);
 
     // Initialize data
     initializeData();
@@ -207,7 +207,7 @@ function initializeData() {
     fetchData('leadmagnets.json')
         .then(data => {
             if (data) {
-                renderLeadMagnets(data);
+                renderleadmagnets(data);
                 setupTagSuggestions('leadmagnet-input', 'leadmagnet-suggestions', data);
             }
         });
@@ -575,16 +575,16 @@ function openCompetitorEdit(competitor) {
     // Add tags
     const selectedFeatures = document.getElementById('selected-features');
     const selectedERPs = document.getElementById('selected-erps');
-    const selectedLeadMagnets = document.getElementById('selected-leadmagnets');
+    const selectedleadmagnets = document.getElementById('selected-leadmagnets');
     
     selectedFeatures.innerHTML = '';
     selectedERPs.innerHTML = '';
-    selectedLeadMagnets.innerHTML = '';
+    selectedleadmagnets.innerHTML = '';
     
     // Track selected tags
     const featureTags = new Set();
     const erpTags = new Set();
-    const leadMagnetTags = new Set();
+    const leadmagnetTags = new Set();
     
     // Add features
     competitor.features.forEach(feature => {
@@ -597,8 +597,8 @@ function openCompetitorEdit(competitor) {
     });
     
     // Add lead magnets
-    competitor.leadMagnets.forEach(leadMagnet => {
-        addTag(leadMagnet, selectedLeadMagnets, leadMagnetTags);
+    competitor.leadmagnets.forEach(leadmagnet => {
+        addTag(leadmagnet, selectedleadmagnets, leadmagnetTags);
     });
     
     // Set competitor ID for form submission
@@ -671,7 +671,7 @@ function saveCompetitor() {
     const erps = Array.from(document.getElementById('selected-erps').children)
         .map(tag => tag.textContent.replace('×', '').trim());
     
-    const leadMagnets = Array.from(document.getElementById('selected-leadmagnets').children)
+    const leadmagnets = Array.from(document.getElementById('selected-leadmagnets').children)
         .map(tag => tag.textContent.replace('×', '').trim());
     
     // Create competitor object
@@ -683,7 +683,7 @@ function saveCompetitor() {
         subscriptionModels,
         features,
         erps,
-        leadMagnets
+        leadmagnets
     };
     
     // Save to database
