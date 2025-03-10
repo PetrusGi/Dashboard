@@ -1,3 +1,4 @@
+// IMPORTANT: This function must be declared in global scope for main.js to access it
 function addNewLeadMagnet() {
     const leadMagnetName = prompt("Enter new lead magnet name:");
     if (leadMagnetName && leadMagnetName.trim() !== '') {
@@ -165,6 +166,109 @@ function getLeadMagnetLeader(competitors) {
 }
 
 // Find unique lead magnets (implemented by only one competitor)
+function findUniqueLeadMagnets(competitors, allLeadMagnets) {
+    if (!competitors || !Array.isArray(competitors) || competitors.length === 0 || 
+        !allLeadMagnets || !Array.isArray(allLeadMagnets) || allLeadMagnets.length === 0) {
+        return [];
+    }
+    
+    const leadMagnetsMap = {};
+    
+    // Initialize count for all lead magnets
+    allLeadMagnets.forEach(leadMagnet => {
+        if (leadMagnet) {
+            leadMagnetsMap[leadMagnet] = {
+                count: 0,
+                competitor: null
+            };
+        }
+    });
+    
+    // Count lead magnet usage across competitors
+    competitors.forEach(competitor => {
+        if (!competitor || !competitor.leadMagnets || !Array.isArray(competitor.leadMagnets)) {
+            return; // Skip invalid competitors
+        }
+        
+        competitor.leadMagnets.forEach(leadMagnet => {
+            if (leadMagnet && leadMagnetsMap[leadMagnet]) {
+                leadMagnetsMap[leadMagnet].count += 1;
+                if (leadMagnetsMap[leadMagnet].count === 1) {
+                    leadMagnetsMap[leadMagnet].competitor = competitor.name || "Unknown";
+                }
+            }
+        });
+    });
+    
+    // Filter for unique lead magnets
+    const uniqueLeadMagnets = allLeadMagnets.filter(leadMagnet => 
+        leadMagnet && leadMagnetsMap[leadMagnet] && leadMagnetsMap[leadMagnet].count === 1
+    ).map(leadMagnet => ({
+        name: leadMagnet,
+        competitor: leadMagnetsMap[leadMagnet].competitor
+    }));
+    
+    return uniqueLeadMagnets;
+}
+
+// Calculate market standard lead magnets
+function calculateMarketStandard(competitors, allLeadMagnets) {
+    if (!competitors || !Array.isArray(competitors) || competitors.length === 0 || 
+        !allLeadMagnets || !Array.isArray(allLeadMagnets) || allLeadMagnets.length === 0) {
+        return [];
+    }
+    
+    const leadMagnetsMap = {};
+    const validCompetitors = competitors.filter(comp => comp && comp.leadMagnets && Array.isArray(comp.leadMagnets));
+    
+    if (validCompetitors.length === 0) return [];
+    
+    // For small numbers of competitors, lower the threshold
+    const thresholdPercentage = validCompetitors.length < 5 ? 0.3 : 0.5; // 30% for small samples, 50% otherwise
+    const threshold = Math.ceil(validCompetitors.length * thresholdPercentage);
+    
+    // Initialize count for all lead magnets
+    allLeadMagnets.forEach(leadMagnet => {
+        if (leadMagnet) {
+            leadMagnetsMap[leadMagnet] = 0;
+        }
+    });
+    
+    // Count lead magnet usage across competitors
+    validCompetitors.forEach(competitor => {
+        competitor.leadMagnets.forEach(leadMagnet => {
+            if (leadMagnet && leadMagnetsMap[leadMagnet] !== undefined) {
+                leadMagnetsMap[leadMagnet] += 1;
+            }
+        });
+    });
+    
+    // Filter for market standard lead magnets
+    const standardLeadMagnets = allLeadMagnets.filter(leadMagnet => 
+        leadMagnet && leadMagnetsMap[leadMagnet] >= threshold
+    ).map(leadMagnet => ({
+        name: leadMagnet,
+        adoption: Math.round((leadMagnetsMap[leadMagnet] / validCompetitors.length) * 100)
+    }));
+    
+    // Make sure we return at least a few items
+    if (standardLeadMagnets.length < 3 && allLeadMagnets.length > 0) {
+        // If we don't have enough standard lead magnets, add the most common ones
+        const topLeadMagnets = [...allLeadMagnets]
+            .filter(f => f && !standardLeadMagnets.some(sf => sf.name === f))
+            .sort((a, b) => (leadMagnetsMap[b] || 0) - (leadMagnetsMap[a] || 0))
+            .slice(0, 5 - standardLeadMagnets.length)
+            .map(leadMagnet => ({
+                name: leadMagnet,
+                adoption: Math.round((leadMagnetsMap[leadMagnet] / validCompetitors.length) * 100)
+            }));
+        
+        return [...standardLeadMagnets, ...topLeadMagnets].sort((a, b) => b.adoption - a.adoption);
+    }
+    
+    return standardLeadMagnets.sort((a, b) => b.adoption - a.adoption);
+}
+
 function renderLeadMagnets(leadMagnets) {
     const leadMagnetList = document.getElementById('leadmagnet-list');
     leadMagnetList.innerHTML = '';
@@ -443,87 +547,3 @@ function renderLeadMagnets(leadMagnets) {
             });
         });
 }
-
-function findUniqueLeadMagnets(competitors, allLeadMagnets) {
-    if (!competitors || !Array.isArray(competitors) || competitors.length === 0 || 
-        !allLeadMagnets || !Array.isArray(allLeadMagnets) || allLeadMagnets.length === 0) {
-        return [];
-    }
-    
-    const leadMagnetsMap = {};
-    
-    // Initialize count for all lead magnets
-    allLeadMagnets.forEach(leadMagnet => {
-        if (leadMagnet) {
-            leadMagnetsMap[leadMagnet] = {
-                count: 0,
-                competitor: null
-            };
-        }
-    });
-    
-    // Count lead magnet usage across competitors
-    competitors.forEach(competitor => {
-        if (!competitor || !competitor.leadMagnets || !Array.isArray(competitor.leadMagnets)) {
-            return; // Skip invalid competitors
-        }
-        
-        competitor.leadMagnets.forEach(leadMagnet => {
-            if (leadMagnet && leadMagnetsMap[leadMagnet]) {
-                leadMagnetsMap[leadMagnet].count += 1;
-                if (leadMagnetsMap[leadMagnet].count === 1) {
-                    leadMagnetsMap[leadMagnet].competitor = competitor.name || "Unknown";
-                }
-            }
-        });
-    });
-    
-    // Filter for unique lead magnets
-    const uniqueLeadMagnets = allLeadMagnets.filter(leadMagnet => 
-        leadMagnet && leadMagnetsMap[leadMagnet] && leadMagnetsMap[leadMagnet].count === 1
-    ).map(leadMagnet => ({
-        name: leadMagnet,
-        competitor: leadMagnetsMap[leadMagnet].competitor
-    }));
-    
-    return uniqueLeadMagnets;
-}
-
-// Calculate market standard lead magnets
-function calculateMarketStandard(competitors, allLeadMagnets) {
-    if (!competitors || !Array.isArray(competitors) || competitors.length === 0 || 
-        !allLeadMagnets || !Array.isArray(allLeadMagnets) || allLeadMagnets.length === 0) {
-        return [];
-    }
-    
-    const leadMagnetsMap = {};
-    const validCompetitors = competitors.filter(comp => comp && comp.leadMagnets && Array.isArray(comp.leadMagnets));
-    
-    if (validCompetitors.length === 0) return [];
-    
-    // For small numbers of competitors, lower the threshold
-    const thresholdPercentage = validCompetitors.length < 5 ? 0.3 : 0.5; // 30% for small samples, 50% otherwise
-    const threshold = Math.ceil(validCompetitors.length * thresholdPercentage);
-    
-    // Initialize count for all lead magnets
-    allLeadMagnets.forEach(leadMagnet => {
-        if (leadMagnet) {
-            leadMagnetsMap[leadMagnet] = 0;
-        }
-    });
-    
-    // Count lead magnet usage across competitors
-    validCompetitors.forEach(competitor => {
-        competitor.leadMagnets.forEach(leadMagnet => {
-            if (leadMagnet && leadMagnetsMap[leadMagnet] !== undefined) {
-                leadMagnetsMap[leadMagnet] += 1;
-            }
-        });
-    });
-    
-    // Filter for market standard lead magnets
-    const standardLeadMagnets = allLeadMagnets.filter(leadMagnet => 
-        leadMagnet && leadMagnetsMap[leadMagnet] >= threshold
-    ).map(leadMagnet => ({
-        name: leadMagnet,
-        adoption: Math.round((leadMagnetsMap[leadMagnet] / validCompetitors.length) * 100)
