@@ -287,8 +287,9 @@ function renderleadmagnets(leadmagnets) {
             
             // Calculate average lead magnets per competitor
             const totalleadmagnets = leadmagnets.length;
+            // Fix the error here - replace sum with a reducer function
             const avgleadmagnets = competitors.length ? 
-                (competitors.reduce((sum, comp => sum + (comp.leadmagnets ? comp.leadmagnets.length : 0)), 0) / competitors.length).toFixed(1) : 
+                (competitors.reduce((acc, comp) => acc + (comp.leadmagnets ? comp.leadmagnets.length : 0), 0) / competitors.length).toFixed(1) : 
                 '0';
             
             // Update stats
