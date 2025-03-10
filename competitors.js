@@ -11,8 +11,8 @@ function updateCompetitorCounts(competitors) {
     const erpCompanies = {};
     
     // Count lead magnets
-    const leadMagnetCounts = {};
-    const leadMagnetCompanies = {};
+    const leadmagnetCounts = {};
+    const leadmagnetCompanies = {};
     
     // Process all competitors
     competitors.forEach(competitor => {
@@ -31,10 +31,10 @@ function updateCompetitorCounts(competitors) {
         });
         
         // Count lead magnets
-        competitor.leadMagnets.forEach(leadMagnet => {
-            leadMagnetCounts[leadMagnet] = (leadMagnetCounts[leadMagnet] || 0) + 1;
-            leadMagnetCompanies[leadMagnet] = leadMagnetCompanies[leadMagnet] || [];
-            leadMagnetCompanies[leadMagnet].push(competitor.name);
+        competitor.leadmagnets.forEach(leadmagnet => {
+            leadmagnetCounts[leadmagnet] = (leadmagnetCounts[leadmagnet] || 0) + 1;
+            leadmagnetCompanies[leadmagnet] = leadmagnetCompanies[leadmagnet] || [];
+            leadmagnetCompanies[leadmagnet].push(competitor.name);
         });
     });
     
@@ -45,7 +45,7 @@ function updateCompetitorCounts(competitors) {
     updateCountsInUI('erp', erpCounts, erpCompanies);
     
     // Update lead magnet counts in UI
-    updateCountsInUI('leadmagnet', erpCounts, erpCompanies);
+    updateCountsInUI('leadmagnet', leadmagnetCounts, leadmagnetCompanies);
 }
 
 // Update counts and companies in UI
@@ -132,7 +132,7 @@ async function saveCompetitorToDatabase(competitor) {
     // Update features, ERPs, and lead magnets lists
     await updateTagList('features.json', competitor.features);
     await updateTagList('erps.json', competitor.erps);
-    await updateTagList('leadmagnets.json', competitor.leadMagnets);
+    await updateTagList('leadmagnets.json', competitor.leadmagnets);
     
     // If global filtering is active, reapply it
     if (typeof globalFilterState !== 'undefined' && globalFilterState.isFilterActive) {
@@ -317,16 +317,16 @@ function openCompetitorEdit(competitor) {
     // Add tags
     const selectedFeatures = document.getElementById('selected-features');
     const selectedERPs = document.getElementById('selected-erps');
-    const selectedLeadMagnets = document.getElementById('selected-leadmagnets');
+    const selectedleadmagnets = document.getElementById('selected-leadmagnets');
     
     selectedFeatures.innerHTML = '';
     selectedERPs.innerHTML = '';
-    selectedLeadMagnets.innerHTML = '';
+    selectedleadmagnets.innerHTML = '';
     
     // Track selected tags
     const featureTags = new Set();
     const erpTags = new Set();
-    const leadMagnetTags = new Set();
+    const leadmagnetTags = new Set();
     
     // Add features
     competitor.features.forEach(feature => {
@@ -339,8 +339,8 @@ function openCompetitorEdit(competitor) {
     });
     
     // Add lead magnets
-    competitor.leadMagnets.forEach(leadMagnet => {
-        addTag(leadMagnet, selectedLeadMagnets, leadMagnetTags);
+    competitor.leadmagnets.forEach(leadmagnet => {
+        addTag(leadmagnet, selectedleadmagnets, leadmagnetTags);
     });
     
     // Set competitor ID for form submission
