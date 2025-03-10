@@ -191,7 +191,7 @@ function applyGlobalFilters() {
             filterCompetitorCards(competitors, filteredCompetitors);
             filterFeaturesList(competitors, filteredCompetitors);
             filterErpsList(competitors, filteredCompetitors);
-            filterLeadMagnetsList(competitors, filteredCompetitors);
+            filterleadmagnetsList(competitors, filteredCompetitors);
             filterPricingSections(competitors, filteredCompetitors);
             
             // Update statistics and visualizations
@@ -380,26 +380,26 @@ function updateErpStatsList(listId, allCompetitors, filteredCompetitors) {
 }
 
 // Filter Lead Magnets list based on filtered competitors
-function filterLeadMagnetsList(allCompetitors, filteredCompetitors) {
-    const leadMagnetList = document.getElementById('leadmagnet-list');
-    if (!leadMagnetList) return;
+function filterleadmagnetsList(allCompetitors, filteredCompetitors) {
+    const leadmagnetList = document.getElementById('leadmagnet-list');
+    if (!leadmagnetList) return;
     
     // Create a map of Lead Magnet usage by filtered competitors
-    const leadMagnetUsage = {};
+    const leadmagnetUsage = {};
     
     filteredCompetitors.forEach(competitor => {
-        if (!competitor.leadMagnets) return;
-        competitor.leadMagnets.forEach(leadMagnet => {
-            leadMagnetUsage[leadMagnet] = (leadMagnetUsage[leadMagnet] || 0) + 1;
+        if (!competitor.leadmagnets) return;
+        competitor.leadmagnets.forEach(leadmagnet => {
+            leadmagnetUsage[leadmagnet] = (leadmagnetUsage[leadmagnet] || 0) + 1;
         });
     });
     
     // Mark Lead Magnets with no usage in filtered competitors
-    const leadMagnetItems = leadMagnetList.querySelectorAll('.list-item');
-    leadMagnetItems.forEach(item => {
-        const leadMagnetName = item.querySelector('.list-item-name').textContent;
+    const leadmagnetItems = leadmagnetList.querySelectorAll('.list-item');
+    leadmagnetItems.forEach(item => {
+        const leadmagnetName = item.querySelector('.list-item-name').textContent;
         
-        if (!leadMagnetUsage[leadMagnetName]) {
+        if (!leadmagnetUsage[leadmagnetName]) {
             item.classList.add('country-filtered');
         } else {
             item.classList.remove('country-filtered');
@@ -408,8 +408,8 @@ function filterLeadMagnetsList(allCompetitors, filteredCompetitors) {
         // Update count to show filtered count
         const countElement = item.querySelector('.list-item-count');
         if (countElement) {
-            const originalCount = getLeadMagnetCountFromAllCompetitors(leadMagnetName, allCompetitors);
-            const filteredCount = leadMagnetUsage[leadMagnetName] || 0;
+            const originalCount = getleadmagnetCountFromAllCompetitors(leadmagnetName, allCompetitors);
+            const filteredCount = leadmagnetUsage[leadmagnetName] || 0;
             
             if (globalFilterState.isFilterActive) {
                 countElement.textContent = `${filteredCount} / ${originalCount}`;
@@ -420,16 +420,16 @@ function filterLeadMagnetsList(allCompetitors, filteredCompetitors) {
     });
     
     // Update Lead Magnet statistics lists
-    updateLeadMagnetStatsList('top-leadmagnets-list', allCompetitors, filteredCompetitors);
-    updateLeadMagnetStatsList('least-leadmagnets-list', allCompetitors, filteredCompetitors);
+    updateleadmagnetStatsList('top-leadmagnets-list', allCompetitors, filteredCompetitors);
+    updateleadmagnetStatsList('least-leadmagnets-list', allCompetitors, filteredCompetitors);
 }
 
 // Get Lead Magnet count from all competitors
-function getLeadMagnetCountFromAllCompetitors(leadMagnetName, allCompetitors) {
+function getleadmagnetCountFromAllCompetitors(leadmagnetName, allCompetitors) {
     let count = 0;
     
     allCompetitors.forEach(competitor => {
-        if (competitor.leadMagnets && competitor.leadMagnets.includes(leadMagnetName)) {
+        if (competitor.leadmagnets && competitor.leadmagnets.includes(leadmagnetName)) {
             count++;
         }
     });
@@ -438,29 +438,29 @@ function getLeadMagnetCountFromAllCompetitors(leadMagnetName, allCompetitors) {
 }
 
 // Update Lead Magnet stats list with filtered data
-function updateLeadMagnetStatsList(listId, allCompetitors, filteredCompetitors) {
+function updateleadmagnetStatsList(listId, allCompetitors, filteredCompetitors) {
     const statsList = document.getElementById(listId);
     if (!statsList) return;
     
     // Get all Lead Magnets and count their usage in filtered competitors
-    const leadMagnetCounts = {};
+    const leadmagnetCounts = {};
     
     filteredCompetitors.forEach(competitor => {
-        if (!competitor.leadMagnets) return;
-        competitor.leadMagnets.forEach(leadMagnet => {
-            leadMagnetCounts[leadMagnet] = (leadMagnetCounts[leadMagnet] || 0) + 1;
+        if (!competitor.leadmagnets) return;
+        competitor.leadmagnets.forEach(leadmagnet => {
+            leadmagnetCounts[leadmagnet] = (leadmagnetCounts[leadmagnet] || 0) + 1;
         });
     });
     
     // Update the list items to show filtered count
     const listItems = statsList.querySelectorAll('li');
     listItems.forEach(item => {
-        const leadMagnetName = item.textContent.split(' ')[0]; // Get the Lead Magnet name (before the count)
+        const leadmagnetName = item.textContent.split(' ')[0]; // Get the Lead Magnet name (before the count)
         const countElement = item.querySelector('.count');
         
         if (countElement) {
-            const originalCount = getLeadMagnetCountFromAllCompetitors(leadMagnetName, allCompetitors);
-            const filteredCount = leadMagnetCounts[leadMagnetName] || 0;
+            const originalCount = getleadmagnetCountFromAllCompetitors(leadmagnetName, allCompetitors);
+            const filteredCount = leadmagnetCounts[leadmagnetName] || 0;
             
             if (globalFilterState.isFilterActive) {
                 countElement.textContent = `${filteredCount} / ${originalCount}`;
@@ -499,7 +499,7 @@ function updateStatisticsWithFilter(allCompetitors, filteredCompetitors) {
     updateErpStatistics(allCompetitors, filteredCompetitors);
     
     // Update Lead Magnet statistics
-    updateLeadMagnetStatistics(allCompetitors, filteredCompetitors);
+    updateleadmagnetStatistics(allCompetitors, filteredCompetitors);
     
     // Update visualizations with filtered data
     updateVisualizations(allCompetitors, filteredCompetitors);
@@ -671,48 +671,48 @@ function updateErpStatistics(allCompetitors, filteredCompetitors) {
 }
 
 // Update Lead Magnet statistics with filtered data
-function updateLeadMagnetStatistics(allCompetitors, filteredCompetitors) {
-    const totalLeadMagnetsEl = document.getElementById('total-leadmagnets');
-    const avgLeadMagnetsEl = document.getElementById('avg-leadmagnets');
+function updateleadmagnetStatistics(allCompetitors, filteredCompetitors) {
+    const totalleadmagnetsEl = document.getElementById('total-leadmagnets');
+    const avgleadmagnetsEl = document.getElementById('avg-leadmagnets');
     
-    if (totalLeadMagnetsEl && avgLeadMagnetsEl) {
+    if (totalleadmagnetsEl && avgleadmagnetsEl) {
         // Get unique Lead Magnets from filtered competitors
-        const leadMagnetsSet = new Set();
+        const leadmagnetsSet = new Set();
         filteredCompetitors.forEach(competitor => {
-            if (!competitor.leadMagnets) return;
-            competitor.leadMagnets.forEach(leadMagnet => leadMagnetsSet.add(leadMagnet));
+            if (!competitor.leadmagnets) return;
+            competitor.leadmagnets.forEach(leadmagnet => leadmagnetsSet.add(leadmagnet));
         });
         
         // Calculate average Lead Magnets per competitor
-        const avgLeadMagnets = filteredCompetitors.length ? 
-            (filteredCompetitors.reduce((sum, comp) => sum + (comp.leadMagnets ? comp.leadMagnets.length : 0), 0) / filteredCompetitors.length).toFixed(1) : 
+        const avgleadmagnets = filteredCompetitors.length ? 
+            (filteredCompetitors.reduce((sum, comp) => sum + (comp.leadmagnets ? comp.leadmagnets.length : 0), 0) / filteredCompetitors.length).toFixed(1) : 
             '0';
         
         // Update the statistics
         if (globalFilterState.isFilterActive) {
-            const totalAllLeadMagnets = document.getElementById('total-leadmagnets').getAttribute('data-original') || totalLeadMagnetsEl.textContent;
+            const totalAllleadmagnets = document.getElementById('total-leadmagnets').getAttribute('data-original') || totalleadmagnetsEl.textContent;
             
             // Store original value if not stored yet
-            if (!totalLeadMagnetsEl.getAttribute('data-original')) {
-                totalLeadMagnetsEl.setAttribute('data-original', totalLeadMagnetsEl.textContent);
+            if (!totalleadmagnetsEl.getAttribute('data-original')) {
+                totalleadmagnetsEl.setAttribute('data-original', totalleadmagnetsEl.textContent);
             }
             
-            totalLeadMagnetsEl.textContent = `${leadMagnetsSet.size} / ${totalAllLeadMagnets}`;
+            totalleadmagnetsEl.textContent = `${leadmagnetsSet.size} / ${totalAllleadmagnets}`;
             
             // Store original value for avg Lead Magnets if not stored yet
-            if (!avgLeadMagnetsEl.getAttribute('data-original')) {
-                avgLeadMagnetsEl.setAttribute('data-original', avgLeadMagnetsEl.textContent);
+            if (!avgleadmagnetsEl.getAttribute('data-original')) {
+                avgleadmagnetsEl.setAttribute('data-original', avgleadmagnetsEl.textContent);
             }
             
-            avgLeadMagnetsEl.textContent = avgLeadMagnets;
+            avgleadmagnetsEl.textContent = avgleadmagnets;
         } else {
             // Restore original values if filter is not active
-            if (totalLeadMagnetsEl.getAttribute('data-original')) {
-                totalLeadMagnetsEl.textContent = totalLeadMagnetsEl.getAttribute('data-original');
+            if (totalleadmagnetsEl.getAttribute('data-original')) {
+                totalleadmagnetsEl.textContent = totalleadmagnetsEl.getAttribute('data-original');
             }
             
-            if (avgLeadMagnetsEl.getAttribute('data-original')) {
-                avgLeadMagnetsEl.textContent = avgLeadMagnetsEl.getAttribute('data-original');
+            if (avgleadmagnetsEl.getAttribute('data-original')) {
+                avgleadmagnetsEl.textContent = avgleadmagnetsEl.getAttribute('data-original');
             }
         }
     }
