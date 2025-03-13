@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competition Analysis Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Chart.js for visualizations -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Add D3.js for network graph -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="header-wrapper">
+            <img src="logo.png" alt="Company Logo" class="logo">
+            <h2>Competition Analysis Dashboard</h2>
+            <p class="subtitle">Track competitive landscape and market positioning</p>
+        </div>
+
+        <div class="tab-container">
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button class="tab-button active" data-tab="features">Features</button>
+                    <button class="tab-button" data-tab="erp">ERP</button>
+                    <button class="tab-button" data-tab="leadmagnets">Lead Magnets</button>
+                    <button class="tab-button" data-tab="pricing">Pricing</button>
+                    <button class="tab-button" data-tab="competitors">Competitor Profiles</button>
+                </div>
+                <div class="global-filters">
+                    <div class="filter-container">
+                        <button id="global-country-filter-btn" class="action-btn">
+                            <span class="material-icons">filter_alt</span>
+                            Filter by Country
+                        </button>
+                        <div id="global-country-filter-dropdown" class="filter-dropdown">
+                            <!-- Country checkboxes will be dynamically added here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content">
+                <!-- Features Tab -->
+                <div class="tab-pane active" id="features-tab">
+                    <div class="tab-header">
+                        <h3>Features Comparison</h3>
+                        <div class="tab-actions">
+                            <input type="text" id="feature-search" placeholder="Search features...">
+                            <button id="add-feature-btn" class="action-btn">Add Feature</button>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-stats">
+                        <div class="stat-card" id="feature-leader-card">
+                            <h4>Feature Leader</h4>
+                            <!-- Leader content will be dynamically generated -->
+                        </div>
+                        <div class="stat-card">
+                            <h4>Top Used Features</h4>
+                            <ul id="top-features-list" class="stats-list"></ul>
+                        </div>
+                        <div class="stat-card">
+                            <h4>Market Standard Features</h4>
+                            <ul id="market-standard-list" class="stats-list"></ul>
+                        </div>
+                        <div class="stat-card">
+                            <h4>Unique Features</h4>
+                            <ul id="unique-features-list" class="stats-list"></ul>
+                        </div>
+                        <div class="stat-card">
+                            <h4>Feature Usage Stats</h4>
+                            <div id="feature-stats-container" class="stats-content">
+                                <p><strong>Total Features:</strong> <span id="total-features">0</span></p>
+                                <p><strong>Average Features per Competitor:</strong> <span id="avg-features">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Feature Visualizations -->
+                    <div class="visualizations-container">
+                        <div class="visualization-card full-width">
+                            <h4>Feature Adoption Rate</h4>
+                            <div id="feature-bar-chart" class="chart-container">
+                                <!-- Bar chart will be dynamically generated -->
+                            </div>
+                        </div>
+                        
+                        <div class="visualization-card full-width">
+                            <h4>Feature Distribution Heatmap</h4>
+                            <div id="feature-heatmap" class="chart-container">
+                                <!-- Heatmap will be dynamically generated -->
+                            </div>
+                        </div>
+                        
+                        <div class="visualization-card full-width">
+                            <h4>Feature Relationship Network</h4>
+                            <div id="feature-network" class="chart-container">
+                                <!-- Network graph will be dynamically generated -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-header">
+                        <h4>Filters</h4>
+                        <span class="material-icons filter-icon">filter_list</span>
+                    </div>
+                    <div id="feature-filters" class="filter-container feature-filters">
+                        <!-- Filters will be dynamically generated -->
+                    </div>
+                    
+                    <div class="list-container">
+                        <div class="list-header">
+                            <h4>All Features</h4>
+                        </div>
+                        <div class="scrollable-list" id="feature-list">
+                            <!-- Features will be loaded here dynamically -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ERP Tab -->
+                <div class="tab-pane" id="erp-tab">
+                    <div class="tab-header">
+                        <h3>ERP Integrations</h3>
+                        <div class="tab-actions">
+                            <input type="text" id="erp-search" placeholder="Search ERPs...">
+                            <button id="add-erp-btn" class="action-btn">Add ERP</button>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="stat-card">
+                            <h4>Top 5 Used ERPs</h4>
+                            <ul id="top-erps-list" class="stats-list"></ul>
+                        </div>
+                        <div class="stat-card">
+                            <h4>Least Used ERPs</h4>
+                            <ul id="least-erps-list" class="stats-list"></ul>
+                        </div>
+                        <div class="stat-card">
+                            <h4>ERP Integration Stats</h4>
+                            <div id="erp-stats-container" class="stats-content">
+                                <p><strong>Total ERPs:</strong> <span id="total-erps">0</span></p>
+                                <p><strong>Average ERPs per Competitor:</strong> <span id="avg-erps">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-container">
+                        <div class="list-header">
+                            <h4>All ERP Integrations</h4>
+                        </div>
+                        <div class="scrollable-list" id="erp-list">
+                            <!-- ERP integrations will be loaded here dynamically -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lead Magnets Tab -->
+                <div class="tab-pane" id="leadmagnets-tab">
+                    <div class="tab-header">
+                        <h3>Lead Magnets</h3>
+                        <div class="tab-actions">
+                            <input type="text" id="leadmagnet-search" placeholder="Search lead magnets...">
+                            <button id="add-leadmagnet-btn" class="action-btn">Add Lead Magnet</button>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="stat-card">
+                            <h4>Top Used Lead Magnets</h4>
+                            <ul id="top-leadmagnets-list" class="stats-list"></ul>
+                        </div>
+                        <div class="stat-card">
+                            <h4>Least Used Lead Magnets</h4>
+                            <ul id="least-leadmagnets-list" class="stats-list"></ul>
+                        </div>
+                        <div class="stat-card">
+                            <h4>Lead Magnet Stats</h4>
+                            <div id="leadmagnet-stats-container" class="stats-content">
+                                <p><strong>Total Lead Magnets:</strong> <span id="total-leadmagnets">0</span></p>
+                                <p><strong>Average per Competitor:</strong> <span id="avg-leadmagnets">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-container">
+                        <div class="list-header">
+                            <h4>All Lead Magnets</h4>
+                        </div>
+                        <div class="scrollable-list" id="leadmagnet-list">
+                            <!-- Lead magnets will be loaded here dynamically -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pricing Tab -->
+                <div class="tab-pane" id="pricing-tab">
+                    <div class="tab-header">
+                        <h3>Pricing Comparison</h3>
+                    </div>
+                    <div class="pricing-container" id="pricing-container">
+                        <!-- Pricing sections will be dynamically generated here -->
+                    </div>
+                </div>
+
+                <!-- Competitor Profiles Tab -->
+                <div class="tab-pane" id="competitors-tab">
+                    <div class="tab-header">
+                        <h3>Competitor Profiles</h3>
+                        <div class="tab-actions">
+                            <input type="text" id="competitor-search" placeholder="Search competitors...">
+                            <button id="add-competitor-btn" class="action-btn primary">Add New Competitor</button>
+                        </div>
+                    </div>
+                    <div class="competitors-container">
+                        <div class="competitors-grid" id="competitors-grid">
+                            <!-- Competitor cards will be loaded here dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Competitor Profile Modal -->
+        <div class="modal" id="competitor-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3 id="modal-title">Add New Competitor</h3>
+                <form id="competitor-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="comp-name">Name</label>
+                            <input type="text" id="comp-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comp-country">Country</label>
+                            <input type="text" id="comp-country" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="comp-website">Website URL</label>
+                        <input type="url" id="comp-website">
+                    </div>
+
+                    <h4>Subscription Models</h4>
+                    <div id="subscription-container">
+                        <!-- Subscription models will be added here -->
+                        <div class="subscription-model">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Subscription Name</label>
+                                    <input type="text" class="sub-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Current Price</label>
+                                    <input type="number" class="sub-current-price" step="0.01" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Invoice Amount</label>
+                                    <input type="number" class="sub-invoice-amount" step="0.01">
+                                </div>
+                                <div class="form-group">
+                                    <label>Invoice Frequency</label>
+                                    <select class="sub-invoice-frequency">
+                                        <option value="monthly">Monthly</option>
+                                        <option value="quarterly">Quarterly</option>
+                                        <option value="annually">Annually</option>
+                                        <option value="custom">Custom</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Old Price (Optional)</label>
+                                    <input type="number" class="sub-old-price" step="0.01">
+                                </div>
+                                <div class="form-group">
+                                    <label>Old Price Date</label>
+                                    <input type="date" class="sub-old-date">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group subscription-notes">
+                                    <label>Notes</label>
+                                    <textarea class="sub-notes" placeholder="Enter any additional notes about this subscription model..."></textarea>
+                                </div>
+                            </div>
+                            <button type="button" class="remove-subscription">Remove</button>
+                        </div>
+                    </div>
+                    <button type="button" id="add-subscription-btn">Add Another Subscription</button>
+
+                    <h4>Features</h4>
+                    <div class="form-group">
+                        <div class="tag-input-container">
+                            <input type="text" id="feature-input" placeholder="Type and select features...">
+                            <div class="tag-suggestions" id="feature-suggestions"></div>
+                        </div>
+                        <div class="tags-container" id="selected-features"></div>
+                    </div>
+
+                    <h4>ERP Integrations</h4>
+                    <div class="form-group">
+                        <div class="tag-input-container">
+                            <input type="text" id="erp-input" placeholder="Type and select ERPs...">
+                            <div class="tag-suggestions" id="erp-suggestions"></div>
+                        </div>
+                        <div class="tags-container" id="selected-erps"></div>
+                    </div>
+
+                    <h4>Lead Magnets</h4>
+                    <div class="form-group">
+                        <div class="tag-input-container">
+                            <input type="text" id="leadmagnet-input" placeholder="Type and select lead magnets...">
+                            <div class="tag-suggestions" id="leadmagnet-suggestions"></div>
+                        </div>
+                        <div class="tags-container" id="selected-leadmagnets"></div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" id="delete-competitor-btn" class="delete-btn">Delete Competitor</button>
+                        <div class="right-actions">
+                            <button type="button" class="cancel-btn">Cancel</button>
+                            <button type="submit" class="save-btn">Save</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Competition Analysis Dashboard | &copy; 2025</p>
+    </footer>
+
+    <!-- Scripts -->
+      <script src="data.js"></script>
+      <script src="features.js"></script>
+      <script src="erps.js"></script>
+      <script src="leadmagnets.js"></script>
+      <script src="pricing.js"></script>
+      <script src="competitors.js"></script>
+      <script src="main.js"></script>
+      <script src="globalfilter.js"></script>
+      <!-- Fix scripts -->
+      <script src="fix-globalfilter.js"></script>
+      <script src="fix-global-filter-all.js"></script>
+      <!-- GitHub integration -->
+      <script src="save-data-github.js"></script>
+
+</body>
+</html>
