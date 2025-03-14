@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature Distribution Heatmap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--white, #ffffff);
+            color: var(--dark-text, #333333);
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--secondary-color, #e0e0e5);
+        }
+        
+        .header h1 {
+            margin: 0;
+            color: var(--primary-color, #4a6fa5);
+            font-family: 'DM Serif Text', serif;
+            font-size: 1.8rem;
+        }
+        
+        .back-btn {
+            background-color: var(--secondary-color, #e0e0e5);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            color: var(--primary-color, #4a6fa5);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 8px 15px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .back-btn:hover {
+            background-color: var(--secondary-hover, #d0d0d5);
+            transform: translateY(-1px);
+        }
+        
+        .back-btn .material-icons {
+            font-size: 18px;
+        }
+        
+        .fullscreen-table-container {
+            width: 100%;
+            overflow: auto;
+            max-height: calc(100vh - 100px);
+        }
+        
+        .fullscreen-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        
+        .fullscreen-table th {
+            padding: 12px 15px;
+            text-align: center;
+            background-color: #f5f4f8;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            border-bottom: 2px solid #e0e0e5;
+            font-weight: 600;
+        }
+        
+        .fullscreen-table th:first-child {
+            text-align: left;
+            position: sticky;
+            left: 0;
+            z-index: 3;
+            background-color: #f5f4f8;
+        }
+        
+        .fullscreen-table td {
+            padding: 12px 15px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            transition: background-color 0.2s ease;
+            height: 40px;
+            width: 100px;
+            min-width: 100px;
+            max-width: 100px;
+        }
+        
+        .fullscreen-table td:first-child {
+            position: sticky;
+            left: 0;
+            z-index: 2;
+            background-color: #f5f4f8;
+            text-align: left;
+            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 250px;
+            border-right: 1px solid #e0e0e5;
+        }
+        
+        .fullscreen-table tr:hover {
+            background-color: var(--secondary-hover, #d0d0d5);
+        }
+        
+        .fullscreen-table .has-feature {
+            background-color: var(--primary-color, #4a6fa5);
+            color: var(--white, #ffffff);
+        }
+        
+        .fullscreen-table .no-feature {
+            background-color: var(--white, #ffffff);
+        }
+        
+        .fullscreen-table .check-icon {
+            font-size: 20px;
+        }
+        
+        .expandable-feature {
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .expandable-feature:hover {
+            background-color: var(--secondary-hover, #d0d0d5);
+        }
+        
+        .feature-preview {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .feature-short-name {
+            font-weight: 500;
+        }
+        
+        .feature-expand-icon {
+            font-size: 20px;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .expandable-feature:hover .feature-expand-icon {
+            transform: scale(1.1);
+        }
+        
+        /* Feature detail popup styles */
+        .feature-detail-popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+        }
+        
+        .feature-detail-content {
+            background-color: var(--white, #ffffff);
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 500px;
+            max-height: 80vh;
+            overflow-y: auto;
+            animation: fadeIn 0.2s ease;
+        }
+        
+        .feature-detail-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--secondary-color, #e0e0e5);
+            background-color: #f5f4f8;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        
+        .feature-detail-header h4 {
+            margin: 0;
+            color: var(--primary-color, #4a6fa5);
+            font-size: 1.2rem;
+        }
+        
+        .close-feature-detail {
+            font-size: 1.5rem;
+            color: var(--light-text, #999999);
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+        
+        .close-feature-detail:hover {
+            color: var(--primary-color, #4a6fa5);
+        }
+        
+        .feature-detail-body {
+            padding: 20px;
+        }
+        
+        .feature-detail-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--dark-text, #333333);
+            margin-bottom: 15px;
+            line-height: 1.4;
+            word-break: break-word;
+        }
+        
+        .feature-detail-meta {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        /* Feature tag styles matching the main dashboard */
+        .feature-category-tag {
+            display: inline-block;
+            background-color: #e0f7fa;
+            color: #006064;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .feature-adoption-tag {
+            display: inline-block;
+            background-color: #f1f8e9;
+            color: #33691e;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .feature-unique-tag {
+            display: inline-block;
+            background-color: #fce4ec;
+            color: #880e4f;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .feature-standard-tag {
+            display: inline-block;
+            background-color: #e8eaf6;
+            color: #1a237e;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        /* Filter styles */
+        .header-controls {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .filter-container {
+            position: relative;
+        }
+        
+        .filter-btn {
+            background-color: var(--secondary-color, #e0e0e5);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            color: var(--primary-color, #4a6fa5);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 8px 15px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .filter-btn:hover {
+            background-color: var(--secondary-hover, #d0d0d5);
+            transform: translateY(-1px);
+        }
+        
+        .filter-btn.filter-active {
+            background-color: var(--primary-color, #4a6fa5);
+            color: var(--white, #ffffff);
+        }
+        
+        .filter-btn .material-icons {
+            font-size: 18px;
+        }
+        
+        .filter-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: var(--white, #ffffff);
+            border: 1px solid var(--secondary-color, #e0e0e5);
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            min-width: 200px;
+            z-index: 1000;
+            display: none;
+            margin-top: 5px;
+        }
+        
+        .filter-dropdown.show {
+            display: block;
+        }
+        
+        .filter-option {
+            padding: 8px 10px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        
+        .filter-option:hover {
+            background-color: var(--secondary-hover, #d0d0d5);
+        }
+        
+        .filter-option label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+        
+        .filter-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--white, #ffffff);
+            color: var(--primary-color, #4a6fa5);
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+        
+        /* Hidden rows */
+        .group-hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Feature Distribution Heatmap</h1>
+        <div class="header-controls">
+            <button id="group-filter-btn" class="back-btn">
+                <span class="material-icons">filter_list</span>
+                <span>Filter by Group</span>
+            </button>
+            <div id="group-filter-dropdown" class="filter-dropdown">
+                <!-- Group checkboxes will be dynamically added here -->
+            </div>
+            <button class="back-btn" onclick="window.close()">
+                <span class="material-icons">arrow_back</span>
+                <span>Back to Dashboard</span>
+            </button>
+        </div>
+    </div>
+    
+    <div class="fullscreen-table-container" id="fullscreen-heatmap">
+        <!-- Heatmap will be dynamically generated here -->
+    </div>
+    
+    <!-- Include necessary scripts -->
+    <script src="data.js"></script>
+    
+    <script>
+        // Function to get data from URL parameters, localStorage, or POST data
+        function getHeatmapData() {
+            console.log("Getting heatmap data...");
+            
+            // Get URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            
+            // Check for localStorage key first (for large datasets)
+            const storageKey = urlParams.get('storage_key');
+            if (storageKey) {
+                try {
+                    console.log("Found storage key:", storageKey);
+                    const storedData = localStorage.getItem(storageKey);
+                    if (storedData) {
+                        console.log("Found data in localStorage");
+                        // Clean up localStorage
+                        localStorage.removeItem(storageKey);
+                        return JSON.parse(storedData);
+                    } else {
+                        console.warn("Storage key found but no data in localStorage");
+                    }
+                } catch (error) {
+                    console.error("Error retrieving data from localStorage:", error);
+                }
+            }
+            
+            // Check for POST data (from form submission)
+            if (document.forms.length > 0) {
+                try {
+                    const form = document.forms[0];
+                    const dataInput = form.querySelector('input[name="data"]');
+                    if (dataInput && dataInput.value) {
+                        console.log("Found data in POST form");
+                        return JSON.parse(decodeURIComponent(dataInput.value));
+                    }
+                } catch (error) {
+                    console.error("Error parsing POST data:", error);
+                }
+            }
+            
+            // Check for direct URL parameter
+            const dataParam = urlParams.get('data');
+            
+            // Debug information
+            console.log('URL Parameters:', window.location.search);
+            console.log('Data parameter exists:', !!dataParam);
+            
+            if (dataParam) {
+                try {
+                    return JSON.parse(decodeURIComponent(dataParam));
+                } catch (error) {
+                    console.error('Error parsing URL data:', error);
+                    throw error;
+                }
+            }
+            
+            // Fallback to sample data if no data is provided
+            console.warn('No data found in any source, using sample data');
+            return getSampleData();
+        }
+        
+        // Generate sample data for testing
+        function getSampleData() {
+            return {
+                features: [
+                    "Automated follow-up",
+                    "Dialogue through invoice portal",
+                    "Various payment methods",
+                    "Smart payment plan",
+                    "Electronic invoicing",
+                    "Notes and task lists",
+                    "Automated reminders",
+                    "Online payment processing",
+                    "Customer portal for easy access",
+                    "Dispute management tools"
+                ],
+                competitors: [
+                    {
+                        name: "Competitor A",
+                        features: ["Automated follow-up", "Smart payment plan", "Electronic invoicing", "Notes and task lists"]
+                    },
+                    {
+                        name: "Competitor B",
+                        features: ["Dialogue through invoice portal", "Various payment methods", "Online payment processing"]
+                    },
+                    {
+                        name: "Competitor C",
+                        features: ["Automated follow-up", "Dialogue through invoice portal", "Various payment methods", 
+                                  "Smart payment plan", "Electronic invoicing", "Notes and task lists", "Automated reminders", 
+                                  "Online payment processing", "Customer portal for easy access", "Dispute management tools"]
+                    }
+                ]
+            };
+        }
+        
+        // Group filter state
+        const groupFilterState = {
+            groups: [],
+            allGroupsSelected: true,
+            isFilterActive: false
+        };
+        
+        // Try to get and render the data
+        document.addEventListener('DOMContentLoaded', function() {
+            try {
+                const data = getHeatmapData();
+                console.log('Parsed data:', data);
+                
+                if (data && data.features && data.competitors) {
+                    // Store the data globally for filtering
+                    window.heatmapData = data;
+                    
+                    // Apply global filtering if provided
+                    if (data.globalFilter && data.globalFilter.isFilterActive) {
+                        console.log("Applying global filter from parent window:", data.globalFilter);
+                        
+                        // Filter competitors based on selected countries
+                        const filteredCompetitors = data.competitors.filter(comp => 
+                            comp && comp.country && data.globalFilter.countries.includes(comp.country)
+                        );
+                        
+                        // If no competitors match the filter, show a message
+                        if (filteredCompetitors.length === 0) {
+                            document.getElementById('fullscreen-heatmap').innerHTML = '<div class="no-data">No competitors match the current global filter</div>';
+                            return;
+                        }
+                        
+                        // Use filtered competitors
+                        data.competitors = filteredCompetitors;
+                    }
+                    
+                    // Identify feature groups
+                    setupFeatureGroups(data.features);
+                    
+                    // Render the heatmap
+                    renderFullscreenHeatmap(data.features, data.competitors);
+                    
+                    // Setup group filter
+                    setupGroupFilter();
+                } else {
+                    console.error('Invalid data structure:', data);
+                    document.getElementById('fullscreen-heatmap').innerHTML = '<p>Invalid data structure. Expected features and competitors.</p>';
+                }
+            } catch (error) {
+                console.error('Error loading heatmap data:', error);
+                document.getElementById('fullscreen-heatmap').innerHTML = `
+                    <p>Error loading heatmap data: ${error.message}</p>
+                    <p>Please return to the dashboard and try again.</p>
+                    <p>If the problem persists, try refreshing the dashboard page first.</p>
+                `;
+            }
+        });
+        
+        // Setup feature groups based on naming patterns
+        function setupFeatureGroups(features) {
+            const groups = new Set();
+            
+            // Extract groups from feature names
+            features.forEach(feature => {
+                if (!feature) return;
+                
+                const featureName = typeof feature === 'object' ? feature.name : feature;
+                
+                // Try to identify groups based on common prefixes or patterns
+                // For example: "Payment - Online", "Payment - Offline" would be in "Payment" group
+                const groupMatch = featureName.match(/^([^-:]+)[-:]/);
+                if (groupMatch && groupMatch[1]) {
+                    groups.add(groupMatch[1].trim());
+                } else {
+                    // Try to find other patterns like "Feature Type: Feature Name"
+                    const colonMatch = featureName.match(/^([^:]+):/);
+                    if (colonMatch && colonMatch[1]) {
+                        groups.add(colonMatch[1].trim());
+                    } else {
+                        // If no pattern is found, use the first word as a group
+                        const firstWord = featureName.split(' ')[0];
+                        if (firstWord && firstWord.length > 3) { // Only use words longer than 3 chars
+                            groups.add(firstWord);
+                        } else {
+                            // If all else fails, put in "Other" group
+                            groups.add('Other');
+                        }
+                    }
+                }
+            });
+            
+            // Store the groups
+            groupFilterState.groups = Array.from(groups).sort();
+        }
+        
+        // Setup group filter UI and functionality
+        function setupGroupFilter() {
+            const filterBtn = document.getElementById('group-filter-btn');
+            const dropdown = document.getElementById('group-filter-dropdown');
+            
+            if (!filterBtn || !dropdown) {
+                console.error("Filter button or dropdown not found");
+                return;
+            }
+            
+            // Clear existing options
+            dropdown.innerHTML = '';
+            
+            // Add "All Groups" option
+            const allOption = document.createElement('div');
+            allOption.className = 'filter-option';
+            allOption.innerHTML = `
+                <label>
+                    <input type="checkbox" class="group-filter" value="all" checked>
+                    All Groups
+                </label>
+            `;
+            dropdown.appendChild(allOption);
+            
+            // Add group options
+            groupFilterState.groups.forEach(group => {
+                const option = document.createElement('div');
+                option.className = 'filter-option';
+                option.innerHTML = `
+                    <label>
+                        <input type="checkbox" class="group-filter" value="${group}" checked>
+                        ${group}
+                    </label>
+                `;
+                dropdown.appendChild(option);
+            });
+            
+            // Toggle dropdown visibility with the button
+            filterBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                
+                // Position the dropdown relative to the filter button
+                const btnRect = filterBtn.getBoundingClientRect();
+                dropdown.style.position = 'absolute';
+                dropdown.style.top = (btnRect.bottom + 5) + 'px';
+                dropdown.style.left = btnRect.left + 'px';
+                
+                dropdown.classList.toggle('show');
+            });
+            
+            // Add event handler for the "All Groups" checkbox
+            const allCheckbox = dropdown.querySelector('.group-filter[value="all"]');
+            if (allCheckbox) {
+                allCheckbox.addEventListener('change', () => {
+                    // Update all other checkboxes
+                    const groupCheckboxes = document.querySelectorAll('.group-filter:not([value="all"])');
+                    groupCheckboxes.forEach(cb => {
+                        cb.checked = allCheckbox.checked;
+                    });
+                    
+                    // Update group filter state
+                    groupFilterState.allGroupsSelected = allCheckbox.checked;
+                    
+                    // Update the filter state
+                    updateGroupFilterState();
+                    
+                    // Apply group filtering
+                    applyGroupFilters();
+                });
+            }
+            
+            // Add event handlers for group checkboxes
+            const groupCheckboxes = document.querySelectorAll('.group-filter:not([value="all"])');
+            groupCheckboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', () => {
+                    // Update the "All Groups" checkbox
+                    const allCheckbox = document.querySelector('.group-filter[value="all"]');
+                    const groupChecks = Array.from(document.querySelectorAll('.group-filter:not([value="all"])'));
+                    const allChecked = groupChecks.every(cb => cb.checked);
+                    
+                    if (allCheckbox) {
+                        allCheckbox.checked = allChecked;
+                    }
+                    groupFilterState.allGroupsSelected = allChecked;
+                    
+                    // Update the filter state
+                    updateGroupFilterState();
+                    
+                    // Apply group filtering
+                    applyGroupFilters();
+                });
+            });
+            
+            // Close dropdown when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!dropdown.contains(e.target) && e.target !== filterBtn) {
+                    dropdown.classList.remove('show');
+                }
+            });
+        }
+        
+        // Update group filter state based on UI selections
+        function updateGroupFilterState() {
+            const selectedGroups = Array.from(document.querySelectorAll('.group-filter:checked'))
+                .map(cb => cb.value)
+                .filter(value => value !== 'all');
+            
+            const allSelected = document.querySelector('.group-filter[value="all"]')?.checked;
+            
+            // Check if any group checkboxes are checked (excluding "all")
+            const groupChecks = Array.from(document.querySelectorAll('.group-filter:not([value="all"])'));
+            const anyChecked = groupChecks.some(cb => cb.checked);
+            
+            groupFilterState.groups = selectedGroups;
+            groupFilterState.allGroupsSelected = allSelected;
+            groupFilterState.isFilterActive = !allSelected;
+            
+            // Update filter button styling to indicate active filter
+            const filterBtn = document.getElementById('group-filter-btn');
+            if (filterBtn) {
+                if (groupFilterState.isFilterActive) {
+                    // Change background color to primary color when active
+                    filterBtn.style.backgroundColor = 'var(--primary-color, #4a6fa5)';
+                    filterBtn.style.color = 'var(--white, #ffffff)';
+                    
+                    // Add a badge with the count of selected groups
+                    const countBadge = document.createElement('span');
+                    countBadge.className = 'filter-badge';
+                    countBadge.textContent = selectedGroups.length;
+                    
+                    // Remove any existing badge first
+                    const existingBadge = filterBtn.querySelector('.filter-badge');
+                    if (existingBadge) {
+                        filterBtn.removeChild(existingBadge);
+                    }
+                    
+                    filterBtn.appendChild(countBadge);
+                } else {
+                    // Reset to default style
+                    filterBtn.style.backgroundColor = 'var(--secondary-color, #e0e0e5)';
+                    filterBtn.style.color = 'var(--primary-color, #4a6fa5)';
+                    
+                    // Remove any existing badge
+                    const existingBadge = filterBtn.querySelector('.filter-badge');
+                    if (existingBadge) {
+                        filterBtn.removeChild(existingBadge);
+                    }
+                }
+            }
+        }
+        
+        // Apply group filters to the heatmap
+        function applyGroupFilters() {
+            if (!window.heatmapData) return;
+            
+            // Only apply filtering if we have specific groups selected
+            if (!groupFilterState.isFilterActive) {
+                // Reset all filtering
+                document.querySelectorAll('.fullscreen-table tr').forEach(row => {
+                    row.classList.remove('group-hidden');
+                });
+                return;
+            }
+            
+            // Get all feature rows
+            const featureRows = document.querySelectorAll('.fullscreen-table tr:not(:first-child)');
+            
+            featureRows.forEach(row => {
+                const featureCell = row.querySelector('td:first-child');
+                if (!featureCell) return;
+                
+                const featureName = featureCell.textContent.trim();
+                
+                // Determine the group for this feature
+                let featureGroup = 'Other';
+                
+                // Try to identify group based on common prefixes or patterns
+                const groupMatch = featureName.match(/^([^-:]+)[-:]/);
+                if (groupMatch && groupMatch[1]) {
+                    featureGroup = groupMatch[1].trim();
+                } else {
+                    // Try to find other patterns like "Feature Type: Feature Name"
+                    const colonMatch = featureName.match(/^([^:]+):/);
+                    if (colonMatch && colonMatch[1]) {
+                        featureGroup = colonMatch[1].trim();
+                    } else {
+                        // If no pattern is found, use the first word as a group
+                        const firstWord = featureName.split(' ')[0];
+                        if (firstWord && firstWord.length > 3) {
+                            featureGroup = firstWord;
+                        }
+                    }
+                }
+                
+                // Show/hide based on selected groups
+                if (!groupFilterState.groups.includes(featureGroup)) {
+                    row.classList.add('group-hidden');
+                } else {
+                    row.classList.remove('group-hidden');
+                }
+            });
+        }
+        
+        function renderFullscreenHeatmap(features, competitors) {
+            const heatmapContainer = document.getElementById('fullscreen-heatmap');
+            if (!heatmapContainer) return;
+            
+            if (!competitors || !Array.isArray(competitors) || competitors.length === 0 ||
+                !features || !Array.isArray(features) || features.length === 0) {
+                heatmapContainer.innerHTML = '<div class="no-data">Insufficient data for heatmap</div>';
+                return;
+            }
+            
+            // Create table
+            const table = document.createElement('table');
+            table.className = 'fullscreen-table';
+            
+            // Create header row
+            const headerRow = document.createElement('tr');
+            headerRow.innerHTML = '<th>Feature</th>';
+            
+            competitors.forEach(competitor => {
+                headerRow.innerHTML += `<th>${competitor.name || 'Unknown'}</th>`;
+            });
+            
+            table.appendChild(headerRow);
+            
+                // Create rows for each feature
+            features.forEach(feature => {
+                if (!feature) return;
+                
+                const featureName = typeof feature === 'object' ? feature.name : feature;
+                
+                // Create a shortened version of the feature name if it's too long
+                const shortFeatureName = featureName.length > 25 ? 
+                    featureName.substring(0, 22) + '...' : 
+                    featureName;
+                
+                const row = document.createElement('tr');
+                
+                // Create feature name cell with expandable functionality
+                const featureCell = document.createElement('td');
+                featureCell.className = 'expandable-feature';
+                featureCell.innerHTML = `
+                    <div class="feature-preview">
+                        <span class="feature-short-name">${shortFeatureName}</span>
+                        <span class="feature-expand-icon material-icons">info</span>
+                    </div>
+                `;
+                
+                // Add click event to show feature details in a popup
+                featureCell.addEventListener('click', function() {
+                    // Pass the original feature object or create one with the name
+                    const featureObj = typeof feature === 'object' ? 
+                        feature : 
+                        { name: featureName };
+                    
+                    showFeatureDetails(featureObj);
+                });
+                
+                row.appendChild(featureCell);
+                
+                competitors.forEach(competitor => {
+                    const hasFeature = competitor.features && competitor.features.includes(featureName);
+                    
+                    const cell = document.createElement('td');
+                    cell.className = hasFeature ? 'has-feature' : 'no-feature';
+                    
+                    if (hasFeature) {
+                        cell.innerHTML = '<span class="material-icons check-icon">done</span>';
+                    }
+                    
+                    row.appendChild(cell);
+                });
+                
+                table.appendChild(row);
+            });
+            
+            heatmapContainer.appendChild(table);
+        }
+        
+        function showFeatureDetails(feature) {
+            // Close any existing feature detail popups
+            const existingPopups = document.querySelectorAll('.feature-detail-popup');
+            existingPopups.forEach(popup => popup.remove());
+            
+            // Get feature name and category
+            const featureName = typeof feature === 'object' ? feature.name : feature;
+            let featureCategory = typeof feature === 'object' && feature.category ? feature.category : 'Misc';
+            
+            // Create popup container
+            const popupContainer = document.createElement('div');
+            popupContainer.className = 'feature-detail-popup';
+            
+            // Create popup content
+            const popupContent = document.createElement('div');
+            popupContent.className = 'feature-detail-content';
+            
+            // Create header
+            const header = document.createElement('div');
+            header.className = 'feature-detail-header';
+            header.innerHTML = `
+                <h4>Feature Details</h4>
+                <span class="close-feature-detail">&times;</span>
+            `;
+            
+            // If category is not provided in the feature object, try to determine it
+            if (featureCategory === 'Misc' && window.heatmapData && window.heatmapData.features) {
+                // First check if features are objects with category property
+                const featureObj = window.heatmapData.features.find(f => 
+                    typeof f === 'object' && f.name === featureName
+                );
+                
+                if (featureObj && featureObj.category) {
+                    featureCategory = featureObj.category;
+                } else {
+                    // If not found or features are strings, try to determine category from name
+                    // This uses the same logic as the group filtering
+                    const groupMatch = featureName.match(/^([^-:]+)[-:]/);
+                    if (groupMatch && groupMatch[1]) {
+                        featureCategory = groupMatch[1].trim();
+                    } else {
+                        const colonMatch = featureName.match(/^([^:]+):/);
+                        if (colonMatch && colonMatch[1]) {
+                            featureCategory = colonMatch[1].trim();
+                        }
+                    }
+                }
+            }
+            
+            // Calculate adoption rate and determine if feature is unique or standard
+            let adoptionRate = 0;
+            let isUnique = false;
+            let isStandard = false;
+            
+            if (window.heatmapData && window.heatmapData.competitors) {
+                const competitors = window.heatmapData.competitors;
+                const totalCompetitors = competitors.length;
+                
+                if (totalCompetitors > 0) {
+                    // Count how many competitors have this feature
+                    const featureCount = competitors.filter(comp => 
+                        comp.features && comp.features.includes(featureName)
+                    ).length;
+                    
+                    // Calculate adoption rate as a percentage
+                    adoptionRate = Math.round((featureCount / totalCompetitors) * 100);
+                    
+                    // Determine if feature is unique (only one competitor has it)
+                    isUnique = featureCount === 1;
+                    
+                    // Determine if feature is standard (more than 50% of competitors have it)
+                    // For small numbers of competitors, lower the threshold to 30%
+                    const thresholdPercentage = totalCompetitors < 5 ? 0.3 : 0.5;
+                    isStandard = featureCount >= Math.ceil(totalCompetitors * thresholdPercentage);
+                }
+            }
+            
+            // Create body with feature name and all tags
+            const body = document.createElement('div');
+            body.className = 'feature-detail-body';
+            
+            // Start with the feature name
+            let bodyHTML = `<div class="feature-detail-name">${featureName}</div>
+                <div class="feature-detail-meta">
+                    <span class="feature-category-tag">${featureCategory}</span>
+                    <span class="feature-adoption-tag">${adoptionRate}% adoption</span>`;
+            
+            // Add unique tag if applicable
+            if (isUnique) {
+                bodyHTML += `<span class="feature-unique-tag">Unique</span>`;
+            }
+            
+            // Add standard tag if applicable
+            if (isStandard) {
+                bodyHTML += `<span class="feature-standard-tag">Standard</span>`;
+            }
+            
+            // Close the meta div
+            bodyHTML += `</div>`;
+            
+            body.innerHTML = bodyHTML;
+            
+            // Assemble popup
+            popupContent.appendChild(header);
+            popupContent.appendChild(body);
+            popupContainer.appendChild(popupContent);
+            
+            // Add to DOM
+            document.body.appendChild(popupContainer);
+            
+            // Position the popup in the center of the screen
+            const popup = document.querySelector('.feature-detail-popup');
+            popup.style.display = 'flex';
+            
+            // Add event listeners
+            const closeBtn = popup.querySelector('.close-feature-detail');
+            if (closeBtn) {
+                closeBtn.addEventListener('click', () => {
+                    popup.remove();
+                });
+            }
+            
+            // Close on click outside
+            popup.addEventListener('click', (e) => {
+                if (e.target === popup) {
+                    popup.remove();
+                }
+            });
+            
+            // Close on escape key
+            document.addEventListener('keydown', function escapeHandler(e) {
+                if (e.key === 'Escape') {
+                    popup.remove();
+                    document.removeEventListener('keydown', escapeHandler);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

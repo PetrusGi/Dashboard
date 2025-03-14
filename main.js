@@ -323,30 +323,73 @@ function setupTagSuggestions(inputId, suggestionsId, items) {
     // Track selected tags
     const selectedTags = new Set();
     
+    // Get already selected tags
+    Array.from(selectedContainer.children).forEach(child => {
+        const tagText = child.textContent.replace('×', '').trim();
+        if (tagText) {
+            selectedTags.add(tagText);
+        }
+    });
+    
     input.addEventListener('input', () => {
         const value = input.value.toLowerCase();
         suggestions.innerHTML = '';
         
-        if (value.length < 2) {
+        if (value.length < 1) { // Reduced minimum length to 1 character
+            // Show all available items when input is empty
+            if (value.length === 0) {
+                const availableItems = items.filter(item => 
+                    !selectedTags.has(typeof item === 'object' ? item.name : item)
+                ).slice(0, 10); // Show only first 10 items
+                
+                if (availableItems.length > 0) {
+                    availableItems.forEach(item => {
+                        const itemName = typeof item === 'object' ? item.name : item;
+                        const div = document.createElement('div');
+                        div.className = 'suggestion-item';
+                        div.textContent = itemName;
+                        div.addEventListener('click', () => {
+                            addTag(itemName, selectedContainer, selectedTags);
+                            input.value = '';
+                            suggestions.style.display = 'none';
+                        });
+                        suggestions.appendChild(div);
+                    });
+                    suggestions.style.display = 'block';
+                    return;
+                }
+            }
+            
             suggestions.style.display = 'none';
             return;
         }
         
-        const filteredItems = items.filter(item => 
-            item.toLowerCase().includes(value) && !selectedTags.has(item)
-        );
+        const filteredItems = items.filter(item => {
+            const itemName = typeof item === 'object' ? item.name : item;
+            return itemName.toLowerCase().includes(value) && !selectedTags.has(itemName);
+        });
         
         if (filteredItems.length === 0) {
-            suggestions.style.display = 'none';
+            // Show "No matches" message
+            const noMatches = document.createElement('div');
+            noMatches.className = 'suggestion-item no-matches';
+            noMatches.textContent = 'No matches found';
+            suggestions.appendChild(noMatches);
+            suggestions.style.display = 'block';
             return;
         }
         
         filteredItems.forEach(item => {
+            const itemName = typeof item === 'object' ? item.name : item;
             const div = document.createElement('div');
             div.className = 'suggestion-item';
-            div.textContent = item;
+            
+            // Highlight the matching part
+            const regex = new RegExp(`(${value})`, 'gi');
+            div.innerHTML = itemName.replace(regex, '<strong>$1</strong>');
+            
             div.addEventListener('click', () => {
-                addTag(item, selectedContainer, selectedTags);
+                addTag(itemName, selectedContainer, selectedTags);
                 input.value = '';
                 suggestions.style.display = 'none';
             });
@@ -354,6 +397,50 @@ function setupTagSuggestions(inputId, suggestionsId, items) {
         });
         
         suggestions.style.display = 'block';
+    });
+    
+    // Show all suggestions when input is focused
+    input.addEventListener('focus', () => {
+        if (input.value.trim() === '') {
+            suggestions.innerHTML = '';
+            
+            // Get currently selected tags
+            const currentSelectedTags = new Set();
+            Array.from(selectedContainer.children).forEach(child => {
+                const tagText = child.textContent.replace('×', '').trim();
+                if (tagText) {
+                    currentSelectedTags.add(tagText);
+                }
+            });
+            
+            // Show all unselected items (limited to 10)
+            const availableItems = items.filter(item => {
+                const itemName = typeof item === 'object' ? item.name : item;
+                return !currentSelectedTags.has(itemName);
+            }).slice(0, 10);
+            
+            if (availableItems.length === 0) {
+                const noItems = document.createElement('div');
+                noItems.className = 'suggestion-item no-matches';
+                noItems.textContent = 'All items already selected';
+                suggestions.appendChild(noItems);
+            } else {
+                availableItems.forEach(item => {
+                    const itemName = typeof item === 'object' ? item.name : item;
+                    const div = document.createElement('div');
+                    div.className = 'suggestion-item';
+                    div.textContent = itemName;
+                    div.addEventListener('click', () => {
+                        addTag(itemName, selectedContainer, selectedTags);
+                        input.value = '';
+                        suggestions.style.display = 'none';
+                    });
+                    suggestions.appendChild(div);
+                });
+            }
+            
+            suggestions.style.display = 'block';
+        }
     });
     
     // Close suggestions on click outside

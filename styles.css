@@ -343,9 +343,10 @@ select:focus {
 
 .pricing-header h4 {
     color: var(--dark-text);
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     margin: 0;
     font-family: 'DM Serif Text', serif;
+    font-weight: 700;
 }
 
 .avg-change {
@@ -563,6 +564,7 @@ select:focus {
     font-family: 'DM Serif Text', serif;
     font-size: 1.3rem;
     color: var(--dark-text);
+    font-weight: 700;
 }
 
 .competitor-country {
@@ -777,13 +779,13 @@ h4 {
 }
 
 .delete-btn {
-    background-color: #f44336;
+    background-color: var(--primary-color);
     color: var(--white);
     border: none;
 }
 
 .delete-btn:hover {
-    background-color: #d32f2f;
+    background-color: var(--primary-hover);
 }
 
 .cancel-btn {
