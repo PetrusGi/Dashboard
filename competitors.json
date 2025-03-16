@@ -1,1 +1,923 @@
-[{"id":"notify001","name":"Notify","country":"NL","website":"https://notify.nl","subscriptionModels":[{"name":"Small","currentPrice":25,"currentPriceDate":"2025-03-07","invoiceAmount":30,"invoiceFrequency":"monthly","notes":"New"},{"name":"Light","currentPrice":65,"currentPriceDate":"2025-03-07","oldPrice":75,"oldPriceDate":"2025-02-01","invoiceAmount":100,"invoiceFrequency":"monthly"},{"name":"Starter","currentPrice":99,"currentPriceDate":"2025-03-07","oldPrice":195,"invoiceAmount":200,"invoiceFrequency":"monthly"},{"name":"Business","currentPrice":150,"currentPriceDate":"2025-03-07","oldPrice":300,"invoiceAmount":500,"invoiceFrequency":"monthly"},{"name":"BusinessPlus","currentPrice":250,"currentPriceDate":"2025-03-07","oldPrice":375,"invoiceAmount":1500,"invoiceFrequency":"monthly","notes":"Invoice Amount used to be 800"}],"features":["Automated reminders","Online payment processing","Customer portal for easy access","Dispute management tools","Integrated mailbox","Various payment methods","Real-time financial dashboard and reporting"],"erps":["AccountView","AFAS","Exact Online","King Software","Microsoft Dynamics 365 BC","Moneybird","SnelStart","Twinfield","Visma Cash","Yuki"],"leadMagnets":["Case Study","Webinar"]},{"id":"chaser001","name":"Chaser","country":"UK","website":"https://chaser.io","subscriptionModels":[{"name":"Basic","currentPrice":45,"currentPriceDate":"2025-03-08","oldPrice":47,"oldPriceDate":"2025-02-01","invoiceFrequency":"monthly","notes":"Removed invoice limit of 50."},{"name":"Standard","currentPrice":117,"currentPriceDate":"2025-03-08","oldPriceDate":"2025-02-01","invoiceFrequency":"monthly","notes":"Removed invoice limit of 150."},{"name":"Enterprice","currentPrice":432,"currentPriceDate":"2025-03-08","oldPrice":357,"oldPriceDate":"2025-03-01","invoiceFrequency":"monthly","notes":"Removed invoice limit of 400."}],"features":["Email/SMS chase automation","Credit risk dashboard","Custom reminders","Debt recovery support"],"erps":["QuickBooks","Sage intacct","Sage Accounting","Sage 50 UK","Sage 200","Chaser API","SAP","Microsoft Dynamics 365","AccountsIQ","Xero"],"leadMagnets":["ROI Calculator","Whitepaper","Free Trial","Templates"]},{"id":"payt002","name":"Payt","country":"NL","website":"https://paytsoftware.nl","subscriptionModels":[{"name":"Starter","currentPrice":39.95,"currentPriceDate":"2025-03-06","oldPrice":29.95,"oldPriceDate":"2025-02-01","invoiceAmount":30,"invoiceFrequency":"monthly"},{"name":"Regular","currentPrice":69.95,"currentPriceDate":"2025-03-06","oldPrice":67.95,"oldPriceDate":"2025-02-01","invoiceAmount":75,"invoiceFrequency":"monthly"},{"name":"Enterprise","currentPrice":149.95,"currentPriceDate":"2025-03-06","oldPrice":139.95,"oldPriceDate":"2024-05-23","invoiceAmount":250,"invoiceFrequency":"monthly"}],"features":["Automated follow-up","Dialogue through invoice portal","Various payment methods","Smart payment plan","Electronic invoicing","Notes and task lists"],"erps":["Oracle NetSuite","QuickBooks","Wolters Kluwer","Visma.net","Xero","SAP"],"leadMagnets":[]},{"id":"visma001","name":"Visma eAccounting","country":"NL","website":"https://nl.visma.com/eaccounting","subscriptionModels":[{"name":"Invoicing","currentPrice":13,"currentPriceDate":"2025-03-07","oldPrice":11,"invoiceFrequency":"quarterly","notes":"Pay per 3 months. Price is10 p/m if paid yearly and used to be 8 p/m if paid yearly."},{"name":"Standard","currentPrice":28,"currentPriceDate":"2025-03-07","oldPrice":25,"invoiceFrequency":"quarterly","notes":"Pay per 3 months. Price is 24 p/m if paid yearly and used to be 21 p/m if paid yearly."},{"name":"Pro","currentPrice":37,"currentPriceDate":"2025-03-07","oldPrice":24,"invoiceFrequency":"quarterly","notes":"Pay per 3 months. Price is 34 p/m if paid yearly and used to be 21 p/m if paid yearly"}],"features":["Unlimited booking of purchase and sales invoices","Easy creation and sending of (e-)invoices","Creation and sending of recurring invoices","Real-time insights through an online dashboard","Scanned receipts directly in the accounting system","VAT declaration automatically prepared for submission","24/7 availability with secure access to key business figures","Expandable with modules for quotes, orders, webshops, and logistics","Seamless collaboration with an accountant in one online environment","Smart automation reduces errors and increases efficiency"],"erps":["Visma eAccounting","Visma.net Financials","AccountView","Davilex","Brincr"],"leadMagnets":[]},{"id":"snelstart001","name":"SnelStart","country":"NL","website":"https://www.snelstart.nl","subscriptionModels":[{"name":"Step","currentPrice":13.5,"currentPriceDate":"2025-03-07","oldPrice":12.5,"invoiceFrequency":"monthly"},{"name":"Kart","currentPrice":19.5,"currentPriceDate":"2025-03-07","oldPrice":18.5,"invoiceFrequency":"monthly"},{"name":"Balans","currentPrice":35.5,"currentPriceDate":"2025-03-07","oldPrice":33,"invoiceFrequency":"monthly"},{"name":"Sight","currentPrice":48.5,"currentPriceDate":"2025-03-07","invoiceAmount":45,"invoiceFrequency":"monthly"}],"features":["Unlimited online invoicing and quotations","Easy creation of invoices, including VAT-reversed invoices","Automatic VAT declaration calculation and submission","Scan and recognize receipts via app","Real-time financial dashboard with insights","Payment reminders and dunning management","Seamless collaboration with accountants","Integration with various banks for automated transaction processing","Subscription billing and installment invoicing","Inventory management and order processing","Multi-currency invoicing and international tax compliance","Financial reports and analysis tools"],"erps":["Exact Online","AFAS","Twinfield","Moneybird","SnelStart inStap","SnelStart inKaart","SnelStart inBalans","SnelStart inZicht","SnelStart inControle","Microsoft Dynamics"],"leadMagnets":[]},{"id":"rompslomp001","name":"Rompslomp","country":"NL","website":"","subscriptionModels":[{"name":"Free","currentPrice":0,"currentPriceDate":"2025-03-07","invoiceAmount":5,"invoiceFrequency":"monthly","notes":"2 months free if you pay for a year"},{"name":"Pure","currentPrice":7.5,"currentPriceDate":"2025-03-07","invoiceFrequency":"monthly","notes":"2 months free if you pay for a year"},{"name":"Basic","currentPrice":12.5,"currentPriceDate":"2025-03-07","invoiceAmount":10,"invoiceFrequency":"monthly"},{"name":"Pro","currentPrice":25,"currentPriceDate":"2025-03-07","invoiceFrequency":"monthly"},{"name":"Master","currentPrice":37.5,"currentPriceDate":"2025-03-07","invoiceFrequency":"monthly"}],"features":["Online bookkeeping tailored for freelancers and small businesses","Easy invoice creation with customizable branding","Automatic VAT calculation and submission","Bank transaction import and reconciliation","Mobile app for receipt scanning and financial management","Automated payment reminders and dunning process","Time tracking and mileage registration for invoicing","Digital storage of invoices and receipts","Secure collaboration with accountants","Integration with online payment solutions","Real-time financial dashboard and reporting"],"erps":[],"leadMagnets":[]},{"id":"moneybird001","name":"Moneybird","country":"NL","website":"","subscriptionModels":[{"name":"1","currentPrice":14,"currentPriceDate":"2025-03-07","invoiceFrequency":"monthly","notes":"20 bank transactions"},{"name":"2","currentPrice":25,"currentPriceDate":"2025-03-07","invoiceFrequency":"monthly","notes":"50 bank transactions"},{"name":"3","currentPrice":35,"currentPriceDate":"2025-03-07","invoiceFrequency":"monthly"}],"features":["Facturen en offertes","Online betaalmethoden","Automatische btw-aangifte","Banktransacties koppelen","Zakelijke betaalrekening","Abonnementenbeheer","Productbeheer","Urenregistratie","Workflow automatisering","Peppol facturen verzenden","Toegang voor boekhouders","Financiële rapportages"],"erps":["Peppol"],"leadMagnets":[]},{"id":"eboekhouden001","name":"E-boekhouden","country":"NL","website":"e-Boekhouden.nl","subscriptionModels":[],"features":["Online bookkeeping and invoicing","Automatic bank transaction matching","Direct VAT submission to the tax authority","Integration with banks, webshops, and POS systems","Accountant collaboration features","Mobile app with receipt scanning","Automated invoice processing","Financial reporting and dashboards"],"erps":[],"leadMagnets":[]},{"id":"recouvup001","name":"Recouv'Up","country":"FR","website":"","subscriptionModels":[],"features":["Automated debt recovery","Payment monitoring","Late fee calculations","Legal proceedings assistance"],"erps":[],"leadMagnets":[]},{"id":"leanpay001","name":"LeanPay","country":"FR","website":"","subscriptionModels":[{"name":"SME","currentPrice":245,"currentPriceDate":"2025-03-07","oldPrice":145,"invoiceAmount":1000,"invoiceFrequency":"monthly","notes":"Invoice Amount used to be 1000. Before that 200."},{"name":"SME+","currentPrice":545,"currentPriceDate":"2025-03-07","oldPrice":245,"invoiceFrequency":"monthly","notes":"Invoice Amount used to be 2000, before that 500"},{"name":"ETI","currentPrice":745,"currentPriceDate":"2025-03-07","invoiceFrequency":"monthly","notes":"Invoice Amount used to be 5000, before that 1000"}],"features":["Automated bookkeeping and invoicing","Real-time financial insights and reporting","Seamless bank integrations for transaction processing","Multi-user access with role-based permissions","AI-powered receipt and document recognition","Tax compliance tools including VAT and ICP declarations","Integration with e-commerce platforms and payment providers","Customizable dashboards and analytics","Subscription and recurring billing management","Multi-company accounting in one platform"],"erps":["Sage 100","Sage FRP 1000","Sage X3","Cegid XRP FLEX","Quadra Enterprise","Pennylane","SAP","Microsoft Dynamics 365","NetSuite","Divalto","Sellsy","Odoo","EBP","Exact Online","Chargebee","Excel","OpenSi","Silog","ACD"],"leadMagnets":[]},{"id":"astoniTF001","name":"Aston iTF","country":"FR","website":"","subscriptionModels":[{"name":"SME","currentPrice":95,"currentPriceDate":"2025-03-07","invoiceFrequency":"monthly"},{"name":"ETI","currentPrice":135,"currentPriceDate":"2025-03-07","invoiceFrequency":"monthly","notes":"Removed PME for 145 p/m"}],"features":["Automated debt collection","Credit management optimization","360° predictive account management","Automated client reminders","Real-time customer support","Order-to-cash process optimization","Dashboard with financial insights","Secure client portal","Online payment platform","Electronic invoice and document dematerialization","Dispute tracking and resolution","Customizable workflows"],"erps":["Sage","IBM","Cegid","SAP","Oracle","Microsoft Dynamics 365","Odoo","Divalto","Infor","Axelor","Wavesoft","Axonaut","Indy","EBP","Pennylane","Xero","Ma Compta","Zephyr","Cogilog","Evaliz","Exact","Mister Compta","Wity"],"leadMagnets":[]},{"id":"hoopiz001","name":"Hoopiz","country":"FR","website":"","subscriptionModels":[{"name":"Custom","currentPrice":0,"currentPriceDate":"2025-03-07","invoiceFrequency":"monthly"}],"features":["Credit risk management","Automated customer reminders","Dispute management","Debt collection tracking","Digitalized litigation process","Customer portal with payment options","Multi-company, multi-language, multi-currency support","Dashboard with financial insights","AI-based risk evaluation","Automated alerts and notifications","Integration with financial services"],"erps":["SAP","Sage","Cegid","Microsoft Dynamics 365","Netsuite","Quadra Entreprise","Pennylane","EBP","Exact Online","Odoo"],"leadMagnets":[]},{"id":"reeleezee001","name":"Reeleezee","country":"NL","website":"","subscriptionModels":[],"features":["Modular accounting","POS system compatibility","Tax report automation","Bank reconciliation"],"erps":["Bestand","API"],"leadMagnets":[]},{"id":"creditiq001","name":"Credit-IQ","country":"UK","website":"","subscriptionModels":[],"features":["AI-driven credit management","Real-time analytics","Debt collection automation","Automated credit risk assessment"],"erps":[],"leadMagnets":[]},{"id":"kwote001","name":"Kwote","country":"FR","website":"","subscriptionModels":[],"features":["API integration for data synchronization","Automated customer reminders","Risk analysis and credit policy management","Dispute tracking and resolution","Customizable workflows","Digitalized credit committees with validation workflow","Financial analytics and reporting","International debt collection with multilingual support","Secure client portal for payment tracking"],"erps":[],"leadMagnets":[]},{"id":"billtrust001","name":"Billtrust","country":"US","website":"","subscriptionModels":[],"features":["Accounts receivable automation","Credit decision automation","AI-powered cash application","Automated invoicing","Multi-channel payment processing","Collections management","eCommerce integration","Real-time financial insights","Customizable workflows","Digitalized dispute management"],"erps":["SAP","Microsoft Dynamics","NetSuite","Sage"],"leadMagnets":[]},{"id":"bill001","name":"Bill","country":"US","website":"","subscriptionModels":[],"features":["Accounts payable automation","Accounts receivable automation","Expense management","Cash flow forecasting","Multi-currency and international payments","Digital invoice processing","Two-way accounting system sync","Secure payment approvals","Credit line management","Automated audit trails"],"erps":["QuickBooks Online","QuickBooks Pro/Premier","QuickBooks Enterprise","Xero","Oracle NetSuite","Sage Intacct","Microsoft Dynamics"],"leadMagnets":[]},{"id":"invoiced001","name":"Invoiced","country":"US","website":"","subscriptionModels":[],"features":["Accounts receivable automation","AI-powered reconciliation","Automated invoicing and collections","Secure B2B payments network","Cash flow forecasting","Customizable workflows","Fraud prevention and vendor verification","Subscription billing support","Payment processing integration"],"erps":["NetSuite","QuickBooks","Xero","Microsoft Dynamics"],"leadMagnets":[]},{"id":"upflow001","name":"Upflow","country":"FR","website":"","subscriptionModels":[],"features":["Accounts receivable automation","Cash flow forecasting","Automated payment reminders","Customer portal for payments","Multi-currency and multi-language support","Financial analytics and reporting","Dispute resolution tracking","Customizable workflows","Integration with existing accounting software"],"erps":["NetSuite","QuickBooks","Xero","Sage Intacct"],"leadMagnets":[]}]
+[
+  {
+    "id": "notify001",
+    "name": "Notify",
+    "country": "NL",
+    "website": "https://notify.nl",
+    "subscriptionModels": [
+      {
+        "name": "Small",
+        "currentPrice": 25,
+        "currentPriceDate": "2025-03-07",
+        "invoiceAmount": 30,
+        "invoiceFrequency": "monthly",
+        "notes": "New"
+      },
+      {
+        "name": "Light",
+        "currentPrice": 65,
+        "currentPriceDate": "2025-03-07",
+        "oldPrice": 75,
+        "oldPriceDate": "2025-02-01",
+        "invoiceAmount": 100,
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Starter",
+        "currentPrice": 99,
+        "currentPriceDate": "2025-03-07",
+        "oldPrice": 195,
+        "invoiceAmount": 200,
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Business",
+        "currentPrice": 150,
+        "currentPriceDate": "2025-03-07",
+        "oldPrice": 300,
+        "invoiceAmount": 500,
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "BusinessPlus",
+        "currentPrice": 250,
+        "currentPriceDate": "2025-03-07",
+        "oldPrice": 375,
+        "invoiceAmount": 1500,
+        "invoiceFrequency": "monthly",
+        "notes": "Invoice Amount used to be 800"
+      }
+    ],
+    "features": [
+      "Automated payment reminder system",
+      "Payment processing integration",
+      "Secure customer portal with payment options",
+      "Dispute management",
+      "Integrated mailbox",
+      "Online payment methods",
+      "Real-time financial dashboard"
+    ],
+    "erps": [
+      "AccountView",
+      "AFAS",
+      "Exact Online",
+      "King Software",
+      "Microsoft Dynamics 365",
+      "Moneybird",
+      "SnelStart",
+      "Twinfield",
+      "Visma Cash",
+      "Yuki"
+    ],
+    "leadMagnets": [
+      "Case Study",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "chaser001",
+    "name": "Chaser",
+    "country": "UK",
+    "website": "https://chaser.io",
+    "subscriptionModels": [
+      {
+        "name": "Basic",
+        "currentPrice": 45,
+        "currentPriceDate": "2025-03-08",
+        "oldPrice": 47,
+        "oldPriceDate": "2025-02-01",
+        "invoiceFrequency": "monthly",
+        "notes": "Removed invoice limit of 50."
+      },
+      {
+        "name": "Standard",
+        "currentPrice": 117,
+        "currentPriceDate": "2025-03-08",
+        "oldPriceDate": "2025-02-01",
+        "invoiceFrequency": "monthly",
+        "notes": "Removed invoice limit of 150."
+      },
+      {
+        "name": "Enterprice",
+        "currentPrice": 432,
+        "currentPriceDate": "2025-03-08",
+        "oldPrice": 357,
+        "oldPriceDate": "2025-03-01",
+        "invoiceFrequency": "monthly",
+        "notes": "Removed invoice limit of 400."
+      }
+    ],
+    "features": [
+      "Automated payment reminder system",
+      "Credit management features",
+      "Custom reminders",
+      "Debt collection and recovery"
+    ],
+    "erps": [
+      "QuickBooks",
+      "Sage intacct",
+      "Sage Accounting",
+      "Sage 50 UK",
+      "Sage 200",
+      "Chaser API",
+      "SAP",
+      "Microsoft Dynamics 365",
+      "AccountsIQ",
+      "Xero"
+    ],
+    "leadMagnets": [
+      "ROI Calculator",
+      "Whitepaper",
+      "Free Trial",
+      "Templates"
+    ]
+  },
+  {
+    "id": "payt002",
+    "name": "Payt",
+    "country": "NL",
+    "website": "https://paytsoftware.nl",
+    "subscriptionModels": [
+      {
+        "name": "Starter",
+        "currentPrice": 39.95,
+        "currentPriceDate": "2025-03-06",
+        "oldPrice": 29.95,
+        "oldPriceDate": "2025-02-01",
+        "invoiceAmount": 30,
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Regular",
+        "currentPrice": 69.95,
+        "currentPriceDate": "2025-03-06",
+        "oldPrice": 67.95,
+        "oldPriceDate": "2025-02-01",
+        "invoiceAmount": 75,
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": 149.95,
+        "currentPriceDate": "2025-03-06",
+        "oldPrice": 139.95,
+        "oldPriceDate": "2024-05-23",
+        "invoiceAmount": 250,
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Automated follow-up",
+      "Dialogue through invoice portal",
+      "Online payment methods",
+      "Smart payment plan",
+      "Automated invoicing",
+      "Notes and task lists"
+    ],
+    "erps": [
+      "Oracle NetSuite",
+      "QuickBooks",
+      "Wolters Kluwer",
+      "Visma.net",
+      "Xero",
+      "SAP"
+    ],
+    "leadMagnets": []
+  },
+  {
+    "id": "visma001",
+    "name": "Visma eAccounting",
+    "country": "NL",
+    "website": "https://nl.visma.com/eaccounting",
+    "subscriptionModels": [
+      {
+        "name": "Invoicing",
+        "currentPrice": 13,
+        "currentPriceDate": "2025-03-16",
+        "oldPrice": 11,
+        "invoiceFrequency": "quarterly",
+        "notes": "Pay per 3 months. Price is10 p/m if paid yearly and used to be 8 p/m if paid yearly."
+      },
+      {
+        "name": "Standard",
+        "currentPrice": 28,
+        "currentPriceDate": "2025-03-16",
+        "oldPrice": 25,
+        "invoiceFrequency": "quarterly",
+        "notes": "Pay per 3 months. Price is 24 p/m if paid yearly and used to be 21 p/m if paid yearly."
+      },
+      {
+        "name": "Pro",
+        "currentPrice": 37,
+        "currentPriceDate": "2025-03-16",
+        "oldPrice": 24,
+        "invoiceFrequency": "quarterly",
+        "notes": "Pay per 3 months. Price is 34 p/m if paid yearly and used to be 21 p/m if paid yearly"
+      }
+    ],
+    "features": [
+      "Unlimited booking of purchase and sales invoices",
+      "Automated invoicing",
+      "Creation and sending of recurring invoices",
+      "Real-time financial dashboard",
+      "Scanned receipts directly in the accounting system",
+      "Tax compliance and management",
+      "Expandable with modules for quotes, orders, webshops, and logistics",
+      "Accountant access",
+      "Smart automation reduces errors and increases efficiency"
+    ],
+    "erps": [
+      "Visma eAccounting",
+      "Visma.net Financials",
+      "AccountView",
+      "Davilex",
+      "Brincr"
+    ],
+    "leadMagnets": []
+  },
+  {
+    "id": "snelstart001",
+    "name": "SnelStart",
+    "country": "NL",
+    "website": "https://www.snelstart.nl",
+    "subscriptionModels": [
+      {
+        "name": "Step",
+        "currentPrice": 13.5,
+        "currentPriceDate": "2025-03-07",
+        "oldPrice": 12.5,
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Kart",
+        "currentPrice": 19.5,
+        "currentPriceDate": "2025-03-07",
+        "oldPrice": 18.5,
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Balans",
+        "currentPrice": 35.5,
+        "currentPriceDate": "2025-03-07",
+        "oldPrice": 33,
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Sight",
+        "currentPrice": 48.5,
+        "currentPriceDate": "2025-03-07",
+        "invoiceAmount": 45,
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Invoicing",
+      "Automated invoicing",
+      "Tax compliance and management",
+      "Mobile receipt scanning and document recognition",
+      "Real-time financial dashboard",
+      "Automated payment reminder system",
+      "Accountant access",
+      "Banking integration",
+      "Subscription billing management",
+      "Inventory management",
+      "Multi-company and multi-currency support",
+      "Cash flow analytics"
+    ],
+    "erps": [
+      "Exact Online",
+      "AFAS",
+      "Twinfield",
+      "Moneybird",
+      "SnelStart inStap",
+      "SnelStart inKaart",
+      "SnelStart inBalans",
+      "SnelStart inZicht",
+      "SnelStart inControle",
+      "Microsoft Dynamics 365"
+    ],
+    "leadMagnets": []
+  },
+  {
+    "id": "rompslomp001",
+    "name": "Rompslomp",
+    "country": "NL",
+    "website": "",
+    "subscriptionModels": [
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-07",
+        "invoiceAmount": 5,
+        "invoiceFrequency": "monthly",
+        "notes": "2 months free if you pay for a year"
+      },
+      {
+        "name": "Pure",
+        "currentPrice": 7.5,
+        "currentPriceDate": "2025-03-07",
+        "invoiceFrequency": "monthly",
+        "notes": "2 months free if you pay for a year"
+      },
+      {
+        "name": "Basic",
+        "currentPrice": 12.5,
+        "currentPriceDate": "2025-03-07",
+        "invoiceAmount": 10,
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Pro",
+        "currentPrice": 25,
+        "currentPriceDate": "2025-03-07",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Master",
+        "currentPrice": 37.5,
+        "currentPriceDate": "2025-03-07",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Online bookkeeping tailored for freelancers and small businesses",
+      "Automated invoicing",
+      "Tax compliance and management",
+      "Banking integration",
+      "Mobile receipt scanning and document recognition",
+      "Automated payment reminder system",
+      "Time tracking",
+      "Digital storage of invoices and receipts",
+      "Accountant access",
+      "Payment processing integration",
+      "Real-time financial dashboard"
+    ],
+    "erps": [],
+    "leadMagnets": []
+  },
+  {
+    "id": "moneybird001",
+    "name": "Moneybird",
+    "country": "NL",
+    "website": "",
+    "subscriptionModels": [
+      {
+        "name": "1",
+        "currentPrice": 14,
+        "currentPriceDate": "2025-03-07",
+        "invoiceFrequency": "monthly",
+        "notes": "20 bank transactions"
+      },
+      {
+        "name": "2",
+        "currentPrice": 25,
+        "currentPriceDate": "2025-03-07",
+        "invoiceFrequency": "monthly",
+        "notes": "50 bank transactions"
+      },
+      {
+        "name": "3",
+        "currentPrice": 35,
+        "currentPriceDate": "2025-03-07",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Invoicing",
+      "Online payment methods",
+      "Tax compliance and management",
+      "Banking integration",
+      "Business payment account",
+      "Subscription management",
+      "Product management",
+      "Time tracking",
+      "Customizable workflows",
+      "Invoicing",
+      "Accountant access",
+      "Financial reporting and analytics"
+    ],
+    "erps": [
+      "Microsoft Dynamics 365"
+    ],
+    "leadMagnets": []
+  },
+  {
+    "id": "eboekhouden001",
+    "name": "E-boekhouden",
+    "country": "NL",
+    "website": "e-Boekhouden.nl",
+    "subscriptionModels": [],
+    "features": [
+      "Online bookkeeping tailored for freelancers and small businesses",
+      "Banking integration",
+      "Tax compliance and management",
+      "Integration with e-commerce platforms and payment providers",
+      "Accountant access",
+      "Mobile receipt scanning and document recognition",
+      "Automated invoicing",
+      "Cash flow analytics"
+    ],
+    "erps": [],
+    "leadMagnets": []
+  },
+  {
+    "id": "recouvup001",
+    "name": "Recouv'Up",
+    "country": "FR",
+    "website": "",
+    "subscriptionModels": [],
+    "features": [
+      "Debt collection and recovery",
+      "Payment monitoring",
+      "Late fee calculations",
+      "Legal proceedings assistance"
+    ],
+    "erps": [],
+    "leadMagnets": []
+  },
+  {
+    "id": "leanpay001",
+    "name": "LeanPay",
+    "country": "FR",
+    "website": "",
+    "subscriptionModels": [
+      {
+        "name": "SME",
+        "currentPrice": 245,
+        "currentPriceDate": "2025-03-16",
+        "oldPrice": 145,
+        "invoiceAmount": 1000,
+        "invoiceFrequency": "monthly",
+        "notes": "Invoice Amount used to be 1000. Before that 200."
+      },
+      {
+        "name": "SME+",
+        "currentPrice": 545,
+        "currentPriceDate": "2025-03-16",
+        "oldPrice": 245,
+        "invoiceFrequency": "monthly",
+        "notes": "Invoice Amount used to be 2000, before that 500"
+      },
+      {
+        "name": "ETI",
+        "currentPrice": 745,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly",
+        "notes": "Invoice Amount used to be 5000, before that 1000"
+      }
+    ],
+    "features": [
+      "Real-time financial dashboard",
+      "Banking integration",
+      "Multi-user access with role-based permissions",
+      "Mobile receipt scanning and document recognition",
+      "Tax compliance and management",
+      "Payment processing integration",
+      "Customizable dashboards and analytics",
+      "Subscription billing management",
+      "Multi-company and multi-currency support",
+      "Automated invoicing"
+    ],
+    "erps": [
+      "Sage 100",
+      "Sage FRP 1000",
+      "Sage X3",
+      "Cegid XRP FLEX",
+      "Quadra Enterprise",
+      "Pennylane",
+      "SAP",
+      "Microsoft Dynamics 365",
+      "NetSuite",
+      "Divalto",
+      "Sellsy",
+      "Odoo",
+      "EBP",
+      "Exact Online",
+      "Chargebee",
+      "Excel",
+      "OpenSi",
+      "Silog",
+      "ACD"
+    ],
+    "leadMagnets": []
+  },
+  {
+    "id": "astoniTF001",
+    "name": "Aston iTF",
+    "country": "FR",
+    "website": "",
+    "subscriptionModels": [
+      {
+        "name": "SME",
+        "currentPrice": 95,
+        "currentPriceDate": "2025-03-07",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "ETI",
+        "currentPrice": 135,
+        "currentPriceDate": "2025-03-07",
+        "invoiceFrequency": "monthly",
+        "notes": "Removed PME for 145 p/m"
+      }
+    ],
+    "features": [
+      "Debt collection and recovery",
+      "Credit management features",
+      "Automated payment reminder system",
+      "Real-time customer support",
+      "Order-to-cash process optimization",
+      "Real-time financial dashboard",
+      "Secure customer portal with payment options",
+      "Payment processing integration",
+      "Automated invoicing",
+      "Dispute management",
+      "Customizable workflows"
+    ],
+    "erps": [
+      "Sage",
+      "IBM",
+      "Cegid",
+      "SAP",
+      "Oracle",
+      "Microsoft Dynamics 365",
+      "Odoo",
+      "Divalto",
+      "Infor",
+      "Axelor",
+      "Wavesoft",
+      "Axonaut",
+      "Indy",
+      "EBP",
+      "Pennylane",
+      "Xero",
+      "Ma Compta",
+      "Zephyr",
+      "Cogilog",
+      "Evaliz",
+      "Exact",
+      "Mister Compta",
+      "Wity"
+    ],
+    "leadMagnets": []
+  },
+  {
+    "id": "hoopiz001",
+    "name": "Hoopiz",
+    "country": "FR",
+    "website": "",
+    "subscriptionModels": [
+      {
+        "name": "Custom",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-07",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Credit management features",
+      "Automated payment reminder system",
+      "Dispute management",
+      "Debt collection and recovery",
+      "Digitalized litigation process",
+      "Secure customer portal with payment options",
+      "Multi-company and multi-currency support",
+      "Real-time financial dashboard",
+      "AI-based risk evaluation",
+      "Automated alerts and notifications",
+      "Integration with financial services"
+    ],
+    "erps": [
+      "SAP",
+      "Sage",
+      "Cegid",
+      "Microsoft Dynamics 365",
+      "Netsuite",
+      "Quadra Entreprise",
+      "Pennylane",
+      "EBP",
+      "Exact Online",
+      "Odoo"
+    ],
+    "leadMagnets": []
+  },
+  {
+    "id": "reeleezee001",
+    "name": "Reeleezee",
+    "country": "NL",
+    "website": "",
+    "subscriptionModels": [],
+    "features": [
+      "Modular accounting",
+      "POS system compatibility",
+      "Tax compliance and management",
+      "Banking integration"
+    ],
+    "erps": [
+      "Bestand",
+      "API"
+    ],
+    "leadMagnets": []
+  },
+  {
+    "id": "creditiq001",
+    "name": "Credit-IQ",
+    "country": "UK",
+    "website": "",
+    "subscriptionModels": [],
+    "features": [
+      "Credit management features",
+      "Cash flow analytics",
+      "Debt collection and recovery",
+      "Real-time financial dashboard"
+      "Customizable workflows",
+      
+    ],
+    "erps": [],
+    "leadMagnets": []
+  },
+  {
+    "id": "kwote001",
+    "name": "Kwote",
+    "country": "FR",
+    "website": "",
+    "subscriptionModels": [],
+    "features": [
+      "Real-time financial dashboard",
+      "Automated payment reminder system",
+      "Credit management features",
+      "Dispute management",
+      "Customizable workflows",
+      "Digitalized credit committees with validation workflow",
+      "Cash flow analytics",
+      "Debt collection and recovery",
+      "Secure customer portal with payment options"
+    ],
+    "erps": [],
+    "leadMagnets": []
+  },
+  {
+    "id": "billtrust001",
+    "name": "Billtrust",
+    "country": "US",
+    "website": "",
+    "subscriptionModels": [],
+    "features": [
+      "Accounts receivable automation",
+      "Credit management features",
+      "AI-powered cash application",
+      "Automated invoicing",
+      "Payment processing integration",
+      "Collections management",
+      "eCommerce integration",
+      "Cash flow analytics",
+      "Customizable workflows",
+      "Dispute management",
+      "Real-time financial dashboard"
+    ],
+    "erps": [
+      "SAP",
+      "Microsoft Dynamics 365",
+      "Oracle NetSuite",
+      "Sage"
+    ],
+    "leadMagnets": []
+  },
+  {
+    "id": "bill001",
+    "name": "Bill",
+    "country": "US",
+    "website": "",
+    "subscriptionModels": [],
+    "features": [
+      "Accounts payable automation",
+      "Accounts receivable automation",
+      "Expense management and tracking",
+      "Cash flow analytics",
+      "Multi-company and multi-currency support",
+      "Automated invoicing",
+      "Two-way accounting system sync",
+      "Secure payment approvals",
+      "Credit management features",
+      "Automated audit trails"
+    ],
+    "erps": [
+      "QuickBooks Online",
+      "QuickBooks Pro/Premier",
+      "QuickBooks Enterprise",
+      "Xero",
+      "Oracle NetSuite",
+      "Sage Intacct",
+      "Microsoft Dynamics 365"
+    ],
+    "leadMagnets": []
+  },
+  {
+    "id": "invoiced001",
+    "name": "Invoiced",
+    "country": "US",
+    "website": "",
+    "subscriptionModels": [],
+    "features": [
+      "Accounts receivable automation",
+      "AI-powered reconciliation",
+      "Automated invoicing",
+      "Secure B2B payments network",
+      "Cash flow analytics",
+      "Customizable workflows",
+      "Fraud prevention and vendor verification",
+      "Subscription billing management",
+      "Payment processing integration"
+    ],
+    "erps": [
+      "Oracle NetSuite",
+      "QuickBooks",
+      "Xero",
+      "Microsoft Dynamics 365"
+    ],
+    "leadMagnets": []
+  },
+  {
+    "id": "upflow001",
+    "name": "Upflow",
+    "country": "FR",
+    "website": "",
+    "subscriptionModels": [],
+    "features": [
+      "Real-time financial dashboard",
+      "Cash flow analytics",
+      "Automated payment reminder system",
+      "Secure customer portal with payment options",
+      "Multi-company and multi-currency support",
+      "Dispute management",
+      "Customizable workflows"
+    ],
+    "erps": [
+      "Oracle NetSuite",
+      "QuickBooks",
+      "Xero",
+      "Sage Intacct"
+    ],
+    "leadMagnets": []
+  },
+  {
+    "id": "xero001",
+    "name": "Xero",
+    "country": "NZ",
+    "website": "https://www.xero.com/",
+    "subscriptionModels": [
+      {
+        "name": "Ignite",
+        "currentPrice": 16,
+        "currentPriceDate": "2025-03-16",
+        "oldPriceDate": "2025-03-15",
+        "invoiceAmount": 20,
+        "invoiceFrequency": "monthly",
+        "notes": "Enter 5 bills, reconcile bank transactions, capture bills and receipts with Hubdoc, short-term cash flow and business snapshot, W-9 + 1099 management, sales tax. 90% off the first 6 months."
+      },
+      {
+        "name": "Grow",
+        "currentPrice": 33,
+        "currentPriceDate": "2025-03-16",
+        "oldPriceDate": "2025-03-15",
+        "invoiceFrequency": "monthly",
+        "notes": "Enter unlimited bills, reconcile bank transactions, capture bills and receipts with Hubdoc, short-term cash flow and business snapshot, W-9 + 1099 management, sales tax. 90% off the first 6 months."
+      },
+      {
+        "name": "Comprehensive",
+        "currentPrice": 47,
+        "currentPriceDate": "2025-03-16",
+        "oldPriceDate": "2025-03-15",
+        "invoiceFrequency": "monthly",
+        "notes": "Enter unlimited bills, reconcile bank transactions, capture bills and receipts with Hubdoc, short-term cash flow and business snapshot, W-9 + 1099 management, sales tax, use multiple currencies, track projects, claim expenses, advanced cash flow predictions with Analytics Plus. Inventory Plus available as an optional add-on. 90% off the first 6 months."
+      },
+      {
+        "name": "Ultimate",
+        "currentPrice": 59,
+        "currentPriceDate": "2025-03-16",
+        "oldPriceDate": "2025-03-15",
+        "invoiceFrequency": "monthly",
+        "notes": "Enter unlimited bills, reconcile bank transactions, capture bills and receipts with Hubdoc, short-term cash flow and business snapshot, W-9 + 1099 management, sales tax, use multiple currencies, track projects, claim expenses, advanced cash flow predictions with Analytics Plus. Inventory Plus available as an optional add-on. 90% off the first 6 months."
+      }
+    ],
+    "features": [
+      "All-in-one, paperless record keeping",
+      "Banking integration",
+      "Automated payment reminder system",
+      "Cash flow analytics",
+      "Data capture",
+      "Automated invoicing",
+      "Online payment methods",
+      "Inventory management",
+      "Expense management and tracking",
+      "Banking integration",
+      "Payment processing integration",
+      "Purchase orders",
+      "Financial reporting and analytics",
+      "Multi-company and multi-currency support",
+      "Manage Xero contacts",
+      "Sales tax automation (via Avalara integration)",
+      "Online file storage",
+      "Real-time financial dashboard",
+      "Manage fixed assets",
+      "Mobile application"
+    ],
+    "erps": [
+      "Custom"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Customer Stories",
+      "Small Business Guides",
+      "Templates for your business (invoice, pay stub, receipt)",
+      "Accounting Glossary"
+    ]
+  },
+  {
+    "id": "freeagent001",
+    "name": "FreeAgent",
+    "country": "UK",
+    "website": "https://www.freeagent.com",
+    "subscriptionModels": [
+      {
+        "name": "Billed monthly",
+        "currentPrice": 33,
+        "currentPriceDate": "2025-03-17",
+        "invoiceFrequency": "monthly",
+        "notes": "50% off for the first six months. Regular price is 33/month."
+      },
+      {
+        "name": "Billed annually",
+        "currentPrice": 330,
+        "currentPriceDate": "2025-03-17",
+        "invoiceFrequency": "annually",
+        "notes": "50% off for the first year. Regular price is 330/year (equivalent to 27.5/month)."
+      },
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-17",
+        "invoiceFrequency": "monthly",
+        "notes": "Available if you have a qualifying business current account with NatWest, Royal Bank of Scotland, Ulster Bank, or Mettle."
+      }
+    ],
+    "features": [
+      "Automated invoicing",
+      "Expense management and tracking",
+      "Time tracking",
+      "Banking integration",
+      "Tax compliance and management",
+      "Real-time financial dashboard",
+      "Mobile application",
+      "Financial reporting and analytics",
+      "Data capture",
+      "Smart categorisation",
+      "Cash flow analytics",
+      "Online payment methods"
+    ],
+    "erps": [
+      "BrightTax",
+      "Capium",
+      "GoSimpleTax",
+      "IRIS Accounts Production",
+      "TaxCalc",
+      "Cyclr",
+      "Maesn",
+      "Make",
+      "Zapier",
+      "Tyl by NatWest",
+      "Stripe",
+      "Adsum's InstantVAT",
+      "Billsby",
+      "GoCardless",
+      "Mimo",
+      "PayPal",
+      "BrightPay",
+      "Buddy",
+      "Employment Hero",
+      "Penfold",
+      "Staffology",
+      "BrightManager",
+      "Engager.app",
+      "IRIS Elements",
+      "Matters.Cloud",
+      "Uku",
+      "Xama",
+      "XBert"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Guides",
+      "Webinars",
+      "Customer Stories",
+      "Accounting Glossary",
+      "Interactive Tools",
+      "Allowable Expenses Calculator for Landlords",
+      "VAT Flat Rate Scheme Calculator",
+      "Mileage Calculator",
+      "VAT Calculator",
+      "ROI Calculator",
+      "Accounting Calendar"
+    ]
+  }
+]
