@@ -6,7 +6,7 @@ const GITHUB_CONFIG = {
     owner: 'PetrusGi', // Your GitHub username
     repo: 'SaveData',        // The repository name where data will be stored
     branch: 'main',                // The branch to use (usually 'main' or 'master')
-    token: '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'                      // Personal access token (will be provided by the user via prompt)
+    token: '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'                      // Personal access token (will be provided by the user via prompt)
 };
 
 // Store token in sessionStorage so it persists during the session but not permanently
@@ -227,26 +227,13 @@ function getDefaultData(filename) {
 
 // These functions should be defined elsewhere, but we're including stubs for completeness
 function extractFeaturesFromDoc() {
-    // This would normally be imported from data.js, but we're providing a stub with the new format
-    return [
-        {
-            "name": "Automated payment reminder system",
-            "category": "Automation"
-        },
-        {
-            "name": "Payment processing integration",
-            "category": "Payment"
-        },
-        {
-            "name": "Secure customer portal with payment options",
-            "category": "Payment"
-        }
-    ];
+    // This would normally be imported from data.js
+    return [];
 }
 
 function extractERPsFromDoc() {
     // This would normally be imported from data.js
-    return ["Oracle NetSuite", "QuickBooks", "Xero"];
+    return [];
 }
 
 // Add GitHub configuration UI
