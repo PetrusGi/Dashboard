@@ -23,7 +23,8 @@ function getGitHubToken() {
             '4. Select the "repo" scope\n' +
             '5. Click "Generate token"\n' +
             '6. Copy the token and paste it here\n\n' +
-            'This token will be stored in your browser session only.'
+            'This token will be stored in your browser session only, so save it.'
+            'It takes 30 seconds to a minute, for your changes to update.'
         );
         
         if (token) {
@@ -332,7 +333,7 @@ function openGitHubConfigModal() {
                     <input type="password" id="github-token" placeholder="ghp_xxxxxxxxxxxx">
                     <p class="help-text">
                         To create a token, go to <a href="https://github.com/settings/tokens" target="_blank">GitHub Token Settings</a>,
-                        click "Generate new token", select the "repo" scope, and click "Generate token".
+                        click "Generate new token", select the "repo" scope, and click "Generate token". It takes 30 seconds to a minute, for your changes to update.
                     </p>
                 </div>
                 <div class="form-actions">
