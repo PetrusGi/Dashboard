@@ -145,6 +145,7 @@ input[type="text"],
 input[type="number"],
 input[type="url"],
 input[type="date"],
+input[type="password"],
 select {
     padding: 10px 15px;
     border: 2px solid var(--secondary-color);
@@ -152,16 +153,16 @@ select {
     font-size: 1rem;
     transition: var(--transition);
 }
-
 input[type="text"]:focus,
 input[type="number"]:focus,
 input[type="url"]:focus,
 input[type="date"]:focus,
+input[type="password"]:focus,
 select:focus {
     border-color: var(--primary-color);
     outline: none;
     box-shadow: 0 0 0 3px rgba(220, 0, 40, 0.1);
-}
+} 
 
 .action-btn {
     padding: 10px 20px;
