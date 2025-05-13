@@ -166,8 +166,29 @@ function showGitHubSaveNotification(file) {
         document.body.appendChild(notification);
     }
     
-    // Set notification message
-    notification.textContent = `${file} has been saved to GitHub successfully.`;
+    // Customize message based on filename
+    let customMessage;
+    switch(file) {
+        case 'competitors.json':
+            customMessage = 'Competitor data has been saved successfully.';
+            break;
+        case 'features.json':
+            customMessage = 'Feature data has been saved successfully.';
+            break;
+        case 'erps.json':
+            customMessage = 'ERP integration data has been saved successfully.';
+            break;
+        case 'leadmagnets.json':
+            customMessage = 'Lead magnet data has been saved successfully.';
+            break;
+        case 'pricing.json':
+            customMessage = 'Pricing data has been saved successfully.';
+            break;
+        default:
+            customMessage = 'Your data has been saved successfully.';
+    }
+    
+    notification.textContent = customMessage;
     notification.style.backgroundColor = '#4CAF50'; // Green for success
     notification.style.opacity = '1';
     
@@ -196,8 +217,29 @@ function showGitHubErrorNotification(file, errorMessage) {
         document.body.appendChild(notification);
     }
     
-    // Set notification message
-    notification.textContent = `Error saving ${file} to GitHub: ${errorMessage}`;
+    // Customize message based on filename
+    let customType;
+    switch(file) {
+        case 'competitors.json':
+            customType = 'competitor data';
+            break;
+        case 'features.json':
+            customType = 'feature data';
+            break;
+        case 'erps.json':
+            customType = 'ERP integration data';
+            break;
+        case 'leadmagnets.json':
+            customType = 'lead magnet data';
+            break;
+        case 'pricing.json':
+            customType = 'pricing data';
+            break;
+        default:
+            customType = 'data';
+    }
+    
+    notification.textContent = `Error saving ${customType}: ${errorMessage}`;
     notification.style.backgroundColor = '#F44336'; // Red for error
     notification.style.opacity = '1';
     
