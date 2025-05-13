@@ -439,7 +439,7 @@
     "id": "leanpay001",
     "name": "LeanPay",
     "country": "FR",
-    "website": "",
+    "website": "www.leanpay.fr",
     "subscriptionModels": [
       {
         "name": "SME",
@@ -505,7 +505,7 @@
     "id": "astoniTF001",
     "name": "Aston iTF",
     "country": "FR",
-    "website": "",
+    "website": "Aston.com",
     "subscriptionModels": [
       {
         "name": "SME",
@@ -623,8 +623,8 @@
     "id": "creditiq001",
     "name": "Credit-IQ",
     "country": "UK",
-    "website": "",
-    "subscriptionModels": [],
+    "website": "www.credit-iq.com",
+    "subscriptionModels": [Topaz, Diamond],
     "features": [
       "Credit management features",
       "Cash flow analytics",
@@ -716,7 +716,7 @@
     "id": "invoiced001",
     "name": "Invoiced",
     "country": "US",
-    "website": "",
+    "website": "Invoiced.fr",
     "subscriptionModels": [],
     "features": [
       "Accounts receivable automation",
