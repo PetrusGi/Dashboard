@@ -6,7 +6,7 @@ const GITHUB_CONFIG = {
     owner: 'PetrusGi', // Your GitHub username
     repo: 'SaveData',        // The repository name where data will be stored
     branch: 'main',                // The branch to use (usually 'main' or 'master')
-    token: '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'                      // Personal access token (will be provided by the user via prompt)
+    token: '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'                      // Personal access token (will be provided by the user via prompt)
 };
 
 // Store token in sessionStorage so it persists during the session but not permanently
