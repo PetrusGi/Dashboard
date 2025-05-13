@@ -302,7 +302,7 @@
     "id": "rompslomp001",
     "name": "Rompslomp",
     "country": "NL",
-    "website": "",
+    "website": "https://www.rompslomp.nl",
     "subscriptionModels": [
       {
         "name": "Free",
@@ -359,7 +359,7 @@
     "id": "moneybird001",
     "name": "Moneybird",
     "country": "NL",
-    "website": "",
+    "website": "https://www.moneybird.com",
     "subscriptionModels": [
       {
         "name": "1",
@@ -405,7 +405,7 @@
     "id": "eboekhouden001",
     "name": "E-boekhouden",
     "country": "NL",
-    "website": "e-Boekhouden.nl",
+    "website": "https://www.e-boekhouden.nl",
     "subscriptionModels": [],
     "features": [
       "Online bookkeeping tailored for freelancers and small businesses",
@@ -424,7 +424,7 @@
     "id": "recouvup001",
     "name": "Recouv'Up",
     "country": "FR",
-    "website": "",
+    "website": "https://www.recouvup.com",
     "subscriptionModels": [],
     "features": [
       "Debt collection and recovery",
@@ -439,7 +439,7 @@
     "id": "leanpay001",
     "name": "LeanPay",
     "country": "FR",
-    "website": "www.leanpay.fr",
+    "website": "https://www.leanpay.fr",
     "subscriptionModels": [
       {
         "name": "SME",
@@ -502,335 +502,392 @@
     "leadMagnets": []
   },
   {
-    "id": "astoniTF001",
-    "name": "Aston iTF",
+    "id": "agrisys001",
+    "name": "Agrisys",
     "country": "FR",
-    "website": "Aston.com",
+    "website": "https://www.agrisys.fr",
     "subscriptionModels": [
       {
-        "name": "SME",
-        "currentPrice": 95,
-        "currentPriceDate": "2025-03-07",
+        "name": "Basic",
+        "currentPrice": 49,
+        "currentPriceDate": "2025-03-16",
         "invoiceFrequency": "monthly"
       },
       {
-        "name": "ETI",
-        "currentPrice": 135,
-        "currentPriceDate": "2025-03-07",
-        "invoiceFrequency": "monthly",
-        "notes": "Removed PME for 145 p/m"
-      }
-    ],
-    "features": [
-      "Debt collection and recovery",
-      "Credit management features",
-      "Automated payment reminder system",
-      "Real-time customer support",
-      "Order-to-cash process optimization",
-      "Real-time financial dashboard",
-      "Secure customer portal with payment options",
-      "Payment processing integration",
-      "Automated invoicing",
-      "Dispute management",
-      "Customizable workflows"
-    ],
-    "erps": [
-      "Sage",
-      "IBM",
-      "Cegid",
-      "SAP",
-      "Oracle",
-      "Microsoft Dynamics 365",
-      "Odoo",
-      "Divalto",
-      "Infor",
-      "Axelor",
-      "Wavesoft",
-      "Axonaut",
-      "Indy",
-      "EBP",
-      "Pennylane",
-      "Xero",
-      "Ma Compta",
-      "Zephyr",
-      "Cogilog",
-      "Evaliz",
-      "Exact",
-      "Mister Compta",
-      "Wity"
-    ],
-    "leadMagnets": []
-  },
-  {
-    "id": "hoopiz001",
-    "name": "Hoopiz",
-    "country": "FR",
-    "website": "",
-    "subscriptionModels": [
-      {
-        "name": "Custom",
-        "currentPrice": 0,
-        "currentPriceDate": "2025-03-07",
+        "name": "Premium",
+        "currentPrice": 99,
+        "currentPriceDate": "2025-03-16",
         "invoiceFrequency": "monthly"
       }
     ],
     "features": [
-      "Credit management features",
-      "Automated payment reminder system",
-      "Dispute management",
-      "Debt collection and recovery",
-      "Digitalized litigation process",
-      "Secure customer portal with payment options",
-      "Multi-company and multi-currency support",
-      "Real-time financial dashboard",
-      "AI-based risk evaluation",
-      "Automated alerts and notifications",
-      "Integration with financial services"
+      "Farm management software",
+      "Financial management",
+      "Crop and livestock management",
+      "Compliance and reporting",
+      "Mobile access"
     ],
     "erps": [
       "SAP",
-      "Sage",
-      "Cegid",
       "Microsoft Dynamics 365",
-      "Netsuite",
-      "Quadra Entreprise",
-      "Pennylane",
-      "EBP",
-      "Exact Online",
-      "Odoo"
+      "Oracle NetSuite"
     ],
     "leadMagnets": []
   },
   {
-    "id": "reeleezee001",
-    "name": "Reeleezee",
-    "country": "NL",
-    "website": "",
-    "subscriptionModels": [],
-    "features": [
-      "Modular accounting",
-      "POS system compatibility",
-      "Tax compliance and management",
-      "Banking integration"
-    ],
-    "erps": [
-      "Bestand",
-      "API"
-    ],
-    "leadMagnets": []
-  },
-  {
-    "id": "creditiq001",
-    "name": "Credit-IQ",
-    "country": "UK",
-    "website": "www.credit-iq.com",
-    "subscriptionModels": [Topaz, Diamond],
-    "features": [
-      "Credit management features",
-      "Cash flow analytics",
-      "Debt collection and recovery",
-      "Real-time financial dashboard"
-      "Customizable workflows",
-      
-    ],
-    "erps": [],
-    "leadMagnets": []
-  },
-  {
-    "id": "kwote001",
-    "name": "Kwote",
+    "id": "myunisoft001",
+    "name": "MyUnisoft",
     "country": "FR",
-    "website": "",
-    "subscriptionModels": [],
-    "features": [
-      "Real-time financial dashboard",
-      "Automated payment reminder system",
-      "Credit management features",
-      "Dispute management",
-      "Customizable workflows",
-      "Digitalized credit committees with validation workflow",
-      "Cash flow analytics",
-      "Debt collection and recovery",
-      "Secure customer portal with payment options"
+    "website": "https://www.myunisoft.fr",
+    "subscriptionModels": [
+      {
+        "name": "Standard",
+        "currentPrice": 29,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
     ],
-    "erps": [],
-    "leadMagnets": []
-  },
-  {
-    "id": "billtrust001",
-    "name": "Billtrust",
-    "country": "US",
-    "website": "",
-    "subscriptionModels": [],
     "features": [
-      "Accounts receivable automation",
-      "Credit management features",
-      "AI-powered cash application",
-      "Automated invoicing",
-      "Payment processing integration",
-      "Collections management",
-      "eCommerce integration",
-      "Cash flow analytics",
-      "Customizable workflows",
-      "Dispute management",
-      "Real-time financial dashboard"
+      "Accounting software for accountants and their clients",
+      "Automated data entry",
+      "Real-time collaboration",
+      "Tax filing assistance",
+      "Mobile application"
     ],
     "erps": [
-      "SAP",
-      "Microsoft Dynamics 365",
-      "Oracle NetSuite",
-      "Sage"
+      "Sage",
+      "Exact",
+      "QuickBooks",
+      "Xero"
     ],
     "leadMagnets": []
   },
   {
-    "id": "bill001",
-    "name": "Bill",
+    "id": "quickbooks001",
+    "name": "QuickBooks",
     "country": "US",
-    "website": "",
-    "subscriptionModels": [],
+    "website": "https://quickbooks.intuit.com",
+    "subscriptionModels": [
+      {
+        "name": "Simple Start",
+        "currentPrice": 15,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Essentials",
+        "currentPrice": 25,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Plus",
+        "currentPrice": 40,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Advanced",
+        "currentPrice": 90,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
     "features": [
-      "Accounts payable automation",
-      "Accounts receivable automation",
-      "Expense management and tracking",
-      "Cash flow analytics",
-      "Multi-company and multi-currency support",
-      "Automated invoicing",
-      "Two-way accounting system sync",
-      "Secure payment approvals",
-      "Credit management features",
-      "Automated audit trails"
+      "Income and expense tracking",
+      "Invoicing and payments",
+      "Tax deductions",
+      "Run reports",
+      "Capture and organize receipts",
+      "Track sales tax",
+      "Send estimates",
+      "Manage bills",
+      "Track time",
+      "Track inventory",
+      "Manage 1099 contractors",
+      "Budgeting and planning",
+      "Business analytics and reporting",
+      "Batch invoices and expenses",
+      "Automate workflows"
     ],
     "erps": [
       "QuickBooks Online",
-      "QuickBooks Pro/Premier",
-      "QuickBooks Enterprise",
-      "Xero",
-      "Oracle NetSuite",
-      "Sage Intacct",
-      "Microsoft Dynamics 365"
+      "QuickBooks Desktop"
     ],
-    "leadMagnets": []
-  },
-  {
-    "id": "invoiced001",
-    "name": "Invoiced",
-    "country": "US",
-    "website": "Invoiced.fr",
-    "subscriptionModels": [],
-    "features": [
-      "Accounts receivable automation",
-      "AI-powered reconciliation",
-      "Automated invoicing",
-      "Secure B2B payments network",
-      "Cash flow analytics",
-      "Customizable workflows",
-      "Fraud prevention and vendor verification",
-      "Subscription billing management",
-      "Payment processing integration"
-    ],
-    "erps": [
-      "Oracle NetSuite",
-      "QuickBooks",
-      "Xero",
-      "Microsoft Dynamics 365"
-    ],
-    "leadMagnets": []
-  },
-  {
-    "id": "upflow001",
-    "name": "Upflow",
-    "country": "FR",
-    "website": "",
-    "subscriptionModels": [],
-    "features": [
-      "Real-time financial dashboard",
-      "Cash flow analytics",
-      "Automated payment reminder system",
-      "Secure customer portal with payment options",
-      "Multi-company and multi-currency support",
-      "Dispute management",
-      "Customizable workflows"
-    ],
-    "erps": [
-      "Oracle NetSuite",
-      "QuickBooks",
-      "Xero",
-      "Sage Intacct"
-    ],
-    "leadMagnets": []
+    "leadMagnets": [
+      "Free Trial",
+      "Demo"
+    ]
   },
   {
     "id": "xero001",
     "name": "Xero",
     "country": "NZ",
-    "website": "https://www.xero.com/",
+    "website": "https://www.xero.com",
     "subscriptionModels": [
       {
-        "name": "Ignite",
-        "currentPrice": 16,
+        "name": "Starter",
+        "currentPrice": 11,
         "currentPriceDate": "2025-03-16",
-        "oldPriceDate": "2025-03-15",
-        "invoiceAmount": 20,
-        "invoiceFrequency": "monthly",
-        "notes": "Enter 5 bills, reconcile bank transactions, capture bills and receipts with Hubdoc, short-term cash flow and business snapshot, W-9 + 1099 management, sales tax. 90% off the first 6 months."
+        "invoiceFrequency": "monthly"
       },
       {
-        "name": "Grow",
-        "currentPrice": 33,
+        "name": "Standard",
+        "currentPrice": 32,
         "currentPriceDate": "2025-03-16",
-        "oldPriceDate": "2025-03-15",
-        "invoiceFrequency": "monthly",
-        "notes": "Enter unlimited bills, reconcile bank transactions, capture bills and receipts with Hubdoc, short-term cash flow and business snapshot, W-9 + 1099 management, sales tax. 90% off the first 6 months."
+        "invoiceFrequency": "monthly"
       },
       {
-        "name": "Comprehensive",
-        "currentPrice": 47,
+        "name": "Premium",
+        "currentPrice": 62,
         "currentPriceDate": "2025-03-16",
-        "oldPriceDate": "2025-03-15",
-        "invoiceFrequency": "monthly",
-        "notes": "Enter unlimited bills, reconcile bank transactions, capture bills and receipts with Hubdoc, short-term cash flow and business snapshot, W-9 + 1099 management, sales tax, use multiple currencies, track projects, claim expenses, advanced cash flow predictions with Analytics Plus. Inventory Plus available as an optional add-on. 90% off the first 6 months."
-      },
-      {
-        "name": "Ultimate",
-        "currentPrice": 59,
-        "currentPriceDate": "2025-03-16",
-        "oldPriceDate": "2025-03-15",
-        "invoiceFrequency": "monthly",
-        "notes": "Enter unlimited bills, reconcile bank transactions, capture bills and receipts with Hubdoc, short-term cash flow and business snapshot, W-9 + 1099 management, sales tax, use multiple currencies, track projects, claim expenses, advanced cash flow predictions with Analytics Plus. Inventory Plus available as an optional add-on. 90% off the first 6 months."
+        "invoiceFrequency": "monthly"
       }
     ],
     "features": [
-      "All-in-one, paperless record keeping",
-      "Banking integration",
-      "Automated payment reminder system",
-      "Cash flow analytics",
-      "Data capture",
-      "Automated invoicing",
-      "Online payment methods",
-      "Inventory management",
-      "Expense management and tracking",
-      "Banking integration",
-      "Payment processing integration",
-      "Purchase orders",
-      "Financial reporting and analytics",
-      "Multi-company and multi-currency support",
-      "Manage Xero contacts",
-      "Sales tax automation (via Avalara integration)",
-      "Online file storage",
-      "Real-time financial dashboard",
-      "Manage fixed assets",
-      "Mobile application"
+      "Send invoices",
+      "Enter bills",
+      "Reconcile bank statements",
+      "Use Hubdoc to capture bills and receipts",
+      "Submit GST returns to the ATO (Australia only)",
+      "Send quotes",
+      "Handle multiple currencies",
+      "Track projects",
+      "Claim expenses",
+      "Analyze projects"
     ],
     "erps": [
-      "Custom"
+      "Xero"
+    ],
+    "leadMagnets": [
+      "Free Trial"
+    ]
+  },
+  {
+    "id": "sage001",
+    "name": "Sage",
+    "country": "UK",
+    "website": "https://www.sage.com",
+    "subscriptionModels": [
+      {
+        "name": "Sage Accounting Start",
+        "currentPrice": 12,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Sage Accounting",
+        "currentPrice": 26,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Send and track invoices",
+      "Connect to bank account",
+      "Automatic bank reconciliation",
+      "Submit VAT returns directly to HMRC (UK only)",
+      "Manage bills to pay",
+      "Send quotes and estimates",
+      "Forecast cash flow",
+      "Get paid online",
+      "Manage purchase orders",
+      "Track inventory",
+      "Report on projects",
+      "Multi-currency invoicing"
+    ],
+    "erps": [
+      "Sage 50",
+      "Sage 100",
+      "Sage 300",
+      "Sage Intacct",
+      "Sage X3"
     ],
     "leadMagnets": [
       "Free Trial",
-      "Customer Stories",
-      "Small Business Guides",
-      "Templates for your business (invoice, pay stub, receipt)",
-      "Accounting Glossary"
+      "Demo"
+    ]
+  },
+  {
+    "id": "zoho001",
+    "name": "Zoho Books",
+    "country": "US",
+    "website": "https://www.zoho.com/books",
+    "subscriptionModels": [
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Standard",
+        "currentPrice": 15,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Professional",
+        "currentPrice": 40,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Premium",
+        "currentPrice": 60,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Ultimate",
+        "currentPrice": 120,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "End-to-end accounting",
+      "Invoicing and estimates",
+      "Expense tracking",
+      "Banking",
+      "Projects and timesheets",
+      "Inventory",
+      "Reporting",
+      "Sales order and purchase order management",
+      "Workflow automation",
+      "Customization",
+      "Vendor portal",
+      "Subscription management",
+      "Multi-currency",
+      "Multi-language",
+      "Multi-user"
+    ],
+    "erps": [
+      "Zoho CRM",
+      "Zoho Expense",
+      "Zoho Inventory",
+      "Zoho Payroll",
+      "Zoho Analytics"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo"
+    ]
+  },
+  {
+    "id": "freshbooks001",
+    "name": "FreshBooks",
+    "country": "US",
+    "website": "https://www.freshbooks.com",
+    "subscriptionModels": [
+      {
+        "name": "Lite",
+        "currentPrice": 17,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Plus",
+        "currentPrice": 30,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Premium",
+        "currentPrice": 55,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Select",
+        "currentPrice": null,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "custom"
+      }
+    ],
+    "features": [
+      "Unlimited invoices and estimates",
+      "Track time",
+      "Track expenses",
+      "Send unlimited proposals",
+      "Double-entry accounting",
+      "Run financial reports",
+      "Invite your accountant",
+      "Bank connectivity",
+      "Mobile mileage tracking",
+      "Client retainers",
+      "Project management",
+      "Accounts payable",
+      "Inventory tracking",
+      "Custom pricing"
+    ],
+    "erps": [],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo"
+    ]
+  },
+  {
+    "id": "wave001",
+    "name": "Wave",
+    "country": "CA",
+    "website": "https://www.waveapps.com",
+    "subscriptionModels": [
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Invoicing",
+      "Accounting",
+      "Receipt scanning",
+      "Banking",
+      "Payments",
+      "Payroll"
+    ],
+    "erps": [],
+    "leadMagnets": []
+  },
+  {
+    "id": "kashoo001",
+    "name": "Kashoo",
+    "country": "CA",
+    "website": "https://kashoo.com",
+    "subscriptionModels": [
+      {
+        "name": "TrulySmall Invoices & Payments",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "TrulySmall Accounting",
+        "currentPrice": 20,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "TrulySmall Accounting + Payroll",
+        "currentPrice": 35,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Invoicing",
+      "Accept payments",
+      "Track income and expenses",
+      "Bank connections",
+      "Financial reports",
+      "Unlimited users",
+      "Payroll"
+    ],
+    "erps": [],
+    "leadMagnets": [
+      "Free Trial"
     ]
   },
   {
@@ -840,84 +897,3649 @@
     "website": "https://www.freeagent.com",
     "subscriptionModels": [
       {
-        "name": "Billed monthly",
-        "currentPrice": 33,
-        "currentPriceDate": "2025-03-17",
-        "invoiceFrequency": "monthly",
-        "notes": "50% off for the first six months. Regular price is 33/month."
-      },
-      {
-        "name": "Billed annually",
-        "currentPrice": 330,
-        "currentPriceDate": "2025-03-17",
-        "invoiceFrequency": "annually",
-        "notes": "50% off for the first year. Regular price is 330/year (equivalent to 27.5/month)."
-      },
-      {
-        "name": "Free",
-        "currentPrice": 0,
-        "currentPriceDate": "2025-03-17",
-        "invoiceFrequency": "monthly",
-        "notes": "Available if you have a qualifying business current account with NatWest, Royal Bank of Scotland, Ulster Bank, or Mettle."
+        "name": "Universal",
+        "currentPrice": 24,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
       }
     ],
     "features": [
-      "Automated invoicing",
-      "Expense management and tracking",
+      "Invoicing",
+      "Expenses",
       "Time tracking",
-      "Banking integration",
-      "Tax compliance and management",
-      "Real-time financial dashboard",
-      "Mobile application",
-      "Financial reporting and analytics",
-      "Data capture",
-      "Smart categorisation",
-      "Cash flow analytics",
-      "Online payment methods"
+      "Banking",
+      "Tax filing",
+      "Payroll",
+      "Projects",
+      "Estimates",
+      "Contacts",
+      "Reports",
+      "Integrations"
+    ],
+    "erps": [],
+    "leadMagnets": [
+      "Free Trial"
+    ]
+  },
+  {
+    "id": "clearbooks001",
+    "name": "Clear Books",
+    "country": "UK",
+    "website": "https://www.clearbooks.co.uk",
+    "subscriptionModels": [
+      {
+        "name": "Micro",
+        "currentPrice": 10,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Small",
+        "currentPrice": 18,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Large",
+        "currentPrice": 30,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Invoicing",
+      "Expenses",
+      "Banking",
+      "VAT filing",
+      "Reporting",
+      "Payroll",
+      "Projects",
+      "Estimates",
+      "Contacts",
+      "Integrations"
+    ],
+    "erps": [],
+    "leadMagnets": [
+      "Free Trial"
+    ]
+  },
+  {
+    "id": "solarvista001",
+    "name": "Solarvista",
+    "country": "UK",
+    "website": "https://www.solarvista.com",
+    "subscriptionModels": [],
+    "features": [
+      "Field service management software",
+      "Scheduling and dispatch",
+      "Mobile workforce management",
+      "Asset management",
+      "Reporting and analytics"
     ],
     "erps": [
-      "BrightTax",
-      "Capium",
-      "GoSimpleTax",
-      "IRIS Accounts Production",
-      "TaxCalc",
-      "Cyclr",
-      "Maesn",
-      "Make",
-      "Zapier",
-      "Tyl by NatWest",
+      "Sage",
+      "QuickBooks",
+      "Xero",
+      "Microsoft Dynamics 365",
+      "SAP"
+    ],
+    "leadMagnets": [
+      "Demo"
+    ]
+  },
+  {
+    "id": "exact001",
+    "name": "Exact Online",
+    "country": "NL",
+    "website": "https://www.exact.com/nl/exact-online",
+    "subscriptionModels": [
+      {
+        "name": "Boekhouden",
+        "currentPrice": 40,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Handel",
+        "currentPrice": 80,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Projecten",
+        "currentPrice": 80,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Productie",
+        "currentPrice": 120,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Online accounting",
+      "Invoicing",
+      "CRM",
+      "Inventory management",
+      "Project management",
+      "Manufacturing",
+      "Reporting and analysis",
+      "Banking integration",
+      "VAT filing"
+    ],
+    "erps": [
+      "Exact Online Boekhouden",
+      "Exact Online Handel",
+      "Exact Online Projecten",
+      "Exact Online Productie"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Whitepaper"
+    ]
+  },
+  {
+    "id": "afas001",
+    "name": "AFAS Software",
+    "country": "NL",
+    "website": "https://www.afas.nl",
+    "subscriptionModels": [
+      {
+        "name": "Small Business",
+        "currentPrice": 125,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Medium Business",
+        "currentPrice": 250,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Large Business",
+        "currentPrice": 500,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "ERP software",
+      "Financial administration",
+      "CRM",
+      "Project administration",
+      "HRM",
+      "Payroll",
+      "Workflow automation",
+      "Reporting and analysis"
+    ],
+    "erps": [
+      "AFAS Small Business",
+      "AFAS Medium Business",
+      "AFAS Large Business"
+    ],
+    "leadMagnets": [
+      "Demo",
+      "Whitepaper",
+      "Case Study"
+    ]
+  },
+  {
+    "id": "twinfield001",
+    "name": "Twinfield",
+    "country": "NL",
+    "website": "https://www.twinfield.com/nl",
+    "subscriptionModels": [
+      {
+        "name": "Small",
+        "currentPrice": 49,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Medium",
+        "currentPrice": 99,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Large",
+        "currentPrice": 199,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Online accounting",
+      "Invoicing",
+      "Banking integration",
+      "Reporting and analysis",
+      "Collaboration with accountant",
+      "API integrations"
+    ],
+    "erps": [
+      "Twinfield"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo"
+    ]
+  },
+  {
+    "id": "visma-net001",
+    "name": "Visma.net",
+    "country": "NL",
+    "website": "https://www.visma.com/net",
+    "subscriptionModels": [],
+    "features": [
+      "Cloud ERP system",
+      "Financial management",
+      "Project management",
+      "Inventory management",
+      "CRM",
+      "Reporting and analysis"
+    ],
+    "erps": [
+      "Visma.net Financials",
+      "Visma.net Project Control",
+      "Visma.net Logistics"
+    ],
+    "leadMagnets": [
+      "Demo"
+    ]
+  },
+  {
+    "id": "netsuite001",
+    "name": "Oracle NetSuite",
+    "country": "US",
+    "website": "https://www.netsuite.com",
+    "subscriptionModels": [],
+    "features": [
+      "Cloud ERP",
+      "Financial management",
+      "CRM",
+      "E-commerce",
+      "Inventory management",
+      "Supply chain management",
+      "Project management",
+      "Analytics and reporting"
+    ],
+    "erps": [
+      "NetSuite"
+    ],
+    "leadMagnets": [
+      "Demo",
+      "Whitepaper",
+      "Case Study"
+    ]
+  },
+  {
+    "id": "sap001",
+    "name": "SAP",
+    "country": "DE",
+    "website": "https://www.sap.com",
+    "subscriptionModels": [],
+    "features": [
+      "ERP software",
+      "CRM",
+      "Supply chain management",
+      "Human resources",
+      "Analytics",
+      "Cloud solutions"
+    ],
+    "erps": [
+      "SAP S/4HANA",
+      "SAP Business One",
+      "SAP Business ByDesign"
+    ],
+    "leadMagnets": [
+      "Demo",
+      "Whitepaper",
+      "Case Study"
+    ]
+  },
+  {
+    "id": "microsoft-dynamics001",
+    "name": "Microsoft Dynamics 365",
+    "country": "US",
+    "website": "https://dynamics.microsoft.com",
+    "subscriptionModels": [],
+    "features": [
+      "CRM and ERP applications",
+      "Sales",
+      "Customer service",
+      "Field service",
+      "Finance",
+      "Supply chain management",
+      "Marketing",
+      "Business intelligence"
+    ],
+    "erps": [
+      "Dynamics 365 Sales",
+      "Dynamics 365 Customer Service",
+      "Dynamics 365 Field Service",
+      "Dynamics 365 Finance",
+      "Dynamics 365 Supply Chain Management",
+      "Dynamics 365 Marketing",
+      "Dynamics 365 Business Central"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Whitepaper"
+    ]
+  },
+  {
+    "id": "exact-globe001",
+    "name": "Exact Globe",
+    "country": "NL",
+    "website": "https://www.exact.com/nl/exact-globe",
+    "subscriptionModels": [],
+    "features": [
+      "ERP software for SMEs",
+      "Financial administration",
+      "Logistics",
+      "Project management",
+      "Manufacturing",
+      "CRM"
+    ],
+    "erps": [
+      "Exact Globe"
+    ],
+    "leadMagnets": [
+      "Demo"
+    ]
+  },
+  {
+    "id": "exact-synergy001",
+    "name": "Exact Synergy",
+    "country": "NL",
+    "website": "https://www.exact.com/nl/exact-synergy",
+    "subscriptionModels": [],
+    "features": [
+      "CRM and HRM software",
+      "Document management",
+      "Workflow management",
+      "Project management",
+      "Reporting and analysis"
+    ],
+    "erps": [
+      "Exact Synergy"
+    ],
+    "leadMagnets": [
+      "Demo"
+    ]
+  },
+  {
+    "id": "king-software001",
+    "name": "King Software",
+    "country": "NL",
+    "website": "https://www.kingsoftware.nl",
+    "subscriptionModels": [],
+    "features": [
+      "ERP software for SMEs",
+      "Financial administration",
+      "Invoicing",
+      "Inventory management",
+      "CRM",
+      "Reporting"
+    ],
+    "erps": [
+      "King Financieel",
+      "King Handel",
+      "King Project"
+    ],
+    "leadMagnets": [
+      "Demo"
+    ]
+  },
+  {
+    "id": "davilex001",
+    "name": "Davilex",
+    "country": "NL",
+    "website": "https://www.davilex.nl",
+    "subscriptionModels": [],
+    "features": [
+      "Accounting software for SMEs",
+      "Invoicing",
+      "Banking integration",
+      "VAT filing",
+      "Reporting"
+    ],
+    "erps": [
+      "Davilex Kasboek",
+      "Davilex Factuur",
+      "Davilex Boekhouding"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo"
+    ]
+  },
+  {
+    "id": "brincr001",
+    "name": "Brincr",
+    "country": "NL",
+    "website": "https://www.brincr.com",
+    "subscriptionModels": [],
+    "features": [
+      "CRM and sales software",
+      "Quoting",
+      "Order management",
+      "Invoicing",
+      "Reporting"
+    ],
+    "erps": [
+      "Brincr"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo"
+    ]
+  },
+  {
+    "id": "accountview001",
+    "name": "AccountView",
+    "country": "NL",
+    "website": "https://www.accountview.nl",
+    "subscriptionModels": [],
+    "features": [
+      "Financial software for SMEs",
+      "Accounting",
+      "Invoicing",
+      "Banking integration",
+      "Reporting"
+    ],
+    "erps": [
+      "AccountView Solo",
+      "AccountView Team",
+      "AccountView Compleet"
+    ],
+    "leadMagnets": [
+      "Demo"
+    ]
+  },
+  {
+    "id": "visma-cash001",
+    "name": "Visma Cash",
+    "country": "NL",
+    "website": "https://www.vismasoftware.nl/producten/visma-cash",
+    "subscriptionModels": [],
+    "features": [
+      "Accounting software for SMEs",
+      "Invoicing",
+      "Banking integration",
+      "VAT filing",
+      "Reporting"
+    ],
+    "erps": [
+      "Visma Cash"
+    ],
+    "leadMagnets": [
+      "Demo"
+    ]
+  },
+  {
+    "id": "yuki001",
+    "name": "Yuki",
+    "country": "NL",
+    "website": "https://www.yuki.nl",
+    "subscriptionModels": [],
+    "features": [
+      "Online accounting software for accountants and entrepreneurs",
+      "Automated document processing",
+      "Banking integration",
+      "VAT filing",
+      "Reporting",
+      "Collaboration platform"
+    ],
+    "erps": [
+      "Yuki"
+    ],
+    "leadMagnets": [
+      "Demo"
+    ]
+  },
+  {
+    "id": "chargebee001",
+    "name": "Chargebee",
+    "country": "US",
+    "website": "https://www.chargebee.com",
+    "subscriptionModels": [],
+    "features": [
+      "Subscription management",
+      "Billing and invoicing",
+      "Payment gateway integrations",
+      "Reporting and analytics",
+      "Revenue recognition",
+      "Churn reduction"
+    ],
+    "erps": [
+      "Salesforce",
+      "HubSpot",
+      "NetSuite",
+      "Xero",
+      "QuickBooks",
+      "Sage Intacct"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Whitepaper"
+    ]
+  },
+  {
+    "id": "stripe001",
+    "name": "Stripe",
+    "country": "US",
+    "website": "https://stripe.com",
+    "subscriptionModels": [],
+    "features": [
+      "Online payment processing",
+      "Subscription management",
+      "Invoicing",
+      "Fraud prevention",
+      "Reporting and analytics",
+      "Connect platform"
+    ],
+    "erps": [
+      "Shopify",
+      "WooCommerce",
+      "Squarespace",
+      "NetSuite",
+      "SAP",
+      "Microsoft Dynamics 365"
+    ],
+    "leadMagnets": [
+      "Guides",
+      "Documentation"
+    ]
+  },
+  {
+    "id": "paypal001",
+    "name": "PayPal",
+    "country": "US",
+    "website": "https://www.paypal.com",
+    "subscriptionModels": [],
+    "features": [
+      "Online payment processing",
+      "Sending and receiving money",
+      "Business accounts",
+      "Invoicing",
+      "Reporting"
+    ],
+    "erps": [
+      "Shopify",
+      "WooCommerce",
+      "Etsy",
+      "eBay"
+    ],
+    "leadMagnets": [
+      "Guides"
+    ]
+  },
+  {
+    "id": "adyen001",
+    "name": "Adyen",
+    "country": "NL",
+    "website": "https://www.adyen.com",
+    "subscriptionModels": [],
+    "features": [
+      "Payment processing platform",
+      "Online payments",
+      "In-app payments",
+      "Point of sale payments",
+      "Risk management",
+      "Reporting and analytics"
+    ],
+    "erps": [
+      "Magento",
+      "Salesforce Commerce Cloud",
+      "SAP Commerce Cloud",
+      "Shopify Plus"
+    ],
+    "leadMagnets": [
+      "Guides",
+      "Documentation"
+    ]
+  },
+  {
+    "id": "mollie001",
+    "name": "Mollie",
+    "country": "NL",
+    "website": "https://www.mollie.com",
+    "subscriptionModels": [],
+    "features": [
+      "Payment service provider",
+      "Online payments",
+      "Various payment methods",
+      "API integrations",
+      "Reporting"
+    ],
+    "erps": [
+      "Shopify",
+      "WooCommerce",
+      "Magento",
+      "Lightspeed",
+      "CCV Shop"
+    ],
+    "leadMagnets": [
+      "Guides",
+      "Documentation"
+    ]
+  },
+  {
+    "id": "icepay001",
+    "name": "ICEPAY",
+    "country": "NL",
+    "website": "https://www.icepay.com",
+    "subscriptionModels": [],
+    "features": [
+      "Payment service provider",
+      "Online payments",
+      "Various payment methods",
+      "API integrations",
+      "Reporting"
+    ],
+    "erps": [
+      "Shopify",
+      "WooCommerce",
+      "Magento"
+    ],
+    "leadMagnets": [
+      "Guides",
+      "Documentation"
+    ]
+  },
+  {
+    "id": "buckaroo001",
+    "name": "Buckaroo",
+    "country": "NL",
+    "website": "https://www.buckaroo.nl",
+    "subscriptionModels": [],
+    "features": [
+      "Payment service provider",
+      "Online payments",
+      "Subscription services",
+      "Credit management",
+      "API integrations",
+      "Reporting"
+    ],
+    "erps": [
+      "Shopify",
+      "WooCommerce",
+      "Magento",
+      "Lightspeed"
+    ],
+    "leadMagnets": [
+      "Guides",
+      "Documentation"
+    ]
+  },
+  {
+    "id": "multisafepay001",
+    "name": "MultiSafepay",
+    "country": "NL",
+    "website": "https://www.multisafepay.com",
+    "subscriptionModels": [],
+    "features": [
+      "Payment service provider",
+      "Online payments",
+      "Various payment methods",
+      "API integrations",
+      "Reporting"
+    ],
+    "erps": [
+      "Shopify",
+      "WooCommerce",
+      "Magento",
+      "Lightspeed"
+    ],
+    "leadMagnets": [
+      "Guides",
+      "Documentation"
+    ]
+  },
+  {
+    "id": "ingenico001",
+    "name": "Ingenico",
+    "country": "FR",
+    "website": "https://ingenico.com",
+    "subscriptionModels": [],
+    "features": [
+      "Payment solutions",
+      "In-store payments",
+      "Online payments",
+      "Payment terminals",
+      "Reporting and analytics"
+    ],
+    "erps": [
+      "SAP",
+      "Oracle",
+      "Microsoft Dynamics 365"
+    ],
+    "leadMagnets": [
+      "Guides",
+      "Documentation"
+    ]
+  },
+  {
+    "id": "worldline001",
+    "name": "Worldline",
+    "country": "FR",
+    "website": "https://worldline.com",
+    "subscriptionModels": [],
+    "features": [
+      "Payment and transactional services",
+      "Merchant acquiring",
+      "Payment processing",
+      "Terminal solutions",
+      "E-commerce services"
+    ],
+    "erps": [
+      "SAP",
+      "Oracle",
+      "Microsoft Dynamics 365"
+    ],
+    "leadMagnets": [
+      "Guides",
+      "Documentation"
+    ]
+  },
+  {
+    "id": "atos001",
+    "name": "Atos",
+    "country": "FR",
+    "website": "https://atos.net",
+    "subscriptionModels": [],
+    "features": [
+      "Digital transformation",
+      "Cloud",
+      "Cybersecurity",
+      "High-performance computing",
+      "Payment solutions"
+    ],
+    "erps": [
+      "SAP",
+      "Oracle",
+      "Microsoft Dynamics 365"
+    ],
+    "leadMagnets": [
+      "Whitepaper",
+      "Case Study"
+    ]
+  },
+  {
+    "id": "docusign001",
+    "name": "DocuSign",
+    "country": "US",
+    "website": "https://www.docusign.com",
+    "subscriptionModels": [
+      {
+        "name": "Personal",
+        "currentPrice": 10,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Standard",
+        "currentPrice": 25,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Business Pro",
+        "currentPrice": 40,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Advanced Solutions",
+        "currentPrice": null,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "custom"
+      }
+    ],
+    "features": [
+      "Electronic signatures",
+      "Document workflow automation",
+      "Agreement management",
+      "Integrations with popular business applications",
+      "Mobile app"
+    ],
+    "erps": [
+      "Salesforce",
+      "Microsoft Dynamics 365",
+      "SAP",
+      "Oracle",
+      "Workday"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Whitepaper",
+      "Guides"
+    ]
+  },
+  {
+    "id": "adobe-sign001",
+    "name": "Adobe Sign",
+    "country": "US",
+    "website": "https://acrobat.adobe.com/us/en/sign.html",
+    "subscriptionModels": [
+      {
+        "name": "Acrobat Standard with e-sign",
+        "currentPrice": 22.99,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Acrobat Pro with e-sign",
+        "currentPrice": 29.99,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Acrobat for business with e-sign",
+        "currentPrice": 24.99,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Electronic signatures",
+      "Document workflow automation",
+      "Integration with Adobe Acrobat and other Adobe products",
+      "Integrations with business applications",
+      "Mobile app"
+    ],
+    "erps": [
+      "Salesforce",
+      "Microsoft Dynamics 365",
+      "Workday",
+      "SAP",
+      "Oracle"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides"
+    ]
+  },
+  {
+    "id": "pandadoc001",
+    "name": "PandaDoc",
+    "country": "US",
+    "website": "https://www.pandadoc.com",
+    "subscriptionModels": [
+      {
+        "name": "Free eSign",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Essentials",
+        "currentPrice": 19,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Business",
+        "currentPrice": 49,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": null,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "custom"
+      }
+    ],
+    "features": [
+      "Document creation and editing",
+      "Electronic signatures",
+      "Workflow automation",
+      "Integrations with CRM and other business tools",
+      "Analytics"
+    ],
+    "erps": [
+      "Salesforce",
+      "HubSpot",
+      "Zoho CRM",
+      "Pipedrive",
       "Stripe",
-      "Adsum's InstantVAT",
-      "Billsby",
-      "GoCardless",
-      "Mimo",
-      "PayPal",
-      "BrightPay",
-      "Buddy",
-      "Employment Hero",
-      "Penfold",
-      "Staffology",
-      "BrightManager",
-      "Engager.app",
-      "IRIS Elements",
-      "Matters.Cloud",
-      "Uku",
-      "Xama",
-      "XBert"
+      "QuickBooks",
+      "Xero"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Templates",
+      "Guides"
+    ]
+  },
+  {
+    "id": "hellosign001",
+    "name": "HelloSign",
+    "country": "US",
+    "website": "https://www.hellosign.com",
+    "subscriptionModels": [
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Essentials",
+        "currentPrice": 15,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Standard",
+        "currentPrice": 25,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Premium",
+        "currentPrice": null,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "custom"
+      }
+    ],
+    "features": [
+      "Electronic signatures",
+      "Templates",
+      "Team features",
+      "Integrations",
+      "Audit trail"
+    ],
+    "erps": [
+      "Salesforce",
+      "HubSpot",
+      "Google Workspace",
+      "Slack",
+      "Dropbox"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Guides"
+    ]
+  },
+  {
+    "id": "signnow001",
+    "name": "signNow",
+    "country": "US",
+    "website": "https://www.signnow.com",
+    "subscriptionModels": [
+      {
+        "name": "Business",
+        "currentPrice": 8,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Business Premium",
+        "currentPrice": 15,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": 30,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "airSlate Business Cloud",
+        "currentPrice": 50,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Electronic signatures",
+      "Templates",
+      "Mobile app",
+      "Integrations",
+      "Audit trail",
+      "Conditional fields",
+      "Bulk sending"
+    ],
+    "erps": [
+      "Salesforce",
+      "HubSpot",
+      "Box",
+      "Dropbox",
+      "Google Drive",
+      "OneDrive"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides"
+    ]
+  },
+  {
+    "id": "onespan001",
+    "name": "OneSpan",
+    "country": "US",
+    "website": "https://www.onespan.com",
+    "subscriptionModels": [],
+    "features": [
+      "Electronic signatures",
+      "Identity verification",
+      "Secure document workflows",
+      "Fraud prevention",
+      "Mobile app"
+    ],
+    "erps": [
+      "Salesforce",
+      "Microsoft Dynamics 365",
+      "SAP",
+      "Oracle"
+    ],
+    "leadMagnets": [
+      "Demo",
+      "Whitepaper",
+      "Case Study"
+    ]
+  },
+  {
+    "id": "rightsignature001",
+    "name": "RightSignature",
+    "country": "US",
+    "website": "https://www.rightsignature.com",
+    "subscriptionModels": [
+      {
+        "name": "Standard",
+        "currentPrice": 15,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Advanced",
+        "currentPrice": 75,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Electronic signatures",
+      "Templates",
+      "Integrations",
+      "Audit trail",
+      "Mobile signing"
+    ],
+    "erps": [
+      "ShareFile",
+      "Citrix Workspace"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo"
+    ]
+  },
+  {
+    "id": "eversign001",
+    "name": "eversign",
+    "country": "AT",
+    "website": "https://eversign.com",
+    "subscriptionModels": [
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Basic",
+        "currentPrice": 9.99,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Professional",
+        "currentPrice": 39.99,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Professional Plus",
+        "currentPrice": 79.99,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": null,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "custom"
+      }
+    ],
+    "features": [
+      "Electronic signatures",
+      "Document templates",
+      "Integrations",
+      "Audit trail",
+      "Team management"
+    ],
+    "erps": [
+      "Google Drive",
+      "Dropbox",
+      "Box",
+      "OneDrive",
+      "Salesforce",
+      "Zoho CRM"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Guides"
+    ]
+  },
+  {
+    "id": "signeasy001",
+    "name": "SignEasy",
+    "country": "US",
+    "website": "https://signeasy.com",
+    "subscriptionModels": [
+      {
+        "name": "Personal",
+        "currentPrice": 10,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Business",
+        "currentPrice": 20,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Business Plus",
+        "currentPrice": 30,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": null,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "custom"
+      }
+    ],
+    "features": [
+      "Electronic signatures",
+      "Mobile app",
+      "Integrations",
+      "Audit trail",
+      "Templates"
+    ],
+    "erps": [
+      "Google Workspace",
+      "Office 365",
+      "Salesforce",
+      "Box",
+      "Dropbox",
+      "Google Drive",
+      "OneDrive"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides"
+    ]
+  },
+  {
+    "id": "getaccept001",
+    "name": "GetAccept",
+    "country": "SE",
+    "website": "https://www.getaccept.com",
+    "subscriptionModels": [
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Essential",
+        "currentPrice": 49,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Professional",
+        "currentPrice": 79,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": null,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "custom"
+      }
+    ],
+    "features": [
+      "Sales enablement platform",
+      "Document tracking and analytics",
+      "Electronic signatures",
+      "Video and chat",
+      "Integrations with CRM and other tools"
+    ],
+    "erps": [
+      "Salesforce",
+      "HubSpot",
+      "Pipedrive",
+      "Zoho CRM",
+      "Microsoft Dynamics 365"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides",
+      "Whitepaper"
+    ]
+  },
+  {
+    "id": "proposify001",
+    "name": "Proposify",
+    "country": "CA",
+    "website": "https://www.proposify.com",
+    "subscriptionModels": [
+      {
+        "name": "Tall",
+        "currentPrice": 49,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Grande",
+        "currentPrice": 89,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Venti",
+        "currentPrice": null,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "custom"
+      }
+    ],
+    "features": [
+      "Proposal software",
+      "Templates",
+      "Content library",
+      "Electronic signatures",
+      "Analytics",
+      "Integrations with CRM and other tools"
+    ],
+    "erps": [
+      "Salesforce",
+      "HubSpot",
+      "Pipedrive",
+      "Zoho CRM",
+      "QuickBooks",
+      "Xero"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Templates",
+      "Guides"
+    ]
+  },
+  {
+    "id": "betterproposals001",
+    "name": "Better Proposals",
+    "country": "UK",
+    "website": "https://betterproposals.io",
+    "subscriptionModels": [
+      {
+        "name": "Premium",
+        "currentPrice": 19,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Premium+",
+        "currentPrice": 39,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": null,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "custom"
+      }
+    ],
+    "features": [
+      "Proposal software",
+      "Templates",
+      "Content library",
+      "Electronic signatures",
+      "Analytics",
+      "Integrations with CRM and other tools"
+    ],
+    "erps": [
+      "Salesforce",
+      "HubSpot",
+      "Pipedrive",
+      "Zoho CRM",
+      "QuickBooks",
+      "Xero"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Templates",
+      "Guides"
+    ]
+  },
+  {
+    "id": "proposable001",
+    "name": "Proposable",
+    "country": "US",
+    "website": "https://www.proposable.com",
+    "subscriptionModels": [
+      {
+        "name": "Solo",
+        "currentPrice": 19,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Team",
+        "currentPrice": 39,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": null,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "custom"
+      }
+    ],
+    "features": [
+      "Proposal software",
+      "Templates",
+      "Content library",
+      "Electronic signatures",
+      "Analytics",
+      "Integrations with CRM and other tools"
+    ],
+    "erps": [
+      "Salesforce",
+      "HubSpot",
+      "Pipedrive",
+      "Zoho CRM"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Templates",
+      "Guides"
+    ]
+  },
+  {
+    "id": "quotewerks001",
+    "name": "QuoteWerks",
+    "country": "US",
+    "website": "https://www.quotewerks.com",
+    "subscriptionModels": [],
+    "features": [
+      "Quoting and proposal software",
+      "Integrations with CRM, PSA, and distribution partners",
+      "Product catalog",
+      "Electronic signatures",
+      "Reporting"
+    ],
+    "erps": [
+      "Salesforce",
+      "HubSpot",
+      "ConnectWise Automate",
+      "Datto Autotask PSA",
+      "Microsoft Dynamics 365",
+      "SAP",
+      "Oracle"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "salesforce001",
+    "name": "Salesforce",
+    "country": "US",
+    "website": "https://www.salesforce.com",
+    "subscriptionModels": [],
+    "features": [
+      "CRM platform",
+      "Sales Cloud",
+      "Service Cloud",
+      "Marketing Cloud",
+      "Commerce Cloud",
+      "Analytics Cloud",
+      "Integration Cloud"
+    ],
+    "erps": [
+      "Salesforce Sales Cloud",
+      "Salesforce Service Cloud",
+      "Salesforce Marketing Cloud",
+      "Salesforce Commerce Cloud",
+      "Salesforce Analytics Cloud",
+      "Salesforce Integration Cloud"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Whitepaper",
+      "Ebook",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "hubspot001",
+    "name": "HubSpot",
+    "country": "US",
+    "website": "https://www.hubspot.com",
+    "subscriptionModels": [
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Starter",
+        "currentPrice": 45,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Professional",
+        "currentPrice": 450,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": 1200,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "CRM",
+      "Marketing Hub",
+      "Sales Hub",
+      "Service Hub",
+      "CMS Hub",
+      "Operations Hub",
+      "Free tools"
+    ],
+    "erps": [
+      "HubSpot CRM",
+      "HubSpot Marketing Hub",
+      "HubSpot Sales Hub",
+      "HubSpot Service Hub",
+      "HubSpot CMS Hub",
+      "HubSpot Operations Hub"
+    ],
+    "leadMagnets": [
+      "Free Tools",
+      "Guides",
+      "Templates",
+      "Webinar",
+      "Ebook",
+      "Case Study"
+    ]
+  },
+  {
+    "id": "pipedrive001",
+    "name": "Pipedrive",
+    "country": "US",
+    "website": "https://www.pipedrive.com",
+    "subscriptionModels": [
+      {
+        "name": "Essential",
+        "currentPrice": 15,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Advanced",
+        "currentPrice": 29,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Professional",
+        "currentPrice": 49,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": 99,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Sales CRM",
+      "Lead management",
+      "Deal management",
+      "Pipeline management",
+      "Automation",
+      "Reporting and analytics",
+      "Integrations",
+      "Mobile app"
+    ],
+    "erps": [
+      "Pipedrive"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides",
+      "Templates"
+    ]
+  },
+  {
+    "id": "zoho-crm001",
+    "name": "Zoho CRM",
+    "country": "US",
+    "website": "https://www.zoho.com/crm",
+    "subscriptionModels": [
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Standard",
+        "currentPrice": 14,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Professional",
+        "currentPrice": 23,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": 40,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Ultimate",
+        "currentPrice": 52,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Sales force automation",
+      "Lead management",
+      "Deal management",
+      "Contact management",
+      "Workflow automation",
+      "Analytics and reporting",
+      "Customization",
+      "Integrations",
+      "Mobile app"
+    ],
+    "erps": [
+      "Zoho CRM"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "monday-sales-crm001",
+    "name": "monday Sales CRM",
+    "country": "US",
+    "website": "https://monday.com/crm",
+    "subscriptionModels": [
+      {
+        "name": "Individual",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Basic",
+        "currentPrice": 10,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Standard",
+        "currentPrice": 14,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Pro",
+        "currentPrice": 24,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": null,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "custom"
+      }
+    ],
+    "features": [
+      "CRM software",
+      "Lead management",
+      "Deal management",
+      "Contact management",
+      "Workflow automation",
+      "Reporting and analytics",
+      "Integrations",
+      "Mobile app"
+    ],
+    "erps": [
+      "monday.com"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Webinar",
+      "Guides"
+    ]
+  },
+  {
+    "id": "freshsales001",
+    "name": "Freshsales",
+    "country": "US",
+    "website": "https://www.freshworks.com/crm/sales",
+    "subscriptionModels": [
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Growth",
+        "currentPrice": 15,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Pro",
+        "currentPrice": 39,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": 69,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Sales CRM",
+      "Lead management",
+      "Deal management",
+      "Contact management",
+      "Email and phone integration",
+      "Workflow automation",
+      "Reporting and analytics",
+      "Integrations",
+      "Mobile app"
+    ],
+    "erps": [
+      "Freshsales"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "salesflare001",
+    "name": "Salesflare",
+    "country": "BE",
+    "website": "https://salesflare.com",
+    "subscriptionModels": [
+      {
+        "name": "Growth",
+        "currentPrice": 29,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Pro",
+        "currentPrice": 49,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": 99,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Sales CRM for small businesses",
+      "Automated data entry",
+      "Email and social media integration",
+      "Workflow automation",
+      "Reporting and analytics",
+      "Mobile app"
+    ],
+    "erps": [
+      "Salesflare"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides"
+    ]
+  },
+  {
+    "id": "capsule-crm001",
+    "name": "Capsule CRM",
+    "country": "UK",
+    "website": "https://capsulecrm.com",
+    "subscriptionModels": [
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Growth",
+        "currentPrice": 18,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Advanced",
+        "currentPrice": 36,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Ultimate",
+        "currentPrice": 54,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "CRM software for small businesses",
+      "Contact management",
+      "Sales pipeline",
+      "Task management",
+      "Reporting",
+      "Integrations",
+      "Mobile app"
+    ],
+    "erps": [
+      "Capsule CRM"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides"
+    ]
+  },
+  {
+    "id": "streak-crm001",
+    "name": "Streak CRM",
+    "country": "US",
+    "website": "https://www.streak.com",
+    "subscriptionModels": [
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Solo",
+        "currentPrice": 15,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Pro",
+        "currentPrice": 49,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": 129,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "CRM for Gmail",
+      "Pipeline management",
+      "Email tracking",
+      "Mail merge",
+      "Reporting",
+      "Integrations"
+    ],
+    "erps": [
+      "Gmail",
+      "Google Workspace"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides"
+    ]
+  },
+  {
+    "id": "insightly001",
+    "name": "Insightly",
+    "country": "US",
+    "website": "https://www.insightly.com",
+    "subscriptionModels": [
+      {
+        "name": "Plus",
+        "currentPrice": 29,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Professional",
+        "currentPrice": 49,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": 99,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "CRM and project management",
+      "Sales pipeline",
+      "Task management",
+      "Project management",
+      "Reporting",
+      "Integrations",
+      "Mobile app"
+    ],
+    "erps": [
+      "Insightly CRM",
+      "Insightly Marketing",
+      "Insightly Service"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "zendesk-sell001",
+    "name": "Zendesk Sell",
+    "country": "US",
+    "website": "https://www.zendesk.com/sell",
+    "subscriptionModels": [
+      {
+        "name": "Team",
+        "currentPrice": 19,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Growth",
+        "currentPrice": 49,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Professional",
+        "currentPrice": 99,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": 159,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Sales CRM",
+      "Lead management",
+      "Deal management",
+      "Contact management",
+      "Email and phone integration",
+      "Reporting and analytics",
+      "Integrations",
+      "Mobile app"
+    ],
+    "erps": [
+      "Zendesk Sell"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides"
+    ]
+  },
+  {
+    "id": "nimble001",
+    "name": "Nimble",
+    "country": "US",
+    "website": "https://www.nimble.com",
+    "subscriptionModels": [
+      {
+        "name": "Business",
+        "currentPrice": 25,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Social CRM",
+      "Contact management",
+      "Sales pipeline",
+      "Email marketing",
+      "Reporting",
+      "Integrations",
+      "Browser extension"
+    ],
+    "erps": [
+      "Nimble"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides"
+    ]
+  },
+  {
+    "id": "copper001",
+    "name": "Copper",
+    "country": "US",
+    "website": "https://www.copper.com",
+    "subscriptionModels": [
+      {
+        "name": "Basic",
+        "currentPrice": 25,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Professional",
+        "currentPrice": 59,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Business",
+        "currentPrice": 119,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "CRM for Google Workspace",
+      "Contact management",
+      "Sales pipeline",
+      "Workflow automation",
+      "Reporting",
+      "Integrations",
+      "Mobile app"
+    ],
+    "erps": [
+      "Google Workspace"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides"
+    ]
+  },
+  {
+    "id": "close001",
+    "name": "Close",
+    "country": "US",
+    "website": "https://close.com",
+    "subscriptionModels": [
+      {
+        "name": "Starter",
+        "currentPrice": 29,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Basic",
+        "currentPrice": 69,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Professional",
+        "currentPrice": 99,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Business",
+        "currentPrice": 149,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Sales CRM",
+      "Built-in calling and email",
+      "Lead management",
+      "Sales pipeline",
+      "Reporting and analytics",
+      "Integrations",
+      "Mobile app"
+    ],
+    "erps": [
+      "Close"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "nutshell001",
+    "name": "Nutshell",
+    "country": "US",
+    "website": "https://www.nutshell.com",
+    "subscriptionModels": [
+      {
+        "name": "Foundation",
+        "currentPrice": 16,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Pro",
+        "currentPrice": 42,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Sales CRM",
+      "Contact management",
+      "Sales pipeline",
+      "Email marketing",
+      "Reporting and analytics",
+      "Integrations",
+      "Mobile app"
+    ],
+    "erps": [
+      "Nutshell"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "sugar-crm001",
+    "name": "SugarCRM",
+    "country": "US",
+    "website": "https://www.sugarcrm.com",
+    "subscriptionModels": [],
+    "features": [
+      "CRM platform",
+      "Sales automation",
+      "Marketing automation",
+      "Service automation",
+      "Reporting and analytics",
+      "Cloud and on-premise options"
+    ],
+    "erps": [
+      "Sugar Sell",
+      "Sugar Market",
+      "Sugar Serve"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Whitepaper",
+      "Ebook",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "creatio001",
+    "name": "Creatio",
+    "country": "US",
+    "website": "https://www.creatio.com",
+    "subscriptionModels": [],
+    "features": [
+      "Low-code platform for CRM and workflow automation",
+      "Sales force automation",
+      "Marketing automation",
+      "Service automation",
+      "Business process management",
+      "Reporting and analytics"
+    ],
+    "erps": [
+      "Sales Creatio",
+      "Marketing Creatio",
+      "Service Creatio",
+      "Studio Creatio"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Whitepaper",
+      "Ebook",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "zendesk001",
+    "name": "Zendesk",
+    "country": "US",
+    "website": "https://www.zendesk.com",
+    "subscriptionModels": [],
+    "features": [
+      "Customer service software",
+      "Ticketing system",
+      "Help center",
+      "Live chat",
+      "Reporting and analytics",
+      "Integrations"
+    ],
+    "erps": [
+      "Zendesk Support",
+      "Zendesk Guide",
+      "Zendesk Chat",
+      "Zendesk Talk",
+      "Zendesk Explore",
+      "Zendesk Sunshine"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "freshdesk001",
+    "name": "Freshdesk",
+    "country": "US",
+    "website": "https://www.freshworks.com/customer-support-software",
+    "subscriptionModels": [
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Growth",
+        "currentPrice": 15,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Pro",
+        "currentPrice": 49,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": 69,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Customer support software",
+      "Ticketing system",
+      "Help desk automation",
+      "Knowledge base",
+      "Community forums",
+      "Reporting and analytics",
+      "Integrations",
+      "Mobile app"
+    ],
+    "erps": [
+      "Freshdesk"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "servicenow001",
+    "name": "ServiceNow",
+    "country": "US",
+    "website": "https://www.servicenow.com",
+    "subscriptionModels": [],
+    "features": [
+      "Digital workflow platform",
+      "IT Service Management (ITSM)",
+      "Customer Service Management (CSM)",
+      "Employee Workflow",
+      "Creator Workflow",
+      "App development"
+    ],
+    "erps": [
+      "ServiceNow ITSM",
+      "ServiceNow CSM",
+      "ServiceNow HRSD",
+      "ServiceNow GRC"
+    ],
+    "leadMagnets": [
+      "Demo",
+      "Whitepaper",
+      "Case Study",
+      "Ebook",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "intercom001",
+    "name": "Intercom",
+    "country": "US",
+    "website": "https://www.intercom.com",
+    "subscriptionModels": [],
+    "features": [
+      "Customer messaging platform",
+      "Live chat",
+      "Chatbots",
+      "Help center",
+      "Outbound messaging",
+      "Reporting and analytics",
+      "Integrations"
+    ],
+    "erps": [
+      "Intercom"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "drift001",
+    "name": "Drift",
+    "country": "US",
+    "website": "https://www.drift.com",
+    "subscriptionModels": [],
+    "features": [
+      "Conversational marketing platform",
+      "Chatbots",
+      "Live chat",
+      "Meeting scheduling",
+      "Reporting and analytics",
+      "Integrations"
+    ],
+    "erps": [
+      "Drift"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides",
+      "Webinar",
+      "Ebook"
+    ]
+  },
+  {
+    "id": "livechat001",
+    "name": "LiveChat",
+    "country": "PL",
+    "website": "https://www.livechat.com",
+    "subscriptionModels": [
+      {
+        "name": "Starter",
+        "currentPrice": 16,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Team",
+        "currentPrice": 33,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Business",
+        "currentPrice": 50,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": null,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "custom"
+      }
+    ],
+    "features": [
+      "Live chat software",
+      "Customer service tools",
+      "Reporting and analytics",
+      "Integrations",
+      "Mobile app"
+    ],
+    "erps": [
+      "LiveChat"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides"
+    ]
+  },
+  {
+    "id": "tawkto001",
+    "name": "tawk.to",
+    "country": "US",
+    "website": "https://www.tawk.to",
+    "subscriptionModels": [
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Free live chat app",
+      "Website visitor tracking",
+      "Knowledge base",
+      "Ticketing system",
+      "Mobile app"
+    ],
+    "erps": [
+      "tawk.to"
+    ],
+    "leadMagnets": [
+      "Guides"
+    ]
+  },
+  {
+    "id": "acquire001",
+    "name": "Acquire",
+    "country": "US",
+    "website": "https://acquire.io",
+    "subscriptionModels": [],
+    "features": [
+      "Customer communication platform",
+      "Live chat",
+      "Chatbots",
+      "Video chat",
+      "Cobrowsing",
+      "Help center",
+      "Reporting and analytics",
+      "Integrations"
+    ],
+    "erps": [
+      "Acquire"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "olark001",
+    "name": "Olark",
+    "country": "US",
+    "website": "https://www.olark.com",
+    "subscriptionModels": [
+      {
+        "name": "Growth",
+        "currentPrice": 29,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Live chat software",
+      "Customer service tools",
+      "Reporting and analytics",
+      "Integrations",
+      "Mobile app"
+    ],
+    "erps": [
+      "Olark"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides"
+    ]
+  },
+  {
+    "id": "purechat001",
+    "name": "Pure Chat",
+    "country": "US",
+    "website": "https://www.purechat.com",
+    "subscriptionModels": [
+      {
+        "name": "Small Business",
+        "currentPrice": 39,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Growth",
+        "currentPrice": 79,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Pro",
+        "currentPrice": 199,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Live chat software",
+      "Website visitor tracking",
+      "Contact history",
+      "Reporting and analytics",
+      "Integrations",
+      "Mobile app"
+    ],
+    "erps": [
+      "Pure Chat"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides"
+    ]
+  },
+  {
+    "id": "chatra001",
+    "name": "Chatra",
+    "country": "US",
+    "website": "https://chatra.com",
+    "subscriptionModels": [
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Essential",
+        "currentPrice": 19,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Pro",
+        "currentPrice": 29,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Live chat software",
+      "Website visitor tracking",
+      "Chatbots",
+      "Email integration",
+      "Reporting",
+      "Mobile app"
+    ],
+    "erps": [
+      "Chatra"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Guides"
+    ]
+  },
+  {
+    "id": "tidio001",
+    "name": "Tidio",
+    "country": "PL",
+    "website": "https://www.tidio.com",
+    "subscriptionModels": [
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Chatbots",
+        "currentPrice": 39,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Communicator",
+        "currentPrice": 15,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Email Marketing",
+        "currentPrice": 10,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Live chat and chatbot platform",
+      "Email marketing",
+      "CRM integrations",
+      "Reporting and analytics",
+      "Mobile app"
+    ],
+    "erps": [
+      "Tidio"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "smartsupp001",
+    "name": "Smartsupp",
+    "country": "CZ",
+    "website": "https://www.smartsupp.com",
+    "subscriptionModels": [
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Standard",
+        "currentPrice": 15,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Pro",
+        "currentPrice": 29,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Live chat and chatbot software",
+      "Website visitor recording",
+      "Reporting and analytics",
+      "Integrations",
+      "Mobile app"
+    ],
+    "erps": [
+      "Smartsupp"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Guides"
+    ]
+  },
+  {
+    "id": "userlike001",
+    "name": "Userlike",
+    "country": "DE",
+    "website": "https://www.userlike.com",
+    "subscriptionModels": [
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Team",
+        "currentPrice": 90,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Corporate",
+        "currentPrice": 290,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Business",
+        "currentPrice": 720,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Live chat and customer messaging",
+      "Chatbots",
+      "Integrations",
+      "Reporting and analytics",
+      "Mobile app"
+    ],
+    "erps": [
+      "Userlike"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "respondio001",
+    "name": "Respond.io",
+    "country": "HK",
+    "website": "https://respond.io",
+    "subscriptionModels": [
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Pro",
+        "currentPrice": 29,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Business",
+        "currentPrice": 79,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": null,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "custom"
+      }
+    ],
+    "features": [
+      "Customer conversation management",
+      "Omnichannel inbox",
+      "Chatbots",
+      "Workflow automation",
+      "Reporting and analytics",
+      "Integrations"
+    ],
+    "erps": [
+      "Respond.io"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "manychat001",
+    "name": "ManyChat",
+    "country": "US",
+    "website": "https://manychat.com",
+    "subscriptionModels": [
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Pro",
+        "currentPrice": 15,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Chatbot platform for marketing and sales",
+      "Facebook Messenger bots",
+      "Instagram bots",
+      "SMS automation",
+      "Email marketing",
+      "Integrations"
+    ],
+    "erps": [
+      "ManyChat"
     ],
     "leadMagnets": [
       "Free Trial",
       "Guides",
-      "Webinars",
-      "Customer Stories",
-      "Accounting Glossary",
-      "Interactive Tools",
-      "Allowable Expenses Calculator for Landlords",
-      "VAT Flat Rate Scheme Calculator",
-      "Mileage Calculator",
-      "VAT Calculator",
-      "ROI Calculator",
-      "Accounting Calendar"
+      "Templates",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "chatfuel001",
+    "name": "Chatfuel",
+    "country": "US",
+    "website": "https://chatfuel.com",
+    "subscriptionModels": [
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Pro",
+        "currentPrice": 15,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Premium",
+        "currentPrice": null,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "custom"
+      }
+    ],
+    "features": [
+      "Chatbot platform for marketing and sales",
+      "Facebook Messenger bots",
+      "Instagram bots",
+      "AI capabilities",
+      "Integrations"
+    ],
+    "erps": [
+      "Chatfuel"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Guides",
+      "Templates",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "botsify001",
+    "name": "Botsify",
+    "country": "PK",
+    "website": "https://botsify.com",
+    "subscriptionModels": [
+      {
+        "name": "Starter",
+        "currentPrice": 49,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Standard",
+        "currentPrice": 149,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Professional",
+        "currentPrice": 499,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": null,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "custom"
+      }
+    ],
+    "features": [
+      "Chatbot platform",
+      "Omnichannel support",
+      "AI capabilities",
+      "Integrations",
+      "Human takeover"
+    ],
+    "erps": [
+      "Botsify"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "kommunicate001",
+    "name": "Kommunicate",
+    "country": "IN",
+    "website": "https://www.kommunicate.io",
+    "subscriptionModels": [
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Grow",
+        "currentPrice": 40,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Scale",
+        "currentPrice": 100,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": null,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "custom"
+      }
+    ],
+    "features": [
+      "Customer support platform with chatbots",
+      "Live chat",
+      "Knowledge base",
+      "Integrations",
+      "Mobile SDKs"
+    ],
+    "erps": [
+      "Kommunicate"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "crisp001",
+    "name": "Crisp",
+    "country": "FR",
+    "website": "https://crisp.chat",
+    "subscriptionModels": [
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Pro",
+        "currentPrice": 25,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Unlimited",
+        "currentPrice": 50,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Customer communication platform",
+      "Live chat",
+      "Chatbots",
+      "Knowledge base",
+      "CRM",
+      "Email marketing",
+      "Reporting and analytics",
+      "Integrations"
+    ],
+    "erps": [
+      "Crisp"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "chatwoot001",
+    "name": "Chatwoot",
+    "country": "US",
+    "website": "https://www.chatwoot.com",
+    "subscriptionModels": [
+      {
+        "name": "Community Edition",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Cloud",
+        "currentPrice": 24,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Open-source customer engagement suite",
+      "Omnichannel inbox",
+      "Live chat",
+      "Shared inbox",
+      "CRM",
+      "Reporting",
+      "Integrations"
+    ],
+    "erps": [
+      "Chatwoot"
+    ],
+    "leadMagnets": [
+      "Guides",
+      "Documentation"
+    ]
+  },
+  {
+    "id": "smooch001",
+    "name": "Smooch",
+    "country": "CA",
+    "website": "https://smooch.io",
+    "subscriptionModels": [],
+    "features": [
+      "Customer messaging platform",
+      "Omnichannel inbox",
+      "Integrations with messaging channels and business systems",
+      "API access"
+    ],
+    "erps": [
+      "Smooch"
+    ],
+    "leadMagnets": [
+      "Documentation",
+      "Guides"
+    ]
+  },
+  {
+    "id": "acquire-chatbot001",
+    "name": "Acquire Chatbot",
+    "country": "US",
+    "website": "https://acquire.io/chatbot",
+    "subscriptionModels": [],
+    "features": [
+      "AI-powered chatbot",
+      "Lead generation",
+      "Customer support automation",
+      "Integration with Acquire platform"
+    ],
+    "erps": [
+      "Acquire"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides"
+    ]
+  },
+  {
+    "id": "intercom-chatbot001",
+    "name": "Intercom Chatbot",
+    "country": "US",
+    "website": "https://www.intercom.com/chatbot",
+    "subscriptionModels": [],
+    "features": [
+      "Chatbot for sales and support",
+      "Lead qualification",
+      "Answer FAQs",
+      "Integration with Intercom platform"
+    ],
+    "erps": [
+      "Intercom"
+    ],
+    "leadMagnets": [
+      "Demo",
+      "Guides"
+    ]
+  },
+  {
+    "id": "drift-chatbot001",
+    "name": "Drift Chatbot",
+    "country": "US",
+    "website": "https://www.drift.com/chatbots",
+    "subscriptionModels": [],
+    "features": [
+      "Conversational marketing chatbot",
+      "Lead qualification",
+      "Meeting scheduling",
+      "Integration with Drift platform"
+    ],
+    "erps": [
+      "Drift"
+    ],
+    "leadMagnets": [
+      "Demo",
+      "Guides"
+    ]
+  },
+  {
+    "id": "manychat-chatbot001",
+    "name": "ManyChat Chatbot",
+    "country": "US",
+    "website": "https://manychat.com",
+    "subscriptionModels": [],
+    "features": [
+      "Chatbot for Facebook Messenger and Instagram",
+      "Marketing and sales automation",
+      "Lead generation"
+    ],
+    "erps": [
+      "ManyChat"
+    ],
+    "leadMagnets": [
+      "Guides",
+      "Templates"
+    ]
+  },
+  {
+    "id": "chatfuel-chatbot001",
+    "name": "Chatfuel Chatbot",
+    "country": "US",
+    "website": "https://chatfuel.com",
+    "subscriptionModels": [],
+    "features": [
+      "Chatbot for Facebook Messenger and Instagram",
+      "AI capabilities",
+      "Marketing and sales automation"
+    ],
+    "erps": [
+      "Chatfuel"
+    ],
+    "leadMagnets": [
+      "Guides",
+      "Templates"
+    ]
+  },
+  {
+    "id": "botsify-chatbot001",
+    "name": "Botsify Chatbot",
+    "country": "PK",
+    "website": "https://botsify.com",
+    "subscriptionModels": [],
+    "features": [
+      "Omnichannel chatbot",
+      "AI capabilities",
+      "Human takeover"
+    ],
+    "erps": [
+      "Botsify"
+    ],
+    "leadMagnets": [
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "kommunicate-chatbot001",
+    "name": "Kommunicate Chatbot",
+    "country": "IN",
+    "website": "https://www.kommunicate.io/chatbot",
+    "subscriptionModels": [],
+    "features": [
+      "AI-powered chatbot for customer support",
+      "Integration with Kommunicate platform"
+    ],
+    "erps": [
+      "Kommunicate"
+    ],
+    "leadMagnets": [
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "crisp-chatbot001",
+    "name": "Crisp Chatbot",
+    "country": "FR",
+    "website": "https://crisp.chat/en/chatbots",
+    "subscriptionModels": [],
+    "features": [
+      "Chatbot for customer communication",
+      "Lead generation",
+      "Customer support automation",
+      "Integration with Crisp platform"
+    ],
+    "erps": [
+      "Crisp"
+    ],
+    "leadMagnets": [
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "chatwoot-chatbot001",
+    "name": "Chatwoot Chatbot",
+    "country": "US",
+    "website": "https://www.chatwoot.com/help-center/setup/features/chatbots",
+    "subscriptionModels": [],
+    "features": [
+      "Chatbot for customer engagement",
+      "Integration with Chatwoot platform"
+    ],
+    "erps": [
+      "Chatwoot"
+    ],
+    "leadMagnets": [
+      "Documentation",
+      "Guides"
+    ]
+  },
+  {
+    "id": "userlike-chatbot001",
+    "name": "Userlike Chatbot",
+    "country": "DE",
+    "website": "https://www.userlike.com/en/chatbots",
+    "subscriptionModels": [],
+    "features": [
+      "Chatbot for customer messaging",
+      "Lead generation",
+      "Customer support automation",
+      "Integration with Userlike platform"
+    ],
+    "erps": [
+      "Userlike"
+    ],
+    "leadMagnets": [
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "respondio-chatbot001",
+    "name": "Respond.io Chatbot",
+    "country": "HK",
+    "website": "https://respond.io/solutions/chatbot",
+    "subscriptionModels": [],
+    "features": [
+      "Chatbot for customer conversation management",
+      "Workflow automation",
+      "Integration with Respond.io platform"
+    ],
+    "erps": [
+      "Respond.io"
+    ],
+    "leadMagnets": [
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "intercom-articles001",
+    "name": "Intercom Articles",
+    "country": "US",
+    "website": "https://www.intercom.com/help-center",
+    "subscriptionModels": [],
+    "features": [
+      "Knowledge base software",
+      "Self-service support",
+      "Integration with Intercom platform"
+    ],
+    "erps": [
+      "Intercom"
+    ],
+    "leadMagnets": [
+      "Guides"
+    ]
+  },
+  {
+    "id": "freshdesk-knowledge-base001",
+    "name": "Freshdesk Knowledge Base",
+    "country": "US",
+    "website": "https://www.freshworks.com/customer-support-software/knowledge-base",
+    "subscriptionModels": [],
+    "features": [
+      "Knowledge base software",
+      "Self-service support",
+      "Integration with Freshdesk platform"
+    ],
+    "erps": [
+      "Freshdesk"
+    ],
+    "leadMagnets": [
+      "Guides"
+    ]
+  },
+  {
+    "id": "zendesk-guide001",
+    "name": "Zendesk Guide",
+    "country": "US",
+    "website": "https://www.zendesk.com/guide",
+    "subscriptionModels": [],
+    "features": [
+      "Knowledge base software",
+      "Self-service support",
+      "AI-powered suggestions",
+      "Integration with Zendesk platform"
+    ],
+    "erps": [
+      "Zendesk"
+    ],
+    "leadMagnets": [
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "servicenow-knowledge-management001",
+    "name": "ServiceNow Knowledge Management",
+    "country": "US",
+    "website": "https://www.servicenow.com/products/it-service-management/knowledge-management.html",
+    "subscriptionModels": [],
+    "features": [
+      "Knowledge management for IT and customer service",
+      "Self-service portal",
+      "Integration with ServiceNow platform"
+    ],
+    "erps": [
+      "ServiceNow"
+    ],
+    "leadMagnets": [
+      "Demo",
+      "Whitepaper"
+    ]
+  },
+  {
+    "id": "document360001",
+    "name": "Document360",
+    "country": "UK",
+    "website": "https://document360.com",
+    "subscriptionModels": [
+      {
+        "name": "Startup",
+        "currentPrice": 99,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Business",
+        "currentPrice": 299,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": 599,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise Plus",
+        "currentPrice": null,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "custom"
+      }
+    ],
+    "features": [
+      "Knowledge base software for software companies",
+      "Self-service portal",
+      "Version control",
+      "Analytics",
+      "Integrations"
+    ],
+    "erps": [
+      "Document360"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "slite001",
+    "name": "Slite",
+    "country": "FR",
+    "website": "https://slite.com",
+    "subscriptionModels": [
+      {
+        "name": "Free",
+        "currentPrice": 0,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Standard",
+        "currentPrice": 8,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Premium",
+        "currentPrice": 12,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": null,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "custom"
+      }
+    ],
+    "features": [
+      "Knowledge base for teams",
+      "Document creation and organization",
+      "Collaboration features",
+      "Integrations",
+      "Search functionality"
+    ],
+    "erps": [
+      "Slite"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides"
+    ]
+  },
+  {
+    "id": "guru001",
+    "name": "Guru",
+    "country": "US",
+    "website": "https://www.getguru.com",
+    "subscriptionModels": [
+      {
+        "name": "Starter",
+        "currentPrice": 5,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Builder",
+        "currentPrice": 10,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Expert",
+        "currentPrice": 20,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": null,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "custom"
+      }
+    ],
+    "features": [
+      "Knowledge management solution",
+      "Browser extension",
+      "AI suggestions",
+      "Verification workflows",
+      "Analytics",
+      "Integrations"
+    ],
+    "erps": [
+      "Salesforce",
+      "HubSpot",
+      "Zendesk",
+      "Slack",
+      "Microsoft Teams"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "kb-by-zendesk001",
+    "name": "KB by Zendesk",
+    "country": "US",
+    "website": "https://www.zendesk.com/guide",
+    "subscriptionModels": [],
+    "features": [
+      "Knowledge base software",
+      "Self-service support",
+      "AI-powered suggestions",
+      "Integration with Zendesk platform"
+    ],
+    "erps": [
+      "Zendesk"
+    ],
+    "leadMagnets": [
+      "Guides",
+      "Webinar"
+    ]
+  },
+  {
+    "id": "helpdocs001",
+    "name": "HelpDocs",
+    "country": "UK",
+    "website": "https://helpdocs.io",
+    "subscriptionModels": [
+      {
+        "name": "Starter",
+        "currentPrice": 49,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Pro",
+        "currentPrice": 99,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": null,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "custom"
+      }
+    ],
+    "features": [
+      "Knowledge base software",
+      "Self-service support",
+      "Customization",
+      "Analytics",
+      "Integrations"
+    ],
+    "erps": [
+      "HelpDocs"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides"
+    ]
+  },
+  {
+    "id": "elevio001",
+    "name": "Elevio",
+    "country": "AU",
+    "website": "https://elev.io",
+    "subscriptionModels": [],
+    "features": [
+      "Knowledge base and customer self-service platform",
+      "In-app help widgets",
+      "Contextual help",
+      "Analytics",
+      "Integrations"
+    ],
+    "erps": [
+      "Elevio"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo",
+      "Guides"
+    ]
+  },
+  {
+    "id": "helpscout-knowledge-base001",
+    "name": "Help Scout Knowledge Base",
+    "country": "US",
+    "website": "https://www.helpscout.com/knowledge-base",
+    "subscriptionModels": [],
+    "features": [
+      "Knowledge base software",
+      "Self-service support",
+      "Integration with Help Scout platform"
+    ],
+    "erps": [
+      "Help Scout"
+    ],
+    "leadMagnets": [
+      "Guides"
+    ]
+  },
+  {
+    "id": "kayako-knowledge-base001",
+    "name": "Kayako Knowledge Base",
+    "country": "UK",
+    "website": "https://www.kayako.com/features/knowledge-base",
+    "subscriptionModels": [],
+    "features": [
+      "Knowledge base software",
+      "Self-service support",
+      "Integration with Kayako platform"
+    ],
+    "erps": [
+      "Kayako"
+    ],
+    "leadMagnets": [
+      "Guides"
+    ]
+  },
+  {
+    "id": "supportbee-knowledge-base001",
+    "name": "SupportBee Knowledge Base",
+    "country": "US",
+    "website": "https://supportbee.com/knowledge-base-software",
+    "subscriptionModels": [],
+    "features": [
+      "Knowledge base software",
+      "Self-service support",
+      "Integration with SupportBee platform"
+    ],
+    "erps": [
+      "SupportBee"
+    ],
+    "leadMagnets": [
+      "Guides"
+    ]
+  },
+  {
+    "id": "helpshelf001",
+    "name": "HelpShelf",
+    "country": "UK",
+    "website": "https://helpshelf.com",
+    "subscriptionModels": [],
+    "features": [
+      "Customer self-service widget",
+      "Integrates with multiple knowledge bases and support tools",
+      "Contextual help"
+    ],
+    "erps": [
+      "HelpShelf"
+    ],
+    "leadMagnets": [
+      "Free Trial",
+      "Demo"
+    ]
+  },
+  {
+    "id": "credit-iq001",
+    "name": "Credit IQ",
+    "country": "NL",
+    "website": "https://www.credit-iq.nl",
+    "subscriptionModels": [
+      {
+        "name": "Basic",
+        "currentPrice": 50,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Pro",
+        "currentPrice": 100,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      },
+      {
+        "name": "Enterprise",
+        "currentPrice": 200,
+        "currentPriceDate": "2025-03-16",
+        "invoiceFrequency": "monthly"
+      }
+    ],
+    "features": [
+      "Credit checks",
+      "Automated credit decisions",
+      "Portfolio monitoring",
+      "Risk assessment",
+      "Integration with data providers"
+    ],
+    "erps": [
+      "Credit IQ"
+    ],
+    "leadMagnets": [
+      "Free Credit Check",
+      "Demo",
+      "Whitepaper"
     ]
   }
 ]
