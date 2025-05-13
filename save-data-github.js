@@ -23,8 +23,7 @@ function getGitHubToken() {
             '4. Select the "repo" scope\n' +
             '5. Click "Generate token"\n' +
             '6. Copy the token and paste it here\n\n' +
-            'This token will be stored in your browser session only, so save it.'
-            'It takes 30 seconds to a minute, for your changes to update.'
+            'This token will be stored in your browser session only.'
         );
         
         if (token) {
@@ -167,7 +166,7 @@ function showGitHubSaveNotification(file) {
         document.body.appendChild(notification);
     }
     
-   // Set notification message
+    // Set notification message
     notification.textContent = `${file} has been saved to GitHub successfully.`;
     notification.style.backgroundColor = '#4CAF50'; // Green for success
     notification.style.opacity = '1';
@@ -228,13 +227,26 @@ function getDefaultData(filename) {
 
 // These functions should be defined elsewhere, but we're including stubs for completeness
 function extractFeaturesFromDoc() {
-    // This would normally be imported from data.js
-    return [];
+    // This would normally be imported from data.js, but we're providing a stub with the new format
+    return [
+        {
+            "name": "Automated payment reminder system",
+            "category": "Automation"
+        },
+        {
+            "name": "Payment processing integration",
+            "category": "Payment"
+        },
+        {
+            "name": "Secure customer portal with payment options",
+            "category": "Payment"
+        }
+    ];
 }
 
 function extractERPsFromDoc() {
     // This would normally be imported from data.js
-    return [];
+    return ["Oracle NetSuite", "QuickBooks", "Xero"];
 }
 
 // Add GitHub configuration UI
@@ -291,7 +303,7 @@ function openGitHubConfigModal() {
                     <input type="password" id="github-token" placeholder="ghp_xxxxxxxxxxxx">
                     <p class="help-text">
                         To create a token, go to <a href="https://github.com/settings/tokens" target="_blank">GitHub Token Settings</a>,
-                        click "Generate new token", select the "repo" scope, and click "Generate token". It takes 30 seconds to a minute, for your changes to update.
+                        click "Generate new token", select the "repo" scope, and click "Generate token".
                     </p>
                 </div>
                 <div class="form-actions">
