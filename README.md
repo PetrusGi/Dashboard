@@ -74,3 +74,6 @@ The dashboard uses the following JSON files to store data:
 - The dashboard is fully responsive and works on all devices
 - No server-side processing is required when using Live Server
 - GitHub integration requires a GitHub account and repository
+
+
+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
